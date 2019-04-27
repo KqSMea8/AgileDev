@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Property>
+  <Review id="Sprint3-review1">
+    <Description>Sprint3-第一次代码评审</Description>
+    <Author>chenhui</Author>
+    <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-07-19 :: 14:27:03:463 CST</CreationDate>
+    <Directory>review/20100720</Directory>
+    <Reviewers>
+      <Entry id="chenhui" name="chenhui"/>
+      <Entry id="guolin" name="guolin"/>
+      <Entry id="shixiaolei" name="shixiaolei"/>
+      <Entry id="sunyi_qa" name="sunyi_qa"/>
+      <Entry id="tianyusong" name="tianyusong"/>
+      <Entry id="zhangjing_pe" name="zhangjing_pe"/>
+    </Reviewers>
+    <Files>
+      <Entry name="src/main/webapp/js/pages/cards/list.js"/>
+      <Entry name="src/main/webapp/WEB-INF/jsp/cards/list.jsp"/>
+      <Entry name="src/main/java/com/baidu/spark/security/annotation/SecuredMethod.java"/>
+      <Entry name="src/main/java/com/baidu/spark/security/annotation/SecuredObj.java"/>
+      <Entry name="src/main/java/com/baidu/spark/security/annotation/SecuredParam.java"/>
+      <Entry name="src/main/java/com/baidu/spark/security/impl/PermissionServiceImpl.java"/>
+      <Entry name="src/main/java/com/baidu/spark/security/impl/SparkMutableAclServiceImpl.java"/>
+      <Entry name="src/main/java/com/baidu/spark/security/PermissionService.java"/>
+      <Entry name="src/main/java/com/baidu/spark/security/principalsid/GroupPrincipalSid.java"/>
+      <Entry name="src/main/java/com/baidu/spark/security/principalsid/UserPrincipalSid.java"/>
+      <Entry name="src/main/java/com/baidu/spark/security/SparkAclAuthorizationStrategyImpl.java"/>
+      <Entry name="src/main/java/com/baidu/spark/security/SparkMutableAclService.java"/>
+      <Entry name="src/main/java/com/baidu/spark/security/SparkPermission.java"/>
+      <Entry name="src/main/java/com/baidu/spark/security/SparkPermissionEnum.java"/>
+      <Entry name="src/main/java/com/baidu/spark/security/SparkSystemResource.java"/>
+      <Entry name="src/main/java/com/baidu/spark/security/taglib/SparkAclTaglib.java"/>
+      <Entry name="src/main/java/com/baidu/spark/security/voter/AccessPermissionBean.java"/>
+      <Entry name="src/main/java/com/baidu/spark/security/voter/SparkAclVoter.java"/>
+      <Entry name="src/main/java/com/baidu/spark/security/voter/UserAccessResolver.java"/>
+      <Entry name="src/main/webapp/js/pages/cards/filter.js"/>
+      <Entry name="src/main/webapp/js/spark-menu.js"/>
+      <Entry name="src/main/webapp/js/pages/cards/cardTreeSelector.js"/>
+      <Entry name="src/main/webapp/js/pages/cards/hierarchy.js"/>
+      <Entry name="src/main/webapp/js/pages/cards/userview.js"/>
+      <Entry name="src/main/webapp/js/spark-history.js"/>
+      <Entry name="src/main/webapp/js/spark-service.js"/>
+      <Entry name="src/main/webapp/js/spark-treeSelector.js"/>
+      <Entry name="src/main/webapp/js/spark.js"/>
+      <Entry name="src/main/webapp/js/test/spark-history.html"/>
+      <Entry name="src/main/webapp/js/test/spark-service.html"/>
+      <Entry name="src/main/java/com/baidu/spark/service/impl/GroupServiceImpl.java"/>
+      <Entry name="src/main/webapp/WEB-INF/jsp/cards/cardform.jsp"/>
+      <Entry name="src/main/webapp/WEB-INF/jsp/cards/userview.jsp"/>
+      <Entry name="src/main/webapp/js/widgets/query.js"/>
+    </Files>
+    <FieldItems>
+      <FieldItem id="Type" default="item.label.unset">
+        <Entry name="item.label.unset"/>
+        <Entry name="item.type.label.codingStandards"/>
+        <Entry name="item.type.label.programLogic"/>
+        <Entry name="item.type.label.optimization"/>
+        <Entry name="item.type.label.usability"/>
+        <Entry name="item.type.label.clarity"/>
+        <Entry name="item.type.label.missing"/>
+        <Entry name="item.type.label.irrelevant"/>
+        <Entry name="item.type.label.suggestion"/>
+        <Entry name="item.type.label.other"/>
+      </FieldItem>
+      <FieldItem id="Severity" default="item.label.unset">
+        <Entry name="item.label.unset"/>
+        <Entry name="item.severity.label.critical"/>
+        <Entry name="item.severity.label.major"/>
+        <Entry name="item.severity.label.normal"/>
+        <Entry name="item.severity.label.minor"/>
+        <Entry name="item.severity.label.trivial"/>
+      </FieldItem>
+      <FieldItem id="Resolution" default="item.label.unset">
+        <Entry name="item.label.unset"/>
+        <Entry name="item.resolution.label.validNeedsfixing"/>
+        <Entry name="item.resolution.label.validFixlater"/>
+        <Entry name="item.resolution.label.validDuplicate"/>
+        <Entry name="item.resolution.label.validWontfix"/>
+        <Entry name="item.resolution.label.invalidWontfix"/>
+        <Entry name="item.resolution.label.unsureValidity"/>
+      </FieldItem>
+      <FieldItem id="Status" default="item.status.label.open">
+        <Entry name="item.status.label.open"/>
+        <Entry name="item.status.label.resolved"/>
+        <Entry name="item.status.label.closed"/>
+        <Entry name="item.status.label.reopened"/>
+      </FieldItem>
+    </FieldItems>
+    <Filters>
+      <Phase name="phase.individual" enabled="true">
+        <Filter name="Interval" value="7" enabled="false"/>
+        <Filter name="Reviewer" value="item.reviewer.label.automatic" enabled="true"/>
+        <Filter name="Type" value="item.label.unset" enabled="false"/>
+        <Filter name="Severity" value="item.label.unset" enabled="false"/>
+        <Filter name="AssignedTo" value="" enabled="false"/>
+        <Filter name="Resolution" value="item.label.unset" enabled="false"/>
+        <Filter name="Status" value="item.status.label.open" enabled="false"/>
+        <Filter name="File" value="" enabled="false"/>
+      </Phase>
+      <Phase name="phase.team" enabled="true">
+        <Filter name="Interval" value="7" enabled="false"/>
+        <Filter name="Reviewer" value="" enabled="false"/>
+        <Filter name="Type" value="item.label.unset" enabled="false"/>
+        <Filter name="Severity" value="item.label.unset" enabled="false"/>
+        <Filter name="AssignedTo" value="" enabled="false"/>
+        <Filter name="Resolution" value="item.label.unset" enabled="true"/>
+        <Filter name="Status" value="item.status.label.open" enabled="false"/>
+        <Filter name="File" value="" enabled="false"/>
+      </Phase>
+      <Phase name="phase.rework" enabled="true">
+        <Filter name="Interval" value="7" enabled="false"/>
+        <Filter name="Reviewer" value="" enabled="false"/>
+        <Filter name="Type" value="item.label.unset" enabled="false"/>
+        <Filter name="Severity" value="item.label.unset" enabled="false"/>
+        <Filter name="AssignedTo" value="item.reviewer.label.automatic" enabled="true"/>
+        <Filter name="Resolution" value="item.label.unset" enabled="false"/>
+        <Filter name="Status" value="item.status.label.open" enabled="true"/>
+        <Filter name="File" value="" enabled="false"/>
+      </Phase>
+    </Filters>
+  </Review>
+  <Review id="Sprint3-review2">
+    <Description>Sprint3-第二次代码评审</Description>
+    <Author>chenhui</Author>
+    <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 14:11:46:431 CST</CreationDate>
+    <Directory>review/20100824</Directory>
+    <Reviewers>
+      <Entry id="chenhui" name="chenhui"/>
+      <Entry id="guolin" name="guolin"/>
+      <Entry id="shixiaolei" name="shixiaolei"/>
+      <Entry id="sunjiaxiang" name="sunjiaxiang"/>
+      <Entry id="tianyusong" name="tianyusong"/>
+      <Entry id="zhangjing_pe" name="zhangjing_pe"/>
+    </Reviewers>
+    <Files>
+      <Entry name="src/main/webapp/js/pages/cards/discussion.js"/>
+      <Entry name="src/main/webapp/WEB-INF/jsp/ajax/spaces/metadata.jsp"/>
+      <Entry name="src/main/java/com/baidu/spark/web/ajax/SpaceAjaxController.java"/>
+      <Entry name="src/main/webapp/WEB-INF/jsp/cards/hierarchy.jsp"/>
+      <Entry name="src/main/webapp/WEB-INF/jsp/cards/list.jsp"/>
+      <Entry name="src/main/webapp/WEB-INF/jsp/templates/base.jsp"/>
+      <Entry name="src/main/webapp/WEB-INF/jsp/templates/plugins/icafe/project-picker.jsp"/>
+      <Entry name="src/main/java/com/baidu/spark/model/Discussion.java"/>
+      <Entry name="src/main/webapp/WEB-INF/jsp/project/delete.jsp"/>
+      <Entry name="src/main/webapp/WEB-INF/jsp/project/list.jsp"/>
+      <Entry name="src/main/webapp/WEB-INF/jsp/project/new.jsp"/>
+      <Entry name="src/main/java/com/baidu/spark/util/FlashScope.java"/>
+      <Entry name="src/main/java/com/baidu/spark/util/FlashScopeFilter.java"/>
+      <Entry name="src/main/java/com/baidu/spark/model/Project.java"/>
+      <Entry name="src/main/java/com/baidu/spark/service/CardBasicService.java"/>
+      <Entry name="src/main/java/com/baidu/spark/service/CardService.java"/>
+      <Entry name="src/main/java/com/baidu/spark/service/DiscussionService.java"/>
+      <Entry name="src/main/java/com/baidu/spark/service/impl/CardBasicServiceImpl.java"/>
+      <Entry name="src/main/java/com/baidu/spark/service/impl/CardServiceImpl.java"/>
+      <Entry name="src/main/java/com/baidu/spark/service/impl/DiscussionServiceImpl.java"/>
+      <Entry name="src/main/java/com/baidu/spark/service/ProjectService.java"/>
+      <Entry name="src/main/java/com/baidu/spark/util/RestTemplateFactory.java"/>
+      <Entry name="src/main/java/com/baidu/spark/util/UrlBasedRestTemplate.java"/>
+      <Entry name="src/main/java/com/baidu/spark/util/WebUtils.java"/>
+      <Entry name="src/main/java/com/baidu/spark/web/taglib/OutTag.java"/>
+      <Entry name="src/main/java/com/baidu/spark/web/taglib/SparkAclTaglib.java"/>
+      <Entry name="src/main/webapp/js/pages/cards/filter.js"/>
+      <Entry name="src/main/webapp/js/spark-menu.js"/>
+      <Entry name="src/main/webapp/WEB-INF/jsp/cards/filter.jsp"/>
+      <Entry name="src/main/java/com/baidu/spark/index/converter/CardIndexConverter.java"/>
+      <Entry name="src/main/java/com/baidu/spark/index/engine/impl/CardIndexEngineImpl.java"/>
+      <Entry name="src/main/java/com/baidu/spark/util/SparkConfig.java"/>
+      <Entry name="src/main/java/com/baidu/spark/service/impl/helper/copyspace/metadata/impl/CardPropertyMetadata.java"/>
+      <Entry name="src/main/java/com/baidu/spark/service/impl/helper/copyspace/metadata/impl/CardTypeMetadata.java"/>
+      <Entry name="src/main/java/com/baidu/spark/service/impl/helper/copyspace/metadata/impl/GroupMetadata.java"/>
+      <Entry name="src/main/java/com/baidu/spark/service/impl/helper/copyspace/metadata/impl/SpaceSequenceMetadata.java"/>
+      <Entry name="src/main/java/com/baidu/spark/service/impl/helper/copyspace/metadata/impl/SpaceViewMetadata.java"/>
+      <Entry name="src/main/java/com/baidu/spark/service/impl/helper/copyspace/metadata/Metadata.java"/>
+      <Entry name="src/main/java/com/baidu/spark/service/impl/helper/copyspace/metadata/PojoMetadata.java"/>
+      <Entry name="src/main/java/com/baidu/spark/service/impl/helper/copyspace/transformer/impl/CardPropertyTransformer.java"/>
+      <Entry name="src/main/java/com/baidu/spark/service/impl/helper/copyspace/transformer/impl/CardTypeTransformer.java"/>
+      <Entry name="src/main/java/com/baidu/spark/service/impl/helper/copyspace/transformer/impl/GroupTransformer.java"/>
+      <Entry name="src/main/java/com/baidu/spark/service/impl/helper/copyspace/validation/impl/DeserializeError.java"/>
+      <Entry name="src/main/java/com/baidu/spark/service/impl/helper/copyspace/validation/impl/InvalidDataError.java"/>
+      <Entry name="src/main/java/com/baidu/spark/service/impl/helper/copyspace/validation/ValidationResult.java"/>
+      <Entry name="src/main/webapp/js/pages/space/tab.js"/>
+      <Entry name="src/main/webapp/js/spark-treeSelector.js"/>
+    </Files>
+    <FieldItems>
+      <FieldItem id="Type" default="item.type.label.codingStandards">
+        <Entry name="item.label.unset"/>
+        <Entry name="item.type.label.codingStandards"/>
+        <Entry name="item.type.label.programLogic"/>
+        <Entry name="item.type.label.optimization"/>
+        <Entry name="item.type.label.usability"/>
+        <Entry name="item.type.label.clarity"/>
+        <Entry name="item.type.label.missing"/>
+        <Entry name="item.type.label.irrelevant"/>
+        <Entry name="item.type.label.suggestion"/>
+        <Entry name="item.type.label.other"/>
+      </FieldItem>
+      <FieldItem id="Severity" default="item.severity.label.normal">
+        <Entry name="item.label.unset"/>
+        <Entry name="item.severity.label.critical"/>
+        <Entry name="item.severity.label.major"/>
+        <Entry name="item.severity.label.normal"/>
+        <Entry name="item.severity.label.minor"/>
+        <Entry name="item.severity.label.trivial"/>
+      </FieldItem>
+      <FieldItem id="Resolution" default="item.label.unset">
+        <Entry name="item.label.unset"/>
+        <Entry name="item.resolution.label.validNeedsfixing"/>
+        <Entry name="item.resolution.label.validFixlater"/>
+        <Entry name="item.resolution.label.validDuplicate"/>
+        <Entry name="item.resolution.label.validWontfix"/>
+        <Entry name="item.resolution.label.invalidWontfix"/>
+        <Entry name="item.resolution.label.unsureValidity"/>
+      </FieldItem>
+      <FieldItem id="Status" default="item.status.label.open">
+        <Entry name="item.status.label.open"/>
+        <Entry name="item.status.label.resolved"/>
+        <Entry name="item.status.label.closed"/>
+        <Entry name="item.status.label.reopened"/>
+      </FieldItem>
+    </FieldItems>
+    <Filters>
+      <Phase name="phase.individual" enabled="true">
+        <Filter name="Interval" value="7" enabled="false"/>
+        <Filter name="Reviewer" value="item.reviewer.label.automatic" enabled="true"/>
+        <Filter name="Type" value="item.label.unset" enabled="false"/>
+        <Filter name="Severity" value="item.label.unset" enabled="false"/>
+        <Filter name="AssignedTo" value="" enabled="false"/>
+        <Filter name="Resolution" value="item.label.unset" enabled="false"/>
+        <Filter name="Status" value="item.status.label.open" enabled="false"/>
+        <Filter name="File" value="" enabled="false"/>
+      </Phase>
+      <Phase name="phase.team" enabled="true">
+        <Filter name="Interval" value="7" enabled="false"/>
+        <Filter name="Reviewer" value="" enabled="false"/>
+        <Filter name="Type" value="item.label.unset" enabled="false"/>
+        <Filter name="Severity" value="item.label.unset" enabled="false"/>
+        <Filter name="AssignedTo" value="" enabled="false"/>
+        <Filter name="Resolution" value="item.label.unset" enabled="true"/>
+        <Filter name="Status" value="item.status.label.open" enabled="false"/>
+        <Filter name="File" value="" enabled="false"/>
+      </Phase>
+      <Phase name="phase.rework" enabled="true">
+        <Filter name="Interval" value="7" enabled="false"/>
+        <Filter name="Reviewer" value="" enabled="false"/>
+        <Filter name="Type" value="item.label.unset" enabled="false"/>
+        <Filter name="Severity" value="item.label.unset" enabled="false"/>
+        <Filter name="AssignedTo" value="item.reviewer.label.automatic" enabled="true"/>
+        <Filter name="Resolution" value="item.label.unset" enabled="false"/>
+        <Filter name="Status" value="item.status.label.open" enabled="true"/>
+        <Filter name="File" value="" enabled="false"/>
+      </Phase>
+    </Filters>
+  </Review>
+  <Review id="附件管理功能评审">
+    <Description>评审附件管理的相关功能</Description>
+    <Author>shixiaolei</Author>
+    <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-19 :: 12:13:37:498 CST</CreationDate>
+    <Directory>review/20101019</Directory>
+    <Reviewers>
+      <Entry id="chenhui" name="chenhui"/>
+      <Entry id="guolin" name="guolin"/>
+      <Entry id="shixiaolei" name="shixiaolei"/>
+      <Entry id="tianyusong" name="tianyusong"/>
+    </Reviewers>
+    <Files>
+      <Entry name="src/main/java/com/baidu/spark/model/Attachment.java"/>
+      <Entry name="src/main/java/com/baidu/spark/model/card/Card.java"/>
+      <Entry name="src/main/java/com/baidu/spark/web/ajax/AttachmentAjaxController.java"/>
+      <Entry name="src/main/java/com/baidu/spark/web/AttachmentController.java"/>
+      <Entry name="src/main/java/com/baidu/spark/service/AttachmentService.java"/>
+      <Entry name="src/main/java/com/baidu/spark/service/impl/AttachmentServiceImpl.java"/>
+      <Entry name="src/main/java/com/baidu/spark/service/impl/CardHistoryServiceImpl.java"/>
+      <Entry name="src/main/java/com/baidu/spark/service/impl/helper/CardHistoryDiffHelper.java"/>
+      <Entry name="src/main/java/com/baidu/spark/model/card/history/CardHistorySingleDiff.java"/>
+      <Entry name="src/main/webapp/js/pages/cards/attachment.js"/>
+      <Entry name="src/main/webapp/WEB-INF/jsp/cards/history.jsp"/>
+    </Files>
+    <FieldItems>
+      <FieldItem id="Type" default="item.type.label.codingStandards">
+        <Entry name="item.label.unset"/>
+        <Entry name="item.type.label.codingStandards"/>
+        <Entry name="item.type.label.programLogic"/>
+        <Entry name="item.type.label.optimization"/>
+        <Entry name="item.type.label.usability"/>
+        <Entry name="item.type.label.clarity"/>
+        <Entry name="item.type.label.missing"/>
+        <Entry name="item.type.label.irrelevant"/>
+        <Entry name="item.type.label.suggestion"/>
+        <Entry name="item.type.label.other"/>
+      </FieldItem>
+      <FieldItem id="Severity" default="item.severity.label.normal">
+        <Entry name="item.label.unset"/>
+        <Entry name="item.severity.label.critical"/>
+        <Entry name="item.severity.label.major"/>
+        <Entry name="item.severity.label.normal"/>
+        <Entry name="item.severity.label.minor"/>
+        <Entry name="item.severity.label.trivial"/>
+      </FieldItem>
+      <FieldItem id="Resolution" default="item.resolution.label.validNeedsfixing">
+        <Entry name="item.label.unset"/>
+        <Entry name="item.resolution.label.validNeedsfixing"/>
+        <Entry name="item.resolution.label.validFixlater"/>
+        <Entry name="item.resolution.label.validDuplicate"/>
+        <Entry name="item.resolution.label.validWontfix"/>
+        <Entry name="item.resolution.label.invalidWontfix"/>
+        <Entry name="item.resolution.label.unsureValidity"/>
+      </FieldItem>
+      <FieldItem id="Status" default="item.status.label.open">
+        <Entry name="item.status.label.open"/>
+        <Entry name="item.status.label.resolved"/>
+        <Entry name="item.status.label.closed"/>
+        <Entry name="item.status.label.reopened"/>
+      </FieldItem>
+    </FieldItems>
+    <Filters>
+      <Phase name="phase.individual" enabled="true">
+        <Filter name="Interval" value="7" enabled="false"/>
+        <Filter name="Reviewer" value="item.reviewer.label.automatic" enabled="true"/>
+        <Filter name="Type" value="item.label.unset" enabled="false"/>
+        <Filter name="Severity" value="item.label.unset" enabled="false"/>
+        <Filter name="AssignedTo" value="" enabled="false"/>
+        <Filter name="Resolution" value="item.label.unset" enabled="false"/>
+        <Filter name="Status" value="item.status.label.open" enabled="false"/>
+        <Filter name="File" value="" enabled="false"/>
+      </Phase>
+      <Phase name="phase.team" enabled="true">
+        <Filter name="Interval" value="7" enabled="false"/>
+        <Filter name="Reviewer" value="" enabled="false"/>
+        <Filter name="Type" value="item.label.unset" enabled="false"/>
+        <Filter name="Severity" value="item.label.unset" enabled="false"/>
+        <Filter name="AssignedTo" value="" enabled="false"/>
+        <Filter name="Resolution" value="item.label.unset" enabled="true"/>
+        <Filter name="Status" value="item.status.label.open" enabled="false"/>
+        <Filter name="File" value="" enabled="false"/>
+      </Phase>
+      <Phase name="phase.rework" enabled="true">
+        <Filter name="Interval" value="7" enabled="false"/>
+        <Filter name="Reviewer" value="" enabled="false"/>
+        <Filter name="Type" value="item.label.unset" enabled="false"/>
+        <Filter name="Severity" value="item.label.unset" enabled="false"/>
+        <Filter name="AssignedTo" value="item.reviewer.label.automatic" enabled="true"/>
+        <Filter name="Resolution" value="item.label.unset" enabled="false"/>
+        <Filter name="Status" value="item.status.label.open" enabled="true"/>
+        <Filter name="File" value="" enabled="false"/>
+      </Phase>
+    </Filters>
+  </Review>
+  <Review id="DEFAULT">
+    <Description>property.default.description</Description>
+    <Author></Author>
+    <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">1970-01-01 :: 18:00:00:000 CST</CreationDate>
+    <Directory>review</Directory>
+    <Reviewers>
+      <Entry id="chenhui" name="chenhui"/>
+      <Entry id="guolin" name="guolin"/>
+      <Entry id="shixiaolei" name="shixiaolei"/>
+      <Entry id="tianyusong" name="tianyusong"/>
+    </Reviewers>
+    <Files/>
+    <FieldItems>
+      <FieldItem id="Type" default="item.label.unset">
+        <Entry name="item.label.unset"/>
+        <Entry name="item.type.label.codingStandards"/>
+        <Entry name="item.type.label.programLogic"/>
+        <Entry name="item.type.label.optimization"/>
+        <Entry name="item.type.label.usability"/>
+        <Entry name="item.type.label.clarity"/>
+        <Entry name="item.type.label.missing"/>
+        <Entry name="item.type.label.irrelevant"/>
+        <Entry name="item.type.label.suggestion"/>
+        <Entry name="item.type.label.other"/>
+      </FieldItem>
+      <FieldItem id="Severity" default="item.label.unset">
+        <Entry name="item.label.unset"/>
+        <Entry name="item.severity.label.critical"/>
+        <Entry name="item.severity.label.major"/>
+        <Entry name="item.severity.label.normal"/>
+        <Entry name="item.severity.label.minor"/>
+        <Entry name="item.severity.label.trivial"/>
+      </FieldItem>
+      <FieldItem id="Resolution" default="item.label.unset">
+        <Entry name="item.label.unset"/>
+        <Entry name="item.resolution.label.validNeedsfixing"/>
+        <Entry name="item.resolution.label.validFixlater"/>
+        <Entry name="item.resolution.label.validDuplicate"/>
+        <Entry name="item.resolution.label.validWontfix"/>
+        <Entry name="item.resolution.label.invalidWontfix"/>
+        <Entry name="item.resolution.label.unsureValidity"/>
+      </FieldItem>
+      <FieldItem id="Status" default="item.status.label.open">
+        <Entry name="item.status.label.open"/>
+        <Entry name="item.status.label.resolved"/>
+        <Entry name="item.status.label.closed"/>
+        <Entry name="item.status.label.reopened"/>
+      </FieldItem>
+    </FieldItems>
+    <Filters>
+      <Phase name="phase.individual" enabled="true">
+        <Filter name="Interval" value="7" enabled="false"/>
+        <Filter name="Reviewer" value="item.reviewer.label.automatic" enabled="true"/>
+        <Filter name="Type" value="item.label.unset" enabled="false"/>
+        <Filter name="Severity" value="item.label.unset" enabled="false"/>
+        <Filter name="AssignedTo" value="" enabled="false"/>
+        <Filter name="Resolution" value="item.label.unset" enabled="false"/>
+        <Filter name="Status" value="item.status.label.open" enabled="false"/>
+        <Filter name="File" value="" enabled="false"/>
+      </Phase>
+      <Phase name="phase.team" enabled="true">
+        <Filter name="Interval" value="7" enabled="false"/>
+        <Filter name="Reviewer" value="" enabled="false"/>
+        <Filter name="Type" value="item.label.unset" enabled="false"/>
+        <Filter name="Severity" value="item.label.unset" enabled="false"/>
+        <Filter name="AssignedTo" value="" enabled="false"/>
+        <Filter name="Resolution" value="item.label.unset" enabled="true"/>
+        <Filter name="Status" value="item.status.label.open" enabled="false"/>
+        <Filter name="File" value="" enabled="false"/>
+      </Phase>
+      <Phase name="phase.rework" enabled="true">
+        <Filter name="Interval" value="7" enabled="false"/>
+        <Filter name="Reviewer" value="" enabled="false"/>
+        <Filter name="Type" value="item.label.unset" enabled="false"/>
+        <Filter name="Severity" value="item.label.unset" enabled="false"/>
+        <Filter name="AssignedTo" value="item.reviewer.label.automatic" enabled="true"/>
+        <Filter name="Resolution" value="item.label.unset" enabled="false"/>
+        <Filter name="Status" value="item.status.label.open" enabled="true"/>
+        <Filter name="File" value="" enabled="false"/>
+      </Phase>
+    </Filters>
+  </Review>
+  <Review id="shixiaolei,chenhui,guolin">
+    <Description>卡片的Excel导出功能</Description>
+    <Author>tianyusong</Author>
+    <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-25 :: 18:43:47:723 CST</CreationDate>
+    <Directory>review</Directory>
+    <Reviewers>
+      <Entry id="chenhui" name="chenhui"/>
+      <Entry id="guolin" name="guolin"/>
+      <Entry id="shixiaolei" name="shixiaolei"/>
+      <Entry id="tianyusong" name="tianyusong"/>
+    </Reviewers>
+    <Files>
+      <Entry name="src/main/java/com/baidu/spark/model/card/property/CardPropertyValue.java"/>
+      <Entry name="src/main/java/com/baidu/spark/service/CardEmportService.java"/>
+      <Entry name="src/main/java/com/baidu/spark/service/impl/CardEmportServiceImpl.java"/>
+      <Entry name="src/main/java/com/baidu/spark/util/poi/CellData.java"/>
+      <Entry name="src/main/java/com/baidu/spark/util/poi/ExcelData.java"/>
+      <Entry name="src/main/java/com/baidu/spark/util/poi/ExcelReader.java"/>
+      <Entry name="src/main/java/com/baidu/spark/util/poi/ExcelWriter.java"/>
+      <Entry name="src/main/webapp/js/pages/cards/list.js"/>
+      <Entry name="src/main/webapp/WEB-INF/jsp/cards/list.jsp"/>
+      <Entry name="src/main/java/com/baidu/spark/web/CardEmportController.java"/>
+    </Files>
+    <FieldItems>
+      <FieldItem id="Type" default="item.label.unset">
+        <Entry name="item.label.unset"/>
+        <Entry name="item.type.label.codingStandards"/>
+        <Entry name="item.type.label.programLogic"/>
+        <Entry name="item.type.label.optimization"/>
+        <Entry name="item.type.label.usability"/>
+        <Entry name="item.type.label.clarity"/>
+        <Entry name="item.type.label.missing"/>
+        <Entry name="item.type.label.irrelevant"/>
+        <Entry name="item.type.label.suggestion"/>
+        <Entry name="item.type.label.other"/>
+      </FieldItem>
+      <FieldItem id="Severity" default="item.label.unset">
+        <Entry name="item.label.unset"/>
+        <Entry name="item.severity.label.critical"/>
+        <Entry name="item.severity.label.major"/>
+        <Entry name="item.severity.label.normal"/>
+        <Entry name="item.severity.label.minor"/>
+        <Entry name="item.severity.label.trivial"/>
+      </FieldItem>
+      <FieldItem id="Resolution" default="item.label.unset">
+        <Entry name="item.label.unset"/>
+        <Entry name="item.resolution.label.validNeedsfixing"/>
+        <Entry name="item.resolution.label.validFixlater"/>
+        <Entry name="item.resolution.label.validDuplicate"/>
+        <Entry name="item.resolution.label.validWontfix"/>
+        <Entry name="item.resolution.label.invalidWontfix"/>
+        <Entry name="item.resolution.label.unsureValidity"/>
+      </FieldItem>
+      <FieldItem id="Status" default="item.status.label.open">
+        <Entry name="item.status.label.open"/>
+        <Entry name="item.status.label.resolved"/>
+        <Entry name="item.status.label.closed"/>
+        <Entry name="item.status.label.reopened"/>
+      </FieldItem>
+    </FieldItems>
+    <Filters>
+      <Phase name="phase.individual" enabled="true">
+        <Filter name="Interval" value="7" enabled="false"/>
+        <Filter name="Reviewer" value="item.reviewer.label.automatic" enabled="true"/>
+        <Filter name="Type" value="item.label.unset" enabled="false"/>
+        <Filter name="Severity" value="item.label.unset" enabled="false"/>
+        <Filter name="AssignedTo" value="" enabled="false"/>
+        <Filter name="Resolution" value="item.label.unset" enabled="false"/>
+        <Filter name="Status" value="item.status.label.open" enabled="false"/>
+        <Filter name="File" value="" enabled="false"/>
+      </Phase>
+      <Phase name="phase.team" enabled="true">
+        <Filter name="Interval" value="7" enabled="false"/>
+        <Filter name="Reviewer" value="" enabled="false"/>
+        <Filter name="Type" value="item.label.unset" enabled="false"/>
+        <Filter name="Severity" value="item.label.unset" enabled="false"/>
+        <Filter name="AssignedTo" value="" enabled="false"/>
+        <Filter name="Resolution" value="item.label.unset" enabled="true"/>
+        <Filter name="Status" value="item.status.label.open" enabled="false"/>
+        <Filter name="File" value="" enabled="false"/>
+      </Phase>
+      <Phase name="phase.rework" enabled="true">
+        <Filter name="Interval" value="7" enabled="false"/>
+        <Filter name="Reviewer" value="" enabled="false"/>
+        <Filter name="Type" value="item.label.unset" enabled="false"/>
+        <Filter name="Severity" value="item.label.unset" enabled="false"/>
+        <Filter name="AssignedTo" value="item.reviewer.label.automatic" enabled="true"/>
+        <Filter name="Resolution" value="item.label.unset" enabled="false"/>
+        <Filter name="Status" value="item.status.label.open" enabled="true"/>
+        <Filter name="File" value="" enabled="false"/>
+      </Phase>
+    </Filters>
+  </Review>
+</Property>

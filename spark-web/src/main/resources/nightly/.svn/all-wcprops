@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/iit/!svn/ver/13453/trunk/spark/spark-web/src/main/resources/nightly
+END
+logback.xml
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/iit/!svn/ver/13158/trunk/spark/spark-web/src/main/resources/nightly/logback.xml
+END
+spark.properties
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/iit/!svn/ver/13453/trunk/spark/spark-web/src/main/resources/nightly/spark.properties
+END

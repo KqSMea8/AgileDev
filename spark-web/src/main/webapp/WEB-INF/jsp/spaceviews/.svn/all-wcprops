@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/iit/!svn/ver/11517/trunk/spark/spark-web/src/main/webapp/WEB-INF/jsp/spaceviews
+END
+edit.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/iit/!svn/ver/11516/trunk/spark/spark-web/src/main/webapp/WEB-INF/jsp/spaceviews/edit.jsp
+END
+new.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/iit/!svn/ver/11517/trunk/spark/spark-web/src/main/webapp/WEB-INF/jsp/spaceviews/new.jsp
+END
+list.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/iit/!svn/ver/5874/trunk/spark/spark-web/src/main/webapp/WEB-INF/jsp/spaceviews/list.jsp
+END

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration>
+
+	<property name="log.base" value="logs/spark" />
+	<property name="default.pattern" value="%date [%thread] %-5level %logger{40} - %msg%n" />
+
+	<appender name="stdout" class="ch.qos.logback.core.ConsoleAppender">
+		<layout class="ch.qos.logback.classic.PatternLayout">
+			<pattern>${default.pattern}</pattern>
+		</layout>
+	</appender>
+
+	<logger name="com.baidu.spark">
+		<level value="debug" />
+	</logger>
+	
+	<logger name="org.springframework.web">
+		<level value="WARN" />
+	</logger>
+
+	<logger name="org.springframework">
+		<level value="WARN" />
+	</logger>
+
+	<logger name="org.hibernate">
+		<level value="WARN" />
+	</logger>
+
+	<logger name="org.hibernate.SQL">
+		<level value="ERROR" />
+	</logger>
+	
+	<logger name="com.baidu.spark.util.mapper">
+		<level value="INFO" />
+	</logger>
+
+	<root>
+		<level value="INFO" />
+		<appender-ref ref="stdout" />
+	</root>
+
+</configuration>

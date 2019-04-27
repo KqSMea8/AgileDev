@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/iit/!svn/ver/13053/trunk/spark/spark-web/src/main/resources/email
+END
+notification-attachment.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/iit/!svn/ver/12985/trunk/spark/spark-web/src/main/resources/email/notification-attachment.ftl
+END
+notification-attachment_zh_CN.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/iit/!svn/ver/11110/trunk/spark/spark-web/src/main/resources/email/notification-attachment_zh_CN.ftl
+END
+notification-card.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/iit/!svn/ver/11110/trunk/spark/spark-web/src/main/resources/email/notification-card.ftl
+END
+notification-card_zh_CN.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/iit/!svn/ver/11110/trunk/spark/spark-web/src/main/resources/email/notification-card_zh_CN.ftl
+END
+notification-user-synchronization.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/iit/!svn/ver/8779/trunk/spark/spark-web/src/main/resources/email/notification-user-synchronization.ftl
+END
+notification-user-synchronization_zh_CN.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/iit/!svn/ver/8779/trunk/spark/spark-web/src/main/resources/email/notification-user-synchronization_zh_CN.ftl
+END
+notification-discussion.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/iit/!svn/ver/13053/trunk/spark/spark-web/src/main/resources/email/notification-discussion.ftl
+END
+notification-discussion_zh_CN.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/iit/!svn/ver/13053/trunk/spark/spark-web/src/main/resources/email/notification-discussion_zh_CN.ftl
+END

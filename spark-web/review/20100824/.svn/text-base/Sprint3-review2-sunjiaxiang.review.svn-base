@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="Sprint3-review2">
+  <ReviewIssue id="GD8EXP9A">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 15:06:52:318 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-27 :: 18:04:10:593 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>sunjiaxiang</ReviewerId>
+    <AssignedTo>guolin</AssignedTo>
+    <File line="133">src/main/webapp/js/spark.js</File>
+    <Type>item.type.label.clarity</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>rkey和rkey没有var声明?</Summary>
+    <Description>RT</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8F3NWV">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 15:11:30:511 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-27 :: 18:03:58:343 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>sunjiaxiang</ReviewerId>
+    <AssignedTo>guolin</AssignedTo>
+    <File line="135">src/main/webapp/js/spark.js</File>
+    <Type>item.type.label.clarity</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>函数调用之后没有写分号.</Summary>
+    <Description>RT
+虽然不会影响什么, 不过有的时候压缩的时候会出问题.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8FAUWA">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 15:17:06:154 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-27 :: 18:03:51:375 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>sunjiaxiang</ReviewerId>
+    <AssignedTo>guolin</AssignedTo>
+    <File line="157">src/main/webapp/js/spark.js</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>有个偷懒的写法</Summary>
+    <Description>RT
+return result ? result : "";
+      ↓
+return result || "";</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8FNF0S">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 15:26:52:108 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-27 :: 18:03:40:062 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>sunjiaxiang</ReviewerId>
+    <AssignedTo>guolin</AssignedTo>
+    <File line="180">src/main/webapp/js/spark.js</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>对象中的key可以不加引号.</Summary>
+    <Description>RT.
+可以少打2个字符.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.invalidWontfix</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8FQ7YH">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 15:29:02:921 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-27 :: 18:03:29:968 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>sunjiaxiang</ReviewerId>
+    <AssignedTo>guolin</AssignedTo>
+    <File line="203">src/main/webapp/js/spark.js</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>如果只是取整可以用位移</Summary>
+    <Description>RT.
+parseInt(interval / 31536000)
+    ↓
+interval / 31536000 &gt;&gt; 0</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8FWF88">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 15:33:52:280 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-27 :: 18:01:22:765 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>sunjiaxiang</ReviewerId>
+    <AssignedTo>guolin</AssignedTo>
+    <File line="234">src/main/webapp/js/spark.js</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.trivial</Severity>
+    <Summary>为空判断是否可以化简</Summary>
+    <Description>RT
+if (text === null || typeof text == "undefined" || !text.length)
+    ↓
+if (!text)</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.invalidWontfix</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8G7WVX">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 15:42:48:381 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-27 :: 18:01:11:531 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>sunjiaxiang</ReviewerId>
+    <AssignedTo>guolin</AssignedTo>
+    <File line="261">src/main/webapp/js/spark.js</File>
+    <Type>item.type.label.clarity</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>为空判断是否可以化简, 好象变量名写错了?</Summary>
+    <Description>RT
+if (html === null || typeof html == "undefined" || !text.length)
+    ↓
+if (!html)
+
+PS: 最后一个text是个什么东东... 好象未定义?</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8GL5BF">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 15:53:05:835 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-30 :: 12:25:44:221 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>sunjiaxiang</ReviewerId>
+    <AssignedTo>tianyusong</AssignedTo>
+    <File line="297">src/main/webapp/js/spark.js</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>可以简化</Summary>
+    <Description>if(arr != null)
+    ↓
+if(arr)</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8H1YVT">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 16:06:10:649 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-27 :: 18:01:01:281 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>sunjiaxiang</ReviewerId>
+    <AssignedTo>guolin</AssignedTo>
+    <File line="501">src/main/webapp/js/spark.js</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>可以在变量创建时候赋值</Summary>
+    <Description>var ps, bs, parameters = "", bookmarks = "", size = url.length;
+ps = url.indexOf("?");
+bs = url.indexOf("#");
+    ↓
+var ps = url.indexOf("?"), bs = url.indexOf("#"), 
+    parameters = bookmarks = "", size = url.length;</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8HKTEM">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 16:20:50:014 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-30 :: 16:22:35:008 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>sunjiaxiang</ReviewerId>
+    <AssignedTo>sunjiaxiang</AssignedTo>
+    <File line="671">src/main/webapp/js/spark.js</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>无效的判断逻辑</Summary>
+    <Description>少加了一个
+if (navigator.userAgent.toLowerCase().indexOf('msie 6'))
+    ↓
+if (navigator.userAgent.toLowerCase().indexOf('msie 6') != -1)</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8HNEER">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 16:22:50:547 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-09-01 :: 11:43:12:104 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>sunjiaxiang</ReviewerId>
+    <AssignedTo>sunjiaxiang</AssignedTo>
+    <File line="707">src/main/webapp/js/spark.js</File>
+    <Type>item.type.label.optimization</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>可以创建一个Spark的全局对象直接进行调用.</Summary>
+    <Description>RT</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8HP92Y">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 16:24:16:954 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-09-01 :: 12:05:52:449 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>sunjiaxiang</ReviewerId>
+    <AssignedTo>sunjiaxiang</AssignedTo>
+    <File line="732">src/main/webapp/js/spark.js</File>
+    <Type>item.type.label.optimization</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>可优化</Summary>
+    <Description>this.loadIocn.src = path ? ...
+    ↓
+this.loadIocn.src = (path || '../../..') + '/images/loading/loading.gif';</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8HS1CS">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 16:26:26:908 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-30 :: 16:22:04:789 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>sunjiaxiang</ReviewerId>
+    <AssignedTo>sunjiaxiang</AssignedTo>
+    <File line="781">src/main/webapp/js/spark.js</File>
+    <Type>item.type.label.optimization</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>可优化</Summary>
+    <Description>this.path = path ? path + this.path : '../../..' + this.path;
+    ↓
+this.path = (path || '../../..') + this.path;</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8HUGYW">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 16:28:20:456 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 18:29:06:890 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>sunjiaxiang</ReviewerId>
+    <AssignedTo>tianyusong</AssignedTo>
+    <File line="821">src/main/webapp/js/spark.js</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>好象没加jquery的判断</Summary>
+    <Description>elem.val(elem.val());
+    ↓
+elem = elem.tagName ? $(elem) : elem;
+elem.val(elem.val());</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8I30S2">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 16:34:59:378 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 18:28:29:093 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>sunjiaxiang</ReviewerId>
+    <AssignedTo>shixiaolei</AssignedTo>
+    <File line="54">src/main/webapp/js/pages/space/tab.js</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>变量可以定义到一起.</Summary>
+    <Description>RT.
+var html=[];
+这个可以和下面的数组变量定义到一起.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8I86LQ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 16:39:00:206 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-27 :: 18:00:22:265 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>sunjiaxiang</ReviewerId>
+    <AssignedTo>guolin</AssignedTo>
+    <File line="45">src/main/webapp/js/pages/cards/hierarchy.js</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>好象可以不用双!取反</Summary>
+    <Description>if (projects &amp;&amp; !!projects.length)
+    ↓
+if (projects &amp;&amp; projects.length)</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8IDT8F">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 16:43:22:815 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-27 :: 18:00:10:375 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>sunjiaxiang</ReviewerId>
+    <AssignedTo>guolin</AssignedTo>
+    <File line="334">src/main/webapp/js/pages/cards/hierarchy.js</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>判断是否为true发否可以简写?</Summary>
+    <Description>if (space.permissions.write == true || ...
+    ↓
+if (space.permissions.write || ...
+
+PS:
+1==true
+'true'!=true
+</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8IGL2M">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 16:45:32:206 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-30 :: 15:35:50:582 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>sunjiaxiang</ReviewerId>
+    <AssignedTo>guolin</AssignedTo>
+    <File line="338">src/main/webapp/js/pages/cards/hierarchy.js</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>可以简写</Summary>
+    <Description>if (types.length &gt; 0 &amp;&amp;　space.permissions.create == true) {
+    ↓
+if (types.length &amp;&amp;　space.permissions.create) {</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8IQH3V">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 16:53:13:627 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-27 :: 17:58:12:828 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>sunjiaxiang</ReviewerId>
+    <AssignedTo>guolin</AssignedTo>
+    <File line="645">src/main/webapp/js/pages/cards/list.js</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>可以简写</Summary>
+    <Description>if (checkboxes.length == 0)
+    ↓
+if (!checkboxes.length)</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+</Review>

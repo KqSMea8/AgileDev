@@ -1,0 +1,467 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.baidu</groupId>
+	<artifactId>spark-parent</artifactId>
+	<version>2.0.0-SNAPSHOT</version>
+	<name>Spark Parent</name>
+	<packaging>pom</packaging>
+
+	<description>
+		Spark is a requirement cases management system.
+	</description>
+
+	<organization>
+		<name>Baidu Corporation.</name>
+		<url>http://www.baidu.com</url>
+	</organization>
+	
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>manual</distribution>
+        </license>
+    </licenses>
+
+	<issueManagement>
+		<system>Trace</system>
+		<url>http://icafe.baidu.com:8100/jtrac/app/list/CASESPARK/</url>
+	</issueManagement>
+
+	<ciManagement>
+		<system>Hudson</system>
+		<url>http://jx-iit-dev00.jx.baidu.com:5000/view/Spark/job/spark/</url>
+		<notifiers>
+			<notifier>
+				<type>mail</type>
+				<address>guolin@baidu.com</address>
+			</notifier>
+			<notifier>
+				<type>mail</type>
+				<address>zhangjing_pe@baidu.com</address>
+			</notifier>
+			<notifier>
+				<type>mail</type>
+				<address>tianyusong@baidu.com</address>
+			</notifier>
+			<notifier>
+				<type>mail</type>
+				<address>chenhui@baidu.com</address>
+			</notifier>
+			<notifier>
+				<type>mail</type>
+				<address>sunyi_qa@baidu.com</address>
+			</notifier>
+			<notifier>
+				<type>mail</type>
+				<address>shixiaolei@baidu.com</address>
+			</notifier>
+			<notifier>
+				<type>mail</type>
+				<sendOnError>false</sendOnError>
+				<sendOnFailure>true</sendOnFailure>
+				<sendOnSuccess>false</sendOnSuccess>
+				<sendOnWarning>false</sendOnWarning>
+				<address>wangguo@baidu.com</address>
+			</notifier>
+		</notifiers>
+	</ciManagement>
+
+	<developers>
+		<developer>
+			<id>chenhui</id>
+			<name>Chen Hui</name>
+			<email>chenhui@baidu.com</email>
+			<roles>
+				<role>leader</role>
+				<role>developer</role>
+			</roles>
+			<timezone>+8</timezone>
+			<properties>
+				<hi>cafelover</hi>
+			</properties>
+		</developer>
+		<developer>
+			<id>zhangjing</id>
+			<name>Zhang Jing</name>
+			<email>zhangjing_pe@baidu.com</email>
+			<roles>
+				<role>architect</role>
+				<role>developer</role>
+			</roles>
+			<timezone>+8</timezone>
+			<properties>
+				<hi>chilly0803</hi>
+			</properties>
+		</developer>
+		<developer>
+			<id>guolin</id>
+			<name>Guo Lin</name>
+			<email>guolin@baidu.com</email>
+			<roles>
+				<role>developer</role>
+			</roles>
+			<timezone>+8</timezone>
+			<properties>
+				<hi>亚瑟王的指甲</hi>
+			</properties>
+		</developer>
+		<developer>
+			<id>tianyusong</id>
+			<name>Tian Yusong</name>
+			<email>tianyusong@baidu.com</email>
+			<roles>
+				<role>developer</role>
+			</roles>
+			<timezone>+8</timezone>
+			<properties>
+				<hi>buptAdun</hi>
+			</properties>
+		</developer>
+		<developer>
+			<id>shixiaolei</id>
+			<name>Shi Xiaolei</name>
+			<email>shixiaolei@baidu.com</email>
+			<roles>
+				<role>developer</role>
+			</roles>
+			<timezone>+8</timezone>
+			<properties>
+				<hi>shixiaolei52</hi>
+			</properties>
+		</developer>
+	</developers>
+
+	<contributors>
+		<contributor>
+			<name>Zhang Yandong</name>
+			<email>zhangyandong@baidu.com</email>
+			<url>http://www.baidu.com</url>
+			<roles>
+				<role>observer</role>
+			</roles>
+			<timezone>+8</timezone>
+			<properties>
+				<hi>Kevin_Sage</hi>
+			</properties>
+		</contributor>
+	</contributors>
+
+	<mailingLists>
+		<mailingList>
+			<name>User List</name>
+			<subscribe>iit-rd@baidu.com</subscribe>
+			<unsubscribe>iit-rd@baidu.com</unsubscribe>
+			<post>iit-rd@baidu.com</post>
+			<archive>iit-rd@baidu.com</archive>
+		</mailingList>
+	</mailingLists>
+
+	<scm>
+		<developerConnection>scm:https://svn.baidu.com/iit/spark</developerConnection>
+	</scm>
+
+	<build>
+		<defaultGoal>install</defaultGoal>
+		<directory>output</directory>
+		<outputDirectory>output/classes</outputDirectory>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>2.0.2</version>
+				<configuration>
+					<source>1.6</source>
+					<target>1.6</target>
+					<maxmem>256M</maxmem>
+					<encoding>UTF-8</encoding>
+				</configuration>
+			</plugin>
+			<plugin>
+				<artifactId>maven-eclipse-plugin</artifactId>
+				<version>2.7</version>
+				<configuration>
+					<additionalProjectnatures>
+						<projectnature>org.springframework.ide.eclipse.core.springnature</projectnature>
+					</additionalProjectnatures>
+					<additionalBuildcommands>
+						<buildcommand>org.springframework.ide.eclipse.core.springbuilder</buildcommand>
+					</additionalBuildcommands>
+					<downloadSources>true</downloadSources>
+					<downloadJavadocs>true</downloadJavadocs>
+					<wtpversion>1.5</wtpversion>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+	<distributionManagement>
+		<repository>
+			<id>baidu_local</id>
+			<name>Baidu Local Repository</name>
+			<url>http://maven.scm.baidu.com:8081/nexus/content/repositories/Baidu_Local</url>
+		</repository>
+		<snapshotRepository>
+			<id>baidu_local_snapshot</id>
+			<name>Baidu Local Snapshot Repository</name>
+			<url>http://maven.scm.baidu.com:8081/nexus/content/repositories/Baidu_Local_Snapshots</url>
+		</snapshotRepository>
+		<site>
+			<id>spark-site</id>
+			<name>Spark Maven Site</name>
+			<url>scp://jx-iit-dev00.jx.baidu.com</url>
+		</site>
+	</distributionManagement>
+
+	<repositories>
+		<repository>
+			<id>scmpf</id>
+			<url>http://maven.scm.baidu.com:8081/nexus/content/groups/public</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
+
+	<pluginRepositories>
+		<pluginRepository>
+			<id>scmpf</id>
+			<url>http://maven.scm.baidu.com:8081/nexus/content/groups/public</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</pluginRepository>
+	</pluginRepositories>
+
+	<reporting>
+		<plugins>
+			<plugin>
+				<artifactId>maven-pmd-plugin</artifactId>
+				<configuration>
+					<linkXref>true</linkXref>
+					<sourceEncoding>UTF-8</sourceEncoding>
+					<targetJdk>1.6</targetJdk>
+				</configuration>
+			</plugin>
+			<plugin>
+				<artifactId>maven-changes-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<artifactId>maven-checkstyle-plugin</artifactId>
+				<configuration>
+					<configLocation>config/turbine_checks.xml</configLocation>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>cobertura-maven-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>findbugs-maven-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<artifactId>maven-javadoc-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<artifactId>maven-jxr-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<artifactId>maven-surefire-report-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</reporting>
+	
+	<profiles>
+		<profile>
+			<id>dev</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+		</profile>
+        <profile>
+            <id>nightly</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <artifactId>maven-antrun-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <phase>test</phase>
+                                <goals>
+                                    <goal>run</goal>
+                                </goals>
+                                <configuration>
+                                    <tasks>
+                                        <copy todir="${project.build.outputDirectory}" overwrite="true" failonerror="false">
+                                            <fileset dir="${project.build.outputDirectory}/nightly" />
+                                        </copy>
+                                    </tasks>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                    <plugin>
+                        <groupId>org.codehaus.mojo</groupId>
+                        <artifactId>cobertura-maven-plugin</artifactId>
+                        <version>2.4</version>
+                        <configuration>
+                            <formats>
+                                <format>xml</format>
+                            </formats>
+                        </configuration>
+                        <executions>
+                            <execution>
+                                <phase>test</phase>
+                                <goals>
+                                    <goal>cobertura</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+        <profile>
+            <id>alpha</id>
+            <build>
+                <finalName>${artifactId}-${version}-alpha</finalName>
+                <plugins>
+                    <plugin>
+                        <artifactId>maven-antrun-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <phase>test</phase>
+                                <goals>
+                                    <goal>run</goal>
+                                </goals>
+                                <configuration>
+                                    <tasks>
+                                        <copy todir="${project.build.outputDirectory}" overwrite="true" failonerror="false">
+                                            <fileset dir="${project.build.outputDirectory}/alpha" />
+                                        </copy>
+                                    </tasks>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                    <plugin>
+                        <artifactId>maven-surefire-plugin</artifactId>
+                        <configuration>
+                            <skip>true</skip>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+        <profile>
+            <id>beta</id>
+            <build>
+                <finalName>${artifactId}-${version}-beta</finalName>
+                <plugins>
+                    <plugin>
+                        <artifactId>maven-antrun-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <phase>test</phase>
+                                <goals>
+                                    <goal>run</goal>
+                                </goals>
+                                <configuration>
+                                    <tasks>
+                                        <copy todir="${project.build.outputDirectory}" overwrite="true" failonerror="false">
+                                            <fileset dir="${project.build.outputDirectory}/beta" />
+                                        </copy>
+                                    </tasks>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                    <plugin>
+                        <artifactId>maven-surefire-plugin</artifactId>
+                        <configuration>
+                            <skip>true</skip>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+        <profile>
+            <id>rc</id>
+            <build>
+                <finalName>${artifactId}-${version}-rc</finalName>
+                <plugins>
+                    <plugin>
+                        <artifactId>maven-antrun-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <phase>test</phase>
+                                <goals>
+                                    <goal>run</goal>
+                                </goals>
+                                <configuration>
+                                    <tasks>
+                                        <copy todir="${project.build.outputDirectory}" overwrite="true" failonerror="false">
+                                            <fileset dir="${project.build.outputDirectory}/rc" />
+                                        </copy>
+                                    </tasks>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                    <plugin>
+                        <artifactId>maven-surefire-plugin</artifactId>
+                        <configuration>
+                            <skip>true</skip>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+        <profile>
+            <id>release</id>
+            <build>
+                <finalName>${artifactId}-${version}-release</finalName>
+                <plugins>
+                    <plugin>
+                        <artifactId>maven-antrun-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <phase>test</phase>
+                                <goals>
+                                    <goal>run</goal>
+                                </goals>
+                                <configuration>
+                                    <tasks>
+                                        <copy todir="${project.build.outputDirectory}" overwrite="true" failonerror="false">
+                                            <fileset dir="${project.build.outputDirectory}/release" />
+                                        </copy>
+                                    </tasks>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                    <plugin>
+                        <artifactId>maven-surefire-plugin</artifactId>
+                        <configuration>
+                            <skip>true</skip>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+	</profiles>
+	
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+	</properties>
+
+</project>

@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Review id="附件管理功能评审">
+  <ReviewIssue id="GFIZTYV7">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-21 :: 10:08:56:515 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-21 :: 13:43:29:734 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tianyusong</ReviewerId>
+    <AssignedTo>shixiaolei</AssignedTo>
+    <File line="1">src/main/java/com/baidu/spark/web/ajax/AttachmentAjaxController.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>可以assert一下</Summary>
+    <Description>rt,判空.下面几个方法同.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GFJ014WN">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-21 :: 10:14:30:935 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-21 :: 12:27:00:885 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tianyusong</ReviewerId>
+    <AssignedTo>shixiaolei</AssignedTo>
+    <File line="121">src/main/java/com/baidu/spark/web/AttachmentController.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>换行很诡异...</Summary>
+    <Description>自动format的吧...ps,70行的地方</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GFJ04T9D">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-21 :: 10:17:22:465 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-21 :: 12:26:50:405 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tianyusong</ReviewerId>
+    <AssignedTo>shixiaolei</AssignedTo>
+    <File line="53">src/main/java/com/baidu/spark/web/AttachmentController.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>无用的参数response,request.</Summary>
+    <Description>并且没有特殊用途的话,最好把HttpServletResponse中的Servlet去掉</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GFJ0B1LC">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-21 :: 10:22:13:200 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-21 :: 10:22:38:113 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tianyusong</ReviewerId>
+    <AssignedTo>shixiaolei</AssignedTo>
+    <File line="91">src/main/java/com/baidu/spark/web/AttachmentController.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>异常可以细化</Summary>
+    <Description>用的类可以细化,异常描述可以细化</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GFJ0D8F8">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-21 :: 10:23:55:364 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-21 :: 10:24:31:213 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tianyusong</ReviewerId>
+    <AssignedTo>shixiaolei</AssignedTo>
+    <File line="95">src/main/java/com/baidu/spark/web/AttachmentController.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>可以考虑把下载文件做成公用?</Summary>
+    <Description>似乎有很多需要处理的参数.而各种下载都是要类似处理的.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GFJ0EUOK">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-21 :: 10:25:10:868 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-21 :: 12:22:40:841 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tianyusong</ReviewerId>
+    <AssignedTo>shixiaolei</AssignedTo>
+    <File line="118">src/main/java/com/baidu/spark/web/AttachmentController.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>如果出异常了,继续往下执行会不会有问题?</Summary>
+    <Description>即使没问题,也最好能把message给log一下吧</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GFJ0HOB5">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-21 :: 10:27:22:577 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-21 :: 12:21:27:376 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tianyusong</ReviewerId>
+    <AssignedTo>shixiaolei</AssignedTo>
+    <File line="139">src/main/java/com/baidu/spark/web/AttachmentController.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>不推荐e.print</Summary>
+    <Description>使用log</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+</Review>

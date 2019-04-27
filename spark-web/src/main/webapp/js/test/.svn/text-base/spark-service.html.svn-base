@@ -1,0 +1,363 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="UTF-8" />
+	<title>Spark.service.SpaceService Test Suite</title>
+
+	<script type="text/javascript" src="../jquery-1.4.2.min.js"></script>
+	<script type="text/javascript" src="../spark.js"></script>
+	<script type="text/javascript" src="../spark-service.js"></script>
+
+	<link rel="stylesheet" href="../qunit/qunit.css" type="text/css"/>
+	<script type="text/javascript" src="../qunit/qunit.js"></script>
+
+	<script type="text/javascript">
+	// 开始测试
+	$(function() {
+
+		var service = Spark.service.SpaceService;
+		
+		module("Smoke", {
+			setup: function() {
+				// 将$.ajax原始函数暂存起来
+				this.original$Ajax = $.ajax;
+			},
+			teardown: function() {
+				// 恢复原始函数
+				$.ajax = this.original$Ajax;
+			}
+		});
+
+		test("space basic", function() {
+			// 构造返回数据
+			var space = {
+				id: 1,
+				name: "spark-anything1",
+				prefixCode: "spark",
+				type: "NORMAL",
+				description: "some description",
+				cardTypes: []
+			};
+
+			mockAjax(space);
+
+			service.load("spark", function(data) {
+				equals(data.space.id, space.id);
+				equals(data.space.name, space.name);
+				equals(data.space.prefixCode, space.prefixCode);
+				equals(data.space.type, space.type);
+				equals(data.space.description, space.description);
+				equals(data.space.cardTypes.length, space.cardTypes.length);
+			}, true);
+		})
+		
+		test("space.cardTypes basic", function() {
+			// 构造返回数据
+			var space = {
+				id: 1,
+				name: "spark-anything",
+				prefixCode: "spark",
+				type: "NORMAL",
+				description: "some description",
+				cardTypes: [ {
+					id: 2,
+					name: "a",
+					recursive: false,
+					cardProperties: []
+				}, {
+					id: 3,
+					name: "b",
+					recursive: false,
+					cardProperties: []
+				} ]
+			}
+
+			mockAjax(space);
+			
+			service.load("spark", function(data) {
+				ok(data.space.cardTypes[0].space == space, "Related with space.");
+				equals(data.space.cardTypes[0].id, space.cardTypes[0].id);
+				equals(data.space.cardTypes[0].name, space.cardTypes[0].name);
+				equals(data.space.cardTypes[0].recursive, space.cardTypes[0].recursive);
+				equals(data.space.cardTypes[0].cardProperties.length, space.cardTypes[0].cardProperties.length);
+				
+				ok(data.space.cardTypes[0].space == space, "Related with space.");
+				equals(data.space.cardTypes[1].id, space.cardTypes[1].id);
+				equals(data.space.cardTypes[1].name, space.cardTypes[1].name);
+				equals(data.space.cardTypes[1].recursive, space.cardTypes[1].recursive);
+				equals(data.space.cardTypes[1].cardProperties.length, space.cardTypes[1].cardProperties.length);				
+			}, true);
+		})
+
+		test("space.cardTypes relationships", function() {
+			// 构造返回数据
+			var space = {
+				id: 1,
+				name: "spark-anything",
+				prefixCode: "spark",
+				type: "NORMAL",
+				description: "some description",
+				cardTypes: [ {
+					id: 2,
+					name: "a",
+					recursive: true,
+					cardProperties: []
+				}, {
+					id: 3,
+					name: "b",
+					recursive: false,
+					cardProperties: [],
+					parent: { id: 2 }
+				}, {
+					id: 4,
+					name: "c",
+					recursive: true,
+					cardProperties: [],
+					parent: { id: 3 }
+				} ]
+			}
+
+			mockAjax(space);
+			
+			service.load("spark", function(data) {
+				ok(!data.space.cardTypes[0].parent, "Parent.");
+				ok(data.space.cardTypes[1].parent == data.space.cardTypes[0], "Parent of cardtype 1.");
+				ok(data.space.cardTypes[2].parent == data.space.cardTypes[1], "Parent of cardtype 2.");
+				// parent/children
+				arrayEquals(data.space.cardTypes[0].children, [space.cardTypes[1]], function(l, r) {
+					return l.id === r.id && 
+						l.name === r.name && 
+						l.recursive === r.recursive && 
+						((l.parent && r.parent) ? l.parent.id == r.parent.id : false) &&
+						(l.cardProperties.length == 0) && (r.cardProperties.length == 0);
+				}, "parent and children");
+				// allChildren
+				window.x = 100;
+				arrayEquals(data.space.cardTypes[0].allChildren, [space.cardTypes[0], space.cardTypes[1], space.cardTypes[2]], function(l, r) {
+					return l.id === r.id && 
+						l.name === r.name && 
+						l.recursive === r.recursive && 
+						((l.parent && r.parent) ? l.parent.id == r.parent.id : false) &&
+						(l.cardProperties.length == 0) && (r.cardProperties.length == 0);
+				}, "allChildren");
+				
+			}, true);
+		})
+		
+		test("space.cardTypes.cardProperties basic", function() {
+			// 构造返回数据
+			var space = {
+				id: 1,
+				name: "spark-anything",
+				prefixCode: "spark",
+				type: "NORMAL",
+				description: "some description",
+				cardTypes: [ {
+					id: 200,
+					name: "a",
+					recursive: false,
+					cardProperties: [ {
+						id: 126,
+						name: "计划工时",
+						type: "number",
+						hidden: false,
+						sort: 0
+					} ]
+				}, {
+					id: 3,
+					name: "b",
+					recursive: false,
+					cardProperties: [],
+					parent: { id: 200 }
+				} ]
+			}
+
+			mockAjax(space);
+
+			service.load("spark", function(data) {
+				var p = data.space.cardTypes[0].cardProperties[0];
+				equals(p.id, 126);
+				equals(p.name, "计划工时");
+				equals(p.type, "number");
+				equals(p.hidden, false);
+				equals(p.sort, 0);
+				ok(p.cardType = data.space.cardTypes[0], "cardType property relationship");
+			}, true)
+		})
+
+		test("cardTypes ordered by deep", function() {
+			// 构造返回数据
+			var space = {
+				id: 1,
+				name: "spark-anything",
+				prefixCode: "spark",
+				type: "NORMAL",
+				description: "some description",
+				cardTypes: [ {
+					id: 1,
+					name: "c",
+					recursive: true,
+					cardProperties: [],
+					parent: { id: 3 }
+				}, {
+					id: 3,
+					name: "b",
+					recursive: false,
+					cardProperties: [],
+					parent: { id: 2 }
+				}, {
+					id: 2,
+					name: "a",
+					recursive: false,
+					cardProperties: []
+				} ]
+			}
+
+			mockAjax(space);
+			
+			service.load("spark", function(data) {
+				// XXX 此时必须使用data.space.cardTypes而不能使用data.cardTypes
+				// 因为js对map({})的key为数字的情况，会自动按照key来排序
+				var orderedIds = [];
+				for (x in data.space.cardTypes) {
+					orderedIds.push(data.space.cardTypes[x].id);
+				}
+				same(orderedIds, [2, 3, 1]);
+			}, true);
+
+		});
+
+		test("cardTypes ordered by deep", function() {
+			// 构造返回数据
+			var space = {
+				id: 1,
+				name: "spark-anything",
+				prefixCode: "spark",
+				type: "NORMAL",
+				description: "some description",
+				cardTypes: [ {
+					id: 4,
+					name: "c",
+					recursive: true,
+					cardProperties: [ {
+						id: 2,
+						name: "第四个属性",
+						type: "number",
+						hidden: false,
+						sort: 4
+					}, {
+						id: 5,
+						name: "第二个属性",
+						type: "text",
+						hidden: false,
+						sort: 2
+					}, {
+						id: 3,
+						name: "第一个属性",
+						type: "number",
+						hidden: false,
+						sort: 1
+					}, {
+						id: 4,
+						name: "第五个属性",
+						type: "list",
+						hidden: false,
+						sort: 5
+					}, {
+						id: 1,
+						name: "第三个属性",
+						type: "date",
+						hidden: false,
+						sort: 3
+					}, {
+						id: 100,
+						name: "没有sort的属性",
+						type: "date",
+						hidden: false
+					} ]
+				} ]
+			}
+
+			mockAjax(space);
+			
+			service.load("spark", function(data) {
+				// XXX 此时必须使用data.space.cardTypes.cardProeprties而不能使用data.cardTypes.cardProeprties
+				// 因为js对map({})的key为数字的情况，会自动按照key来排序
+				var orderedIds = [];
+				var ps = data.space.cardTypes[0].cardProperties;
+				for (x in ps) {
+					orderedIds.push(ps[x].id);
+				}
+				same(orderedIds, [100, 3, 5, 1, 2, 4]);
+			}, true);
+
+		});
+
+	});
+	
+	// Mock jQuery ajax method
+	var mockAjax = function(returnValue) {
+		var original$Ajax = $.ajax;
+		$.ajax = function(options) {
+			var url = options.url;
+			var dataType = options.dataType;
+			var success = options.success;
+			var error = options.error;
+
+			if (url != Spark.constants.CONTEXT + "/ajax/spaces/" + returnValue.prefixCode) {
+				ok(false, "Specified ajax url does not match.");
+			}
+
+			if (dataType.toLowerCase() != "json") {
+				ok(false, "Specified ajax dataType does not match.");
+			}
+			
+			success.call(options, returnValue, "200", "some thing");
+		}
+		return original$Ajax;
+	};
+
+	var arrayEquals = function(array1, array2, compareCallback, message) {
+		var msg = array1 + " not equals to " + array2 + ".";
+		var callback = (compareCallback && (compareCallback instanceof Function)) ? compareCallback : function(e1, e2) { return e1 == e2 };
+		if (!array1 && !array2) {
+			ok(true, message);
+		}
+		else if (!array1 || !array2) {
+			ok(false, msg);
+		}
+		else if (!array1.length && !array2.length) {
+			ok(true, message);
+		}
+		else if (array1.length != array2.length) {
+			ok(false, msg + ": length not equals.");
+		}
+		var i, j, l, r, equals = {}, n = array1.length;
+		for (i = 0; i < n; i++) {
+			l = array1[i];
+			for (j = 0; j < n; j++) {
+				r = array2[j];
+				if (!equals[r] && callback(l, r)) {
+					equals[r] = true;
+					break;
+				}
+			}
+			if (!equals[r]) {
+				ok(false, msg + ": [" + i + "]:" + l + " not equals to [" + (j - 1) + "]:" + r + ".");
+			}
+		}
+		ok(true, message);
+	}
+	</script>
+
+</head>
+<body>
+
+<h1 id="qunit-header">Spark.service.SpaceService Test Suite</h1>
+<h2 id="qunit-banner"></h2>
+<h2 id="qunit-userAgent"></h2>
+<ol id="qunit-tests">
+</ol>
+
+</body>
+</html>

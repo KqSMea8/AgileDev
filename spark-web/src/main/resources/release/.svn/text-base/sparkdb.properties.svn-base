@@ -1,0 +1,10 @@
+##
+## NOTE: 
+## This properties file will be replaced on deployment, 
+## so username and password are not real.
+##
+# Database settings
+datasource.driver=com.mysql.jdbc.Driver
+datasource.url=jdbc:mysql://172.22.1.74:3306/spark?useUnicode=true&amp;characterEncoding=utf8
+datasource.username=spark_w
+datasource.password=

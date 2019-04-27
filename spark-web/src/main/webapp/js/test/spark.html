@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="UTF-8" />
+	<title>Spark.util.History Test Suite</title>
+
+	<script type="text/javascript" src="../jquery-1.4.2.min.js"></script>
+	<script type="text/javascript" src="../jquery.hashchange.js"></script>
+	<script type="text/javascript" src="../spark.js"></script>
+	<script type="text/javascript" src="../spark-history.js"></script>
+
+	<link rel="stylesheet" href="../qunit/qunit.css" type="text/css"/>
+	<script type="text/javascript" src="../qunit/qunit.js"></script>
+
+	<script type="text/javascript">
+	$(function() {
+		
+		// i18n
+		window.Spark.messages = {
+			"format.date.default": "yyyy-MM-dd",
+			"format.date.short-date": "yy-M-d",
+			"format.date.long-date": "yyyy-MM-dd",
+			"format.date.short-time": "H:m:s",
+			"format.date.long-time": "HH:mm:ss",
+			"format.date.long-time-minute": "HH:mm",
+			"format.date.short-datetime": "yy-M-d H:m:s",
+			"format.date.long-datetime": "yyyy-MM-dd HH:mm:ss",
+			"format.date.long-datetime-minute": "yyyy-MM-dd HH:mm",
+			
+			"tag.diffDateTag.ago.second": "{0} second(s) ago",
+			"tag.diffDateTag.ago.minute": "{0} minute(s) ago",
+			"tag.diffDateTag.ago.hour": "{0} hour(s) ago",
+			"tag.diffDateTag.ago.day": "{0} day(s) ago",
+			"tag.diffDateTag.ago.today": "Today {0}",
+			"tag.diffDateTag.ago.yesterday": "Yesterday {0}",
+			"tag.diffDateTag.ago.month": "{0} month(s) ago",
+			"tag.diffDateTag.ago.year": "{0} year(s) ago",
+			"tag.diffDateTag.ago.other": "Just a monent ago"
+		}
+		
+		module("spark.js", {
+			setup: function() {
+			},
+			teardown: function() { 
+			}
+		});
+
+		// Spark.util.formatDateInterval
+		test("Spark.util.formatDateInterval", function() {
+			var formatDateInterval = Spark.util.formatDateInterval,
+				formatDate = Spark.util.formatDate,
+				msg = Spark.util.message,
+				keys = {
+					sec: "tag.diffDateTag.ago.second",
+					min: "tag.diffDateTag.ago.minute",
+					today: "tag.diffDateTag.ago.today",
+					yesterday: "tag.diffDateTag.ago.yesterday"
+				}, time = new Date();
+			equals(formatDateInterval(time), msg(keys.sec, 1));
+			time.setSeconds(time.getSeconds() - 12);
+			equals(formatDateInterval(time), msg(keys.sec, 12));
+			time.setMinutes(time.getMinutes() - 12);
+			equals(formatDateInterval(time), msg(keys.min, 12));
+			time.setHours(time.getHours() - 1);
+			equals(formatDateInterval(time), msg(keys.today, formatDate(time, "longtime-minute")));
+			time.setDate(time.getDate() - 1); // FIXME 不要在每月1日执行此case
+			equals(formatDateInterval(time), msg(keys.yesterday, formatDate(time, "longtime-minute")));
+			time.setDate(time.getDate() - 1); // FIXME 不要在每月1日执行此case
+			equals(formatDateInterval(time), formatDate(time, "longdatetime-minute"));
+		});
+		
+	});
+	</script>
+
+</head>
+<body>
+
+<h1 id="qunit-header">Spark.util.History Test Suite</h1>
+<h2 id="qunit-banner"></h2>
+<h2 id="qunit-userAgent"></h2>
+<ol id="qunit-tests">
+</ol>
+
+</body>
+</html>

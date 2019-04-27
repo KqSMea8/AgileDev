@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/iit/!svn/ver/6169/trunk/spark/spark-web/src/main/java/com/baidu/spark/service/impl/helper/copyspace/metadata/impl
+END
+CardPropertyMetadata.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/iit/!svn/ver/6169/trunk/spark/spark-web/src/main/java/com/baidu/spark/service/impl/helper/copyspace/metadata/impl/CardPropertyMetadata.java
+END
+SpaceSequenceMetadata.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/iit/!svn/ver/6169/trunk/spark/spark-web/src/main/java/com/baidu/spark/service/impl/helper/copyspace/metadata/impl/SpaceSequenceMetadata.java
+END
+SpaceViewMetadata.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/iit/!svn/ver/6169/trunk/spark/spark-web/src/main/java/com/baidu/spark/service/impl/helper/copyspace/metadata/impl/SpaceViewMetadata.java
+END
+CardTypeMetadata.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/iit/!svn/ver/6169/trunk/spark/spark-web/src/main/java/com/baidu/spark/service/impl/helper/copyspace/metadata/impl/CardTypeMetadata.java
+END
+GroupMetadata.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/iit/!svn/ver/6169/trunk/spark/spark-web/src/main/java/com/baidu/spark/service/impl/helper/copyspace/metadata/impl/GroupMetadata.java
+END

@@ -1,0 +1,13 @@
+#!/bin/bash
+# backup spark's 'opbin'
+#
+OFFSET_PATH=`date +%Y%m%d`
+TIME=`date +%Y%m%d-%H%M`
+RESOURCE_PATH=/home/work/
+BACKUP_PATH=/home/work/opdir/backup/spark/${OFFSET_PATH}
+TARGETFILE=$BACKUP_PATH/spark_opbin_$TIME.tar.gz
+
+mkdir -p ${BACKUP_PATH}
+cd ${RESOURCE_PATH}
+tar zcvf ${TARGETFILE} opbin
+ls -l ${TARGETFILE}

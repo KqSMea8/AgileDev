@@ -1,0 +1,14 @@
+#!/bin/bash
+# backup spark's 'upload'
+#
+
+OFFSET_PATH=`date +%Y%m%d`
+TIME=`date +%Y%m%d-%H%M`
+RESOURCE_PATH=/home/work/workdir/spark
+BACKUP_PATH=/home/work/opdir/backup/spark/${OFFSET_PATH}
+TARGETFILE=$BACKUP_PATH/spark_upload_$TIME.tar.gz
+
+mkdir -p ${BACKUP_PATH}
+cd ${RESOURCE_PATH}
+tar zcvf ${TARGETFILE} upload
+ls -l ${TARGETFILE}

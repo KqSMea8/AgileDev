@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="Sprint3-review2">
+  <ReviewIssue id="GD8FY4LF">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 15:35:11:811 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-30 :: 12:21:51:235 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>zhangjing_pe</ReviewerId>
+    <AssignedTo>tianyusong</AssignedTo>
+    <File line="37">src/main/webapp/WEB-INF/jsp/project/new.jsp</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>无用行</Summary>
+    <Description></Description>
+    <Annotation>无用jsp。。。</Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8G77QQ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 15:42:15:794 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-25 :: 12:18:20:396 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>zhangjing_pe</ReviewerId>
+    <AssignedTo>zhangjing_pe</AssignedTo>
+    <File line="35">src/main/java/com/baidu/spark/util/FlashScopeFilter.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>补充注释</Summary>
+    <Description>FLASH_SCOPE_FILTER_PATTERN</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8GHZ3K">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 15:50:37:808 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 18:11:16:562 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>zhangjing_pe</ReviewerId>
+    <AssignedTo>shixiaolei</AssignedTo>
+    <File line="130">src/main/java/com/baidu/spark/service/DiscussionService.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>不太理解下面的三个方法</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validWontfix</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8GYSG6">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 16:03:42:342 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 18:03:12:593 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>zhangjing_pe</ReviewerId>
+    <AssignedTo>shixiaolei</AssignedTo>
+    <File line="74">src/main/java/com/baidu/spark/service/impl/DiscussionServiceImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>通过状态来实现讨论的软删除？是否应该调用delete方法？这个逻辑是否应由ecmp来实现？</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validFixlater</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8H3TUK">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 16:07:37:436 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 18:02:22:140 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>zhangjing_pe</ReviewerId>
+    <AssignedTo>shixiaolei</AssignedTo>
+    <File line="70">src/main/java/com/baidu/spark/service/impl/DiscussionServiceImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>增加ecmp中的字段的常量定义。以下同</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validFixlater</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8HKTMX">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 16:20:50:313 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 18:02:18:437 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>zhangjing_pe</ReviewerId>
+    <AssignedTo>shixiaolei</AssignedTo>
+    <File line="151">src/main/java/com/baidu/spark/service/impl/DiscussionServiceImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>公用的url的提取成常量或配置吧</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validFixlater</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8IDGZY">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 16:43:06:958 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 18:01:53:765 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>zhangjing_pe</ReviewerId>
+    <AssignedTo>shixiaolei</AssignedTo>
+    <File line="278">src/main/java/com/baidu/spark/service/impl/DiscussionServiceImpl.java</File>
+    <Type>item.type.label.optimization</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>能否和new Discussion(Map)的方法统一起来？</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8J4A4I">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 17:03:57:762 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-25 :: 12:15:42:054 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>zhangjing_pe</ReviewerId>
+    <AssignedTo>zhangjing_pe</AssignedTo>
+    <File line="34">src/main/java/com/baidu/spark/web/taglib/OutTag.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>错误注释</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+</Review>

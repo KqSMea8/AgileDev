@@ -1,0 +1,2 @@
+#!/bin/sh
+tail -fn400 /home/work/local/tomcat-spark/logs/catalina.out

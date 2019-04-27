@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+	<spaces id="1" name="测试空间1" prefix_code="spark1" type="0" />
+	<spaces id="2" name="测试空间2" prefix_code="spark2" type="0" />
+	<groups id="1" name="用户组1" space_id="1" locked="0" />
+	<users id="1" username="zhangjing"/>
+	<users id="2" username="guolin"/>
+	<users id="3" username="chenhui"/>
+	<group_user group_id="1" user_id="1"/>
+	<group_space group_id="1" space_id="1"/>
+	<acl_class id="101" class="com.baidu.spark.model.Space"/>
+	<acl_class id="102" class="com.baidu.spark.model.card.Card"/>
+	<acl_sid id="101" principal="1" sid="group_1"/>
+	<acl_sid id="102" principal="1" sid="user_2"/>
+	<acl_object_identity id="101" object_id_class="101" object_id_identity="1" owner_sid="102" entries_inheriting="1"/>
+	<acl_entry id="101" acl_object_identity="101" ace_order="0" sid="101" mask="5" granting="1" audit_success="0" audit_failure="0"/>
+</dataset>

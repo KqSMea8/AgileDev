@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/iit/!svn/ver/13510/trunk/spark/spark-web/src/main/java/com/baidu/spark/model/card/property
+END
+DatePropertyValue.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/iit/!svn/ver/13308/trunk/spark/spark-web/src/main/java/com/baidu/spark/model/card/property/DatePropertyValue.java
+END
+DummyProperty.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/iit/!svn/ver/5850/trunk/spark/spark-web/src/main/java/com/baidu/spark/model/card/property/DummyProperty.java
+END
+ListProperty.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/iit/!svn/ver/13510/trunk/spark/spark-web/src/main/java/com/baidu/spark/model/card/property/ListProperty.java
+END
+UserPropertyValue.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/iit/!svn/ver/13308/trunk/spark/spark-web/src/main/java/com/baidu/spark/model/card/property/UserPropertyValue.java
+END
+DateProperty.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/iit/!svn/ver/3700/trunk/spark/spark-web/src/main/java/com/baidu/spark/model/card/property/DateProperty.java
+END
+UserProperty.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/iit/!svn/ver/5012/trunk/spark/spark-web/src/main/java/com/baidu/spark/model/card/property/UserProperty.java
+END
+TextPropertyValue.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/iit/!svn/ver/13308/trunk/spark/spark-web/src/main/java/com/baidu/spark/model/card/property/TextPropertyValue.java
+END
+TextProperty.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/iit/!svn/ver/3700/trunk/spark/spark-web/src/main/java/com/baidu/spark/model/card/property/TextProperty.java
+END
+NumberPropertyValue.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/iit/!svn/ver/13308/trunk/spark/spark-web/src/main/java/com/baidu/spark/model/card/property/NumberPropertyValue.java
+END
+CardPropertyValue.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/iit/!svn/ver/13485/trunk/spark/spark-web/src/main/java/com/baidu/spark/model/card/property/CardPropertyValue.java
+END
+DummyPropertyValue.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/iit/!svn/ver/13308/trunk/spark/spark-web/src/main/java/com/baidu/spark/model/card/property/DummyPropertyValue.java
+END
+ListPropertyValue.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/iit/!svn/ver/13308/trunk/spark/spark-web/src/main/java/com/baidu/spark/model/card/property/ListPropertyValue.java
+END
+NumberProperty.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/iit/!svn/ver/3700/trunk/spark/spark-web/src/main/java/com/baidu/spark/model/card/property/NumberProperty.java
+END
+CardProperty.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/iit/!svn/ver/5847/trunk/spark/spark-web/src/main/java/com/baidu/spark/model/card/property/CardProperty.java
+END

@@ -1,0 +1,29 @@
+*.class
+*.log
+*.LOG
+.DS_Store
+*.iml
+log
+out
+publish.sh
+login.sh
+/target
+/*/target
+/temp
+/*/temp
+/qr
+/.idea
+*.iws
+*.ipr
+
+/qr_code
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*

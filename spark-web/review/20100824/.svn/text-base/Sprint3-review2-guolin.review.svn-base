@@ -1,0 +1,1278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="Sprint3-review2">
+  <ReviewIssue id="GD8EP1YJ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 15:00:08:875 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-25 :: 10:15:59:100 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>zhangjing_pe</AssignedTo>
+    <File line="9">src/main/java/com/baidu/spark/dao/CardPropertyValueDao.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>好多warning</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.invalidWontfix</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8EX2RN">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 15:06:23:171 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-25 :: 10:16:38:372 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>zhangjing_pe</AssignedTo>
+    <File line="103">src/main/java/com/baidu/spark/model/Group.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>应该考虑不再使用deprecated的API</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8F0I3C">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 15:09:03:000 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-25 :: 10:16:49:770 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>zhangjing_pe</AssignedTo>
+    <File line="19">src/main/java/com/baidu/spark/dao/hibernate/CardPropertyValueDaoHibernate.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>应该去掉不必要的警告</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.invalidWontfix</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8F1PD2">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 15:09:59:078 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-25 :: 10:17:38:748 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>zhangjing_pe</AssignedTo>
+    <File line="305">src/main/java/com/baidu/spark/dao/hibernate/GenericDaoHibernate.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>前面的List已经被泛型，后面的转型也应该使用泛型</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.unsureValidity</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8F30KA">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 15:11:00:250 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-25 :: 10:17:55:448 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>zhangjing_pe</AssignedTo>
+    <File line="3">src/main/java/com/baidu/spark/dao/hibernate/ProjectDaoHibernate.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.trivial</Severity>
+    <Summary>unused引用</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validDuplicate</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8F4M1A">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 15:12:14:734 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-25 :: 10:18:11:535 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>zhangjing_pe</AssignedTo>
+    <File line="9">src/main/java/com/baidu/spark/index/converter/IndexConverter.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.trivial</Severity>
+    <Summary>unused引用</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validDuplicate</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8F55HD">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 15:12:39:937 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-25 :: 10:18:31:652 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>zhangjing_pe</AssignedTo>
+    <File line="227">src/main/java/com/baidu/spark/index/engine/impl/BaseIndexSupport.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>多余的方法</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8F6JPJ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 15:13:45:031 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-25 :: 10:22:36:519 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>zhangjing_pe</AssignedTo>
+    <File line="437">src/main/java/com/baidu/spark/index/engine/impl/BaseIndexSupport.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>多余的方法</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8FAPFA">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 15:16:59:062 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-25 :: 10:24:12:520 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>zhangjing_pe</AssignedTo>
+    <File line="51">src/main/java/com/baidu/spark/model/card/property/NumberPropertyValue.java</File>
+    <Type>item.type.label.usability</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>可以考虑将PropertyValueValidationException的构造器改为可变参数</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8FBUU6">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 15:17:52:734 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-25 :: 10:26:43:182 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>zhangjing_pe</AssignedTo>
+    <File line="23">src/main/java/com/baidu/spark/security/SparkAclAuthorizationStrategyImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.trivial</Severity>
+    <Summary>unused属性</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8FCCK7">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 15:18:15:703 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-30 :: 12:26:13:114 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>tianyusong</AssignedTo>
+    <File line="25">src/main/java/com/baidu/spark/security/impl/SparkAclHandlerServiceImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.trivial</Severity>
+    <Summary>unused引用</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validDuplicate</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8FD9EX">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 15:18:58:281 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-25 :: 10:26:52:925 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>zhangjing_pe</AssignedTo>
+    <File line="4">src/main/java/com/baidu/spark/service/CardTypeBasicService.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.trivial</Severity>
+    <Summary>unused引用</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validDuplicate</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8FDHF4">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 15:19:08:656 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-25 :: 10:27:03:875 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>zhangjing_pe</AssignedTo>
+    <File line="4">src/main/java/com/baidu/spark/service/CardTypeService.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.trivial</Severity>
+    <Summary>unused引用</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8FDU1J">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 15:19:25:015 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-25 :: 10:29:12:826 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>zhangjing_pe</AssignedTo>
+    <File line="338">src/main/java/com/baidu/spark/service/impl/CardBasicServiceImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>缺少泛型</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.invalidWontfix</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8FEEAA">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 15:19:51:250 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-25 :: 10:29:40:169 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>zhangjing_pe</AssignedTo>
+    <File line="49">src/main/java/com/baidu/spark/service/impl/CardTypeBasicServiceImpl.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>多余的成员变量</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8FERFD">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 15:20:08:281 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-25 :: 10:29:57:845 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>zhangjing_pe</AssignedTo>
+    <File line="4">src/main/java/com/baidu/spark/service/impl/CardTypeServiceImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.trivial</Severity>
+    <Summary>unused引用</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8FL6KZ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 15:25:07:859 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-25 :: 10:35:48:797 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>zhangjing_pe</AssignedTo>
+    <File line="19">src/main/java/com/baidu/spark/service/impl/GroupSpaceServiceImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>废弃的类</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8FN3FP">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 15:26:37:093 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-25 :: 10:40:47:958 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>zhangjing_pe</AssignedTo>
+    <File line="46">src/main/java/com/baidu/spark/service/impl/UserServiceImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>可能引发keyword中包含百分号或是下划线的问题</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8FPXAD">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 15:28:49:093 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-25 :: 10:42:53:560 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>zhangjing_pe</AssignedTo>
+    <File line="36">src/main/java/com/baidu/spark/service/impl/helper/copyspace/metadata/Metadata.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>缺少泛型</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8FTS5I">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 15:31:49:062 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-25 :: 10:43:22:671 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>zhangjing_pe</AssignedTo>
+    <File line="80">src/main/java/com/baidu/spark/service/impl/helper/CardHistoryDiffHelper.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>左侧可以使用接口</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8FW2HH">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 15:33:35:765 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 19:10:04:750 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>zhangjing_pe</AssignedTo>
+    <File line="9">src/main/java/com/baidu/spark/service/impl/helper/copyspace/metadata/impl/CardPropertyMetadata.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>缺少注释</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validDuplicate</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8FWDF5">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 15:33:49:937 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 19:09:56:656 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>zhangjing_pe</AssignedTo>
+    <File line="9">src/main/java/com/baidu/spark/service/impl/helper/copyspace/metadata/impl/CardTypeMetadata.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>缺少注释</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validDuplicate</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8FWKSS">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 15:33:59:500 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-30 :: 12:26:32:763 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>tianyusong</AssignedTo>
+    <File line="10">src/main/java/com/baidu/spark/service/impl/helper/copyspace/metadata/impl/GroupMetadata.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>缺少注释</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validDuplicate</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8FY2AZ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 15:35:08:843 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 19:09:24:796 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>zhangjing_pe</AssignedTo>
+    <File line="9">src/main/java/com/baidu/spark/service/impl/helper/copyspace/metadata/impl/SpaceSequenceMetadata.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>缺少注释</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8FZ31H">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 15:35:56:453 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-25 :: 10:44:06:019 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>zhangjing_pe</AssignedTo>
+    <File line="33">src/main/java/com/baidu/spark/service/impl/helper/copyspace/option/CheckboxImportOption.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>建议使用常量</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8G02SS">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 15:36:42:796 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 19:08:40:062 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>zhangjing_pe</AssignedTo>
+    <File line="12">src/main/java/com/baidu/spark/service/impl/helper/copyspace/transformer/Transformer.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>TODO</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validFixlater</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8G226O">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 15:38:15:312 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-25 :: 10:50:06:742 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>zhangjing_pe</AssignedTo>
+    <File line="72">src/main/java/com/baidu/spark/service/impl/helper/copyspace/transformer/impl/CardPropertyTransformer.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>建议使用接口</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8G3L1I">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 15:39:26:406 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-25 :: 10:50:31:234 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>zhangjing_pe</AssignedTo>
+    <File line="176">src/main/java/com/baidu/spark/service/impl/helper/copyspace/transformer/impl/CardTypeTransformer.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>可以写在一行</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8G7YSR">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 15:42:50:859 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-25 :: 10:51:06:939 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>zhangjing_pe</AssignedTo>
+    <File line="94">src/main/java/com/baidu/spark/service/impl/helper/copyspace/transformer/impl/SpaceViewTransformer.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>断言写到第一行</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8G8OWF">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 15:43:24:687 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-25 :: 10:58:30:092 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>zhangjing_pe</AssignedTo>
+    <File line="118">src/main/java/com/baidu/spark/service/impl/helper/copyspace/transformer/impl/SpaceViewTransformer.java</File>
+    <Type>item.type.label.optimization</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>可以直接返回instanceof的结果</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8G9H99">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 15:44:01:437 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-25 :: 10:58:45:460 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>zhangjing_pe</AssignedTo>
+    <File line="135">src/main/java/com/baidu/spark/service/impl/helper/copyspace/transformer/impl/SpaceViewTransformer.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>不应该拦截最大的Exception</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validWontfix</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8GAH6O">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 15:44:48:000 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-25 :: 11:03:44:443 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>zhangjing_pe</AssignedTo>
+    <File line="73">src/main/java/com/baidu/spark/service/impl/helper/copyspace/transformer/impl/SpaceViewTransformer.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>可以考虑使用Commons lang的NumberUtils，可以自动处理null问题</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8GBDAH">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 15:45:29:609 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-25 :: 11:04:11:190 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>zhangjing_pe</AssignedTo>
+    <File line="65">src/main/java/com/baidu/spark/service/impl/helper/copyspace/transformer/impl/SpaceViewTransformer.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>isEmpty</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8GC4QR">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 15:46:05:187 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-25 :: 12:14:56:849 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>zhangjing_pe</AssignedTo>
+    <File line="87">src/main/java/com/baidu/spark/service/impl/helper/copyspace/transformer/impl/SpaceViewTransformer.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>常量写在equals左侧可以避免null pointer exception</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8GDPMX">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 15:47:18:921 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-25 :: 11:05:33:427 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>zhangjing_pe</AssignedTo>
+    <File line="62">src/main/java/com/baidu/spark/service/impl/helper/copyspace/transformer/impl/SpaceSequenceTransformer.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>@Override</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8GFISF">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 15:48:43:359 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-25 :: 11:06:01:781 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>zhangjing_pe</AssignedTo>
+    <File line="106">src/main/java/com/baidu/spark/service/impl/helper/copyspace/transformer/impl/SpaceSequenceTransformer.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>可以直接返回instanceof的结果</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8GHR1B">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 15:50:27:359 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-25 :: 12:27:22:287 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>zhangjing_pe</AssignedTo>
+    <File line="24">src/main/java/com/baidu/spark/util/WebUtils.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>缺少注释。。。这个方法是干啥的？</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8GIUN3">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 15:51:18:687 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-25 :: 12:25:28:881 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>zhangjing_pe</AssignedTo>
+    <File line="66">src/main/java/com/baidu/spark/util/SparkConfig.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>工具类方法缺少注释</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validDuplicate</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8GOCQL">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 15:55:35:421 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 19:03:21:312 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>shixiaolei</AssignedTo>
+    <File line="344">src/main/webapp/js/spark.js</File>
+    <Type>item.type.label.optimization</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>应该使用别名</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8GOYSV">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 15:56:04:015 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-30 :: 12:26:24:393 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>tianyusong</AssignedTo>
+    <File line="432">src/main/webapp/js/spark.js</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>缺少注释</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validDuplicate</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8GP3W1">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 15:56:10:609 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-30 :: 12:26:20:001 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>tianyusong</AssignedTo>
+    <File line="436">src/main/webapp/js/spark.js</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>缺少注释</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validDuplicate</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8GQ4JX">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 15:56:58:125 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-30 :: 12:24:19:764 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>tianyusong</AssignedTo>
+    <File line="537">src/main/webapp/js/spark.js</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>缺少jsdoc</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8GQIA9">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 15:57:15:921 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-09-01 :: 11:29:24:704 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>sunjiaxiang</AssignedTo>
+    <File line="595">src/main/webapp/js/spark.js</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>return null可以不用写</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8GSKRP">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 15:58:52:453 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 19:02:07:296 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>shixiaolei</AssignedTo>
+    <File line="641">src/main/webapp/js/spark.js</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>不需要me</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8GTJFY">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 15:59:37:390 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-09-01 :: 15:05:23:523 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>sunjiaxiang</AssignedTo>
+    <File line="663">src/main/webapp/js/spark.js</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>缺少jsdoc，可以考虑改为使用jQuery自带的$.browser.msie</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8GUGLJ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 16:00:20:359 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 19:01:43:484 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>sunjiaxiang</AssignedTo>
+    <File line="679">src/main/webapp/js/spark.js</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>缺少jsdoc，可以考虑使用jQuery的position</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8GVDG9">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 16:01:02:937 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-09-01 :: 11:28:21:489 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>sunjiaxiang</AssignedTo>
+    <File line="733">src/main/webapp/js/spark.js</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Iocn--&gt;Icon</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8GW532">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 16:01:38:750 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-09-01 :: 15:06:27:180 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>sunjiaxiang</AssignedTo>
+    <File line="741">src/main/webapp/js/spark.js</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>可能不是函数</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.unsureValidity</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8GWSCQ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 16:02:08:906 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-09-01 :: 11:38:13:808 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>sunjiaxiang</AssignedTo>
+    <File line="753">src/main/webapp/js/spark.js</File>
+    <Type>item.type.label.optimization</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>应该使用别名，提高性能</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8GY8HG">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 16:03:16:468 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-09-01 :: 14:44:01:522 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>sunjiaxiang</AssignedTo>
+    <File line="771">src/main/webapp/js/spark.js</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>类名首字母大写，不支持同页面多个不同图片</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8H26UW">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 16:06:20:984 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-09-01 :: 11:41:24:026 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>sunjiaxiang</AssignedTo>
+    <File line="811">src/main/webapp/js/spark.js</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>写在匿名函数内部保持整体</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8H336Y">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 16:07:02:890 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 18:57:43:796 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>tianyusong</AssignedTo>
+    <File line="818">src/main/webapp/js/spark.js</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>这是个爪子？</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8HJD23">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 16:19:42:171 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 18:57:28:203 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>shixiaolei</AssignedTo>
+    <File line="269">src/main/java/com/baidu/spark/service/impl/DiscussionServiceImpl.java</File>
+    <Type>item.type.label.usability</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>可以将拼接token的责任放到UrlBasedRestTemplate类中</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.unsureValidity</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8HNTMH">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 16:23:10:265 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-25 :: 11:08:45:901 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>zhangjing_pe</AssignedTo>
+    <File line="42">src/main/java/com/baidu/spark/util/SparkConfig.java</File>
+    <Type>item.type.label.irrelevant</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>可以简化到三目</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validWontfix</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8HO5Y2">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 16:23:26:234 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-25 :: 12:25:18:941 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>zhangjing_pe</AssignedTo>
+    <File line="58">src/main/java/com/baidu/spark/util/SparkConfig.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>工具类缺少注释</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8HPZ4F">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 16:24:50:703 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-25 :: 11:09:51:793 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>zhangjing_pe</AssignedTo>
+    <File line="58">src/main/java/com/baidu/spark/index/engine/impl/CardIndexEngineImpl.java</File>
+    <Type>item.type.label.optimization</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Sort的实例化应该后推至分支处</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8HYGAY">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 16:31:26:218 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-25 :: 11:10:32:789 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>zhangjing_pe</AssignedTo>
+    <File line="72">src/main/java/com/baidu/spark/index/converter/CardIndexConverter.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>不需要赋予null值</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.invalidWontfix</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8I28GV">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 16:34:22:687 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-25 :: 12:13:59:422 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>zhangjing_pe</AssignedTo>
+    <File line="367">src/main/java/com/baidu/spark/index/converter/CardIndexConverter.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>使用isNumeric比拦截异常更合适</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.invalidWontfix</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8I2PP3">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 16:34:45:015 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-25 :: 12:15:32:852 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>zhangjing_pe</AssignedTo>
+    <File line="374">src/main/java/com/baidu/spark/index/converter/CardIndexConverter.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>两个判断可以合并</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8I8D2P">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 16:39:08:593 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 18:53:44:875 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>shixiaolei</AssignedTo>
+    <File line="50">src/main/webapp/js/pages/space/tab.js</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>这两个地方都不需要用me，只有最下面一处需要</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validDuplicate</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8I91XO">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 16:39:40:812 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 18:53:35:109 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>shixiaolei</AssignedTo>
+    <File line="49">src/main/webapp/js/pages/space/tab.js</File>
+    <Type>item.type.label.optimization</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>建议使用别名</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8IAC35">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 16:40:40:625 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 18:52:59:000 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>shixiaolei</AssignedTo>
+    <File line="83">src/main/webapp/js/pages/space/tab.js</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>这里可以不需要写!!</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8IBCDK">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 16:41:27:656 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 18:52:40:703 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>shixiaolei</AssignedTo>
+    <File line="135">src/main/webapp/js/pages/space/tab.js</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>注释写在@method前，可以考虑使用html标签例如&lt;p&gt;。另外需要补充@return</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8IECMP">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 16:43:47:953 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 18:52:13:968 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>shixiaolei</AssignedTo>
+    <File line="162">src/main/webapp/js/spark-treeSelector.js</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>可以不需要使用me，只有函数中需要使用me通过闭包获取到this</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8IJCCB">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 16:47:40:859 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-09-01 :: 11:26:45:345 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>sunjiaxiang</AssignedTo>
+    <File line="63">src/main/webapp/js/pages/cards/discussion.js</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>这里不需要This，可以直接this，只有函数内才需要This</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validDuplicate</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8IKGR6">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 16:48:33:234 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-30 :: 17:29:21:132 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>sunjiaxiang</AssignedTo>
+    <File line="38">src/main/webapp/js/pages/cards/discussion.js</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>成员变量应该在prototype中标识出来，并给出注释</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8ILD0M">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 16:49:15:046 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-30 :: 17:25:22:051 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>sunjiaxiang</AssignedTo>
+    <File line="70">src/main/webapp/js/pages/cards/discussion.js</File>
+    <Type>item.type.label.optimization</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>this.data可以给出别名</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8IMX1K">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 16:50:27:656 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-09-01 :: 12:05:38:073 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>sunjiaxiang</AssignedTo>
+    <File line="137">src/main/webapp/js/pages/cards/discussion.js</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>参数过多，考虑改为传递一个{xxx:xx...}对象</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8INTE2">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 16:51:09:578 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-30 :: 17:08:54:507 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>sunjiaxiang</AssignedTo>
+    <File line="128">src/main/webapp/js/pages/cards/discussion.js</File>
+    <Type>item.type.label.optimization</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Spark.util.message应该使用别名</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8IRF52">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 16:53:57:734 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-30 :: 17:23:44:346 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>sunjiaxiang</AssignedTo>
+    <File line="121">src/main/webapp/js/pages/cards/discussion.js</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>私有函数应该以下划线开头</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8IRYM0">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 16:54:22:968 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-09-01 :: 15:06:34:290 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>sunjiaxiang</AssignedTo>
+    <File line="259">src/main/webapp/js/pages/cards/discussion.js</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>jsdoc不完整</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8IVLXG">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 16:57:13:156 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-30 :: 17:09:09:507 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>sunjiaxiang</AssignedTo>
+    <File line="308">src/main/webapp/js/pages/cards/discussion.js</File>
+    <Type>item.type.label.optimization</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>无用的变量</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8IVWYL">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 16:57:27:453 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-09-01 :: 11:25:38:830 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>sunjiaxiang</AssignedTo>
+    <File line="346">src/main/webapp/js/pages/cards/discussion.js</File>
+    <Type>item.type.label.optimization</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>这个函数不需要This</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8J0V9U">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 17:01:18:546 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 18:45:52:937 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>sunjiaxiang</AssignedTo>
+    <File line="497">src/main/webapp/js/pages/cards/discussion.js</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>可变变量应该考虑抽取到可配置的位置</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8J3M2A">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 17:03:26:578 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-30 :: 16:45:55:120 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>sunjiaxiang</AssignedTo>
+    <File line="463">src/main/webapp/js/pages/cards/discussion.js</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>不应使用alert</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+</Review>

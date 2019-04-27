@@ -1,0 +1,119 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/iit/!svn/ver/13512/trunk/spark/spark-web/src/main/java/com/baidu/spark/service
+END
+UserService.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/iit/!svn/ver/8359/trunk/spark/spark-web/src/main/java/com/baidu/spark/service/UserService.java
+END
+DiscussionService.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/iit/!svn/ver/13053/trunk/spark/spark-web/src/main/java/com/baidu/spark/service/DiscussionService.java
+END
+SpaceViewService.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/iit/!svn/ver/11451/trunk/spark/spark-web/src/main/java/com/baidu/spark/service/SpaceViewService.java
+END
+SpaceCopyService.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/iit/!svn/ver/5188/trunk/spark/spark-web/src/main/java/com/baidu/spark/service/SpaceCopyService.java
+END
+NotificationService.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/iit/!svn/ver/13053/trunk/spark/spark-web/src/main/java/com/baidu/spark/service/NotificationService.java
+END
+AttachmentService.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/iit/!svn/ver/10984/trunk/spark/spark-web/src/main/java/com/baidu/spark/service/AttachmentService.java
+END
+SpaceService.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/iit/!svn/ver/6351/trunk/spark/spark-web/src/main/java/com/baidu/spark/service/SpaceService.java
+END
+CardHistoryService.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/iit/!svn/ver/5255/trunk/spark/spark-web/src/main/java/com/baidu/spark/service/CardHistoryService.java
+END
+GroupService.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/iit/!svn/ver/5460/trunk/spark/spark-web/src/main/java/com/baidu/spark/service/GroupService.java
+END
+CardEmportService.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/iit/!svn/ver/8533/trunk/spark/spark-web/src/main/java/com/baidu/spark/service/CardEmportService.java
+END
+ProjectService.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/iit/!svn/ver/5539/trunk/spark/spark-web/src/main/java/com/baidu/spark/service/ProjectService.java
+END
+ConfigurationService.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/iit/!svn/ver/8359/trunk/spark/spark-web/src/main/java/com/baidu/spark/service/ConfigurationService.java
+END
+SpacegroupService.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/iit/!svn/ver/13447/trunk/spark/spark-web/src/main/java/com/baidu/spark/service/SpacegroupService.java
+END
+CardService.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/iit/!svn/ver/13512/trunk/spark/spark-web/src/main/java/com/baidu/spark/service/CardService.java
+END
+UserViewService.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/iit/!svn/ver/13447/trunk/spark/spark-web/src/main/java/com/baidu/spark/service/UserViewService.java
+END
+UserSynchronizeService.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/iit/!svn/ver/13091/trunk/spark/spark-web/src/main/java/com/baidu/spark/service/UserSynchronizeService.java
+END
+CardTypeService.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/iit/!svn/ver/6532/trunk/spark/spark-web/src/main/java/com/baidu/spark/service/CardTypeService.java
+END
+CardBasicService.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/iit/!svn/ver/13442/trunk/spark/spark-web/src/main/java/com/baidu/spark/service/CardBasicService.java
+END
+CardTypeBasicService.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/iit/!svn/ver/6532/trunk/spark/spark-web/src/main/java/com/baidu/spark/service/CardTypeBasicService.java
+END

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/iit/!svn/ver/13335/trunk/spark/spark-web/src/main/webapp/WEB-INF/jsp/errors/ajax
+END
+500.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/iit/!svn/ver/13335/trunk/spark/spark-web/src/main/webapp/WEB-INF/jsp/errors/ajax/500.jsp
+END
+403.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/iit/!svn/ver/13335/trunk/spark/spark-web/src/main/webapp/WEB-INF/jsp/errors/ajax/403.jsp
+END
+404.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/iit/!svn/ver/13335/trunk/spark/spark-web/src/main/webapp/WEB-INF/jsp/errors/ajax/404.jsp
+END

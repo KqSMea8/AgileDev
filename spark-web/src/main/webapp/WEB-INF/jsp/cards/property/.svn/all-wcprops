@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/iit/!svn/ver/13465/trunk/spark/spark-web/src/main/webapp/WEB-INF/jsp/cards/property
+END
+text.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/iit/!svn/ver/13334/trunk/spark/spark-web/src/main/webapp/WEB-INF/jsp/cards/property/text.jsp
+END
+number.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/iit/!svn/ver/13465/trunk/spark/spark-web/src/main/webapp/WEB-INF/jsp/cards/property/number.jsp
+END
+list.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/iit/!svn/ver/13416/trunk/spark/spark-web/src/main/webapp/WEB-INF/jsp/cards/property/list.jsp
+END
+date.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/iit/!svn/ver/13444/trunk/spark/spark-web/src/main/webapp/WEB-INF/jsp/cards/property/date.jsp
+END
+user.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/iit/!svn/ver/13334/trunk/spark/spark-web/src/main/webapp/WEB-INF/jsp/cards/property/user.jsp
+END

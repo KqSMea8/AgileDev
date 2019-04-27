@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/iit/!svn/ver/6414/trunk/spark/spark-web/src/test/resources/com/baidu/spark/util/unit
+END
+TemplateGeneratorTest.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/iit/!svn/ver/6410/trunk/spark/spark-web/src/test/resources/com/baidu/spark/util/unit/TemplateGeneratorTest.ftl
+END
+TemplateGeneratorTest_zh_CN.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/iit/!svn/ver/6414/trunk/spark/spark-web/src/test/resources/com/baidu/spark/util/unit/TemplateGeneratorTest_zh_CN.ftl
+END

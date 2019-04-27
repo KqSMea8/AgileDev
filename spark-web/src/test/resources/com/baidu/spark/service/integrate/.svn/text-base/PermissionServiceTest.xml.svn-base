@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+	<users id="1" username="zhangjing"/>
+	<users id="2" username="tianyusong"/>
+	<acl_class id="101" class="com.baidu.spark.model.Space"/>
+	<acl_class id="102" class="com.baidu.spark.security.SparkSystemResource"/>
+	<acl_sid id="101" principal="1" sid="group_1"/>
+	<acl_object_identity id="101" object_id_class="101" object_id_identity="1" owner_sid="101" entries_inheriting="1"/>
+	<acl_object_identity id="102" object_id_class="102" object_id_identity="1" owner_sid="101" entries_inheriting="1"/>
+	<acl_entry id="101" acl_object_identity="101" ace_order="0" sid="101" mask="5" granting="1" audit_success="0" audit_failure="0"/>
+	<acl_entry id="102" acl_object_identity="102" ace_order="0" sid="101" mask="8" granting="1" audit_success="0" audit_failure="0"/>
+</dataset>

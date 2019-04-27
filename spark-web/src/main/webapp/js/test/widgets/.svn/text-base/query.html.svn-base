@@ -1,0 +1,431 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="UTF-8" />
+	<title>Spark.widgets.QueryParser Test Suite</title>
+
+	<script type="text/javascript" src="../../jquery-1.4.2.min.js"></script>
+	<script type="text/javascript" src="../../spark.js"></script>
+	<script type="text/javascript" src="../../widgets/query.js"></script>
+
+	<link rel="stylesheet" href="../../qunit/qunit.css" type="text/css"/>
+	<script type="text/javascript" src="../../qunit/qunit.js"></script>
+
+	<script type="text/javascript">
+	$(function() {
+
+		var Query = Spark.widgets.Query;
+
+		// TODO 各种null值情况
+
+		// Conditions
+		module("Query conditions");
+		
+		test("parse property with parameter only(not whole URL).", function() {
+			var q = new Query("q=[prop_144][moreThan][vv]");
+			var c = q.getConditions()["prop_144"][0];
+			equals(c.property, "prop_144");
+			equals(c.propertyId, 144);
+			equals(c.operation, "moreThan");
+			equals(c.value, "vv");
+		});
+
+		test("parse property with empty something initial URL.", function() {
+			expect(3);
+			try {
+				new Query("http://whatever#q=[][equals][something]");
+			} catch (e) {
+				ok(true, "empty property");
+			}
+			try {
+				new Query("http://whatever#q=[content][][something]");
+			} catch (e) {
+				ok(true, "empty operation");
+			}
+			var q = new Query("http://whatever#q=[content][equals][]");
+			var c = q.getConditions()["content"][0];
+			ok(c.value === "", "empty value");
+		});
+
+		test("parse property with wrong parameter number in initial URL.", function() {
+			expect(3);
+			// less than 3
+			try {
+				new Query("http://whatever#q=[prop_144][equals][20][this should not be here]");
+			} catch (e) {
+				ok(true, "parameter number less than 3");
+			}
+			// more than 3
+			try {
+				new Query("http://whatever#q=[prop_144][equals]");
+			} catch (e) {
+				ok(true, "parameter number less than 3");
+			}
+			// not match % 3
+			try {
+				new Query("http://whatever#q=[prop_144][equals][20][content][lessThan][300][prop_2][equals]");
+			} catch (e) {
+				ok(true, "% 3 !== 0");
+			}
+		});
+
+		test("parse default property with initial URL.", function() {
+			var q = new Query("http://whatever#q=[title][equals][value]");
+			var c = q.getConditions()["title"][0];
+			equals(c.property, "title");
+			ok(!c.propertyId, "Not a customize property.");
+			equals(c.operation, "equals");
+			equals(c.value, "value");
+		});
+
+		test("parse customize property with initial URL.", function() {
+			var q = new Query("http://whatever#q=[prop_144][moreThan][vv]");
+			var c = q.getConditions()["prop_144"][0];
+			equals(c.property, "prop_144");
+			equals(c.propertyId, 144);
+			equals(c.operation, "moreThan");
+			equals(c.value, "vv");
+		});
+
+		test("parse multipal customize properties with initial URL.", function() {
+			var q = new Query("http://whatever#q=[prop_144][moreThan][vv]+[prop_144][equals][value]");
+
+			var c = q.getConditions()["prop_144"][0];
+			equals(c.property, "prop_144");
+			equals(c.propertyId, 144);
+			equals(c.operation, "moreThan");
+			equals(c.value, "vv");
+			
+			c = q.getConditions()["prop_144"][1];
+			equals(c.property, "prop_144");
+			equals(c.propertyId, 144);
+			equals(c.operation, "equals");
+			equals(c.value, "value");
+		});
+
+		test("add default property.", function() {
+			var q = new Query();
+			q.addCondition("content", "equals", "something");
+			var c = q.getConditions()["content"][0];
+			equals(c.property, "content");
+			ok(!c.propertyId, "Not a customize property.");
+			equals(c.operation, "equals");
+			equals(c.value, "something");
+		});
+
+		test("add customize property.", function() {
+			var q = new Query();
+			q.addCondition("prop_133", "equals", "what");
+			var c = q.getConditions()["prop_133"][0];
+			equals(c.property, "prop_133");
+			equals(c.propertyId, 133);
+			equals(c.operation, "equals");
+			equals(c.value, "what");
+		});
+
+		test("add property using object parameter.", function() {
+			var q = new Query();
+			q.addCondition({ property: "prop_133", operation: "equals", value: "what" });
+			var c = q.getConditions()["prop_133"][0];
+			equals(c.property, "prop_133");
+			equals(c.propertyId, 133);
+			equals(c.operation, "equals");
+			equals(c.value, "what");
+		});
+
+		test("add property using array parameter.", function() {
+			var q = new Query();
+			var arr = [
+				{ property: "prop_133", operation: "moreThan", value: 100 },
+				{ property: "prop_133", operation: "lessThan", value: 200 },
+				{ property: "content", operation: "equals", value: "what3" }
+			]
+			q.addCondition(arr);
+			
+			var c = q.getConditions()["prop_133"][0];
+			equals(c.property, "prop_133");
+			equals(c.propertyId, 133);
+			equals(c.operation, "moreThan");
+			equals(c.value, 100);
+			
+			c = q.getConditions()["prop_133"][1];
+			equals(c.property, "prop_133");
+			equals(c.propertyId, 133);
+			equals(c.operation, "lessThan");
+			equals(c.value, 200);
+			
+			c = q.getConditions()["content"][0];
+			equals(c.property, "content");
+			ok(!c.propertyId, "Not a customize property.");
+			equals(c.operation, "equals");
+			equals(c.value, "what3");
+		});
+
+		test("remove default property.", function() {
+			var q = new Query("http://whatever#q=[title][equals][what]");
+			q.removeCondition("title");
+			ok(!q.getConditions()["title"].length, " has been removed.");
+		});
+
+		test("remove customize property.", function() {
+			var q = new Query("http://whatever#q=[prop_144][lessThan][100]");
+			q.removeCondition("prop_144");
+			ok(!q.getConditions()["prop_144"].length, " has been removed.");
+		});
+
+		test("clear.", function() {
+			expect(0);
+			var q = new Query();
+			var arr = [
+				{ property: "prop_133", operation: "moreThan", value: 100 },
+				{ property: "prop_133", operation: "lessThan", value: 200 },
+				{ property: "content", operation: "equals", value: "what3" }
+			]
+			q.addCondition(arr);
+			q.clearConditions();
+			var c = q.getConditions();
+			for (var p in c) {
+				ok(false, "Should not have any property.");
+			}
+		});
+
+		test("serialize.", function() {
+			var q = new Query();
+			q.addCondition("prop_133", "equals", "what");
+			q.addCondition("content", "moreThan", 222);
+			q.addCondition("prop_155", "lessThan", 44);
+			equals(q.serialize(), "q=[prop_133][equals][what]+[content][moreThan][222]+[prop_155][lessThan][44]");
+		});
+
+		test("serialize special charactors.", function() {
+			var q = new Query();
+			q.addCondition("prop_133", "equals", "[haha]/+?#=");
+			q.addCondition("prop_144", "equals", "中文哈");
+			equals(q.serialize(), "q=[prop_133][equals][%5Bhaha%5D%2F%2B%3F%23%3D]+[prop_144][equals][%E4%B8%AD%E6%96%87%E5%93%88]");
+		});
+
+		// Sorts
+		module("Query sorts");
+		
+		test("parse property with wrong 'order' initial URL.", function() {
+			var q = new Query("http://whatever#s=[prop_144][whatever]");
+			var c = q.getSorts()["prop_144"];
+			equals(c.property, "prop_144");
+			equals(c.propertyId, "144");
+			equals(c.order, "desc");
+		});
+
+		test("parse property with wrong parameter number initial URL.", function() {
+			var q;
+			try {
+				q = new Query("http://whatever#s=[prop_144][whatever][this should not be here]");
+			} catch (e) {
+				ok(true, "should throw a error");
+				return;
+			}
+			ok(false, "should throw a error.");
+		});
+
+		test("parse default property with initial URL.", function() {
+			var q = new Query("http://whatever#s=[title][asc]");
+			var c = q.getSorts()["title"];
+			equals(c.property, "title");
+			ok(!c.propertyId, "Not a customize property.");
+			equals(c.order, "asc");
+		});
+
+		test("parse customize property with initial URL.", function() {
+			var q = new Query("http://whatever#s=[prop_144][desc]");
+			var c = q.getSorts()["prop_144"];
+			equals(c.property, "prop_144");
+			equals(c.propertyId, "144");
+			equals(c.order, "desc");
+		});
+
+		test("add default property.", function() {
+			var q = new Query();
+			q.addSort("content", "asc");
+			var c = q.getSorts()["content"];
+			equals(c.property, "content");
+			ok(!c.propertyId, "Not a customize property.");
+			equals(c.order, "asc");
+		});
+
+		test("add customize property.", function() {
+			var q = new Query();
+			q.addSort("prop_133", "desc");
+			var c = q.getSorts()["prop_133"];
+			equals(c.property, "prop_133");
+			equals(c.propertyId, "133");
+			equals(c.order, "desc");
+		});
+
+		test("add properties using array parameter.", function() {
+			expect(0);
+			var q = new Query();
+			var arr = [
+				{ property: "prop_133", order: "asc" },
+				{ property: "prop_134", order: "desc" },
+				{ property: "content", order: "asc" }
+			];
+			q.addSort(arr);
+			var c = q.getSort("prop_133");
+			equals(c.property, "prop_133");
+			equals(c.propertyId, 133);
+			equals(c.order, "asc");
+
+			c = q.getSort("prop_134");
+			equals(c.property, "prop_134");
+			equals(c.propertyId, 134);
+			equals(c.order, "desc");
+			
+			c = q.getSort("content");
+			equals(c.property, "content");
+			ok(!c.propertyId, "Not a customize property.");
+			equals(c.order, "asc");
+		});
+
+		test("remove default property.", function() {
+			var q = new Query("http://whatever#s=[title][asc][content][desc]");
+			q.removeSort("title");
+			q.addSort("content");  // another way
+			ok(!q.getSorts()["title"], " has been removed.");
+			ok(!q.getSorts()["content"], " has been removed.");
+		});
+
+		test("remove customize property.", function() {
+			var q = new Query("http://whatever#s=[prop_144][asc][prop_201][asc]");
+			q.removeSort("prop_144");
+			q.addSort("prop_201");
+			ok(!q.getSorts()["prop_144"], " has been removed.");
+			ok(!q.getSorts()["prop_201"], " has been removed.");
+		});
+
+		test("clear.", function() {
+			expect(0);
+			var q = new Query();
+			var arr = [
+				{ property: "prop_133", order: "asc" },
+				{ property: "prop_134", order: "desc" },
+				{ property: "content", order: "asc" }
+			];
+			q.addSort(arr);
+			q.clearSorts();
+			var c = q.getSorts();
+			for (var p in c) {
+				ok(false, "Should not have any property.");
+			}
+		});
+
+		test("serialize.", function() {
+			var q = new Query();
+			q.addSort("prop_133", "asc");
+			q.addSort("content", "desc");
+			q.addSort("prop_155", "desc");
+			q.addSort("title", "asc");
+			equals(q.serialize(), "s=[prop_133][asc]+[content][desc]+[prop_155][desc]+[title][asc]");
+		});
+
+		// Columns
+		module("Query columns");
+		
+		test("parse default property with initial URL.", function() {
+			var q = new Query("http://whatever#c=[title]");
+			var c = q.getColumns()["title"];
+			equals(c.property, "title");
+			ok(!c.propertyId, "Not a customize property.");
+		});
+
+		test("parse customize property with initial URL.", function() {
+			var q = new Query("http://whatever#c=[prop_144]");
+			var c = q.getColumns()["prop_144"];
+			equals(c.property, "prop_144");
+			equals(c.propertyId, "144");
+		});
+
+		test("add default property.", function() {
+			var q = new Query();
+			q.addColumn("content");
+			var c = q.getColumns()["content"];
+			equals(c.property, "content");
+			equals(c.propertyId, null);
+		});
+
+		test("add customize property.", function() {
+			var q = new Query();
+			q.addColumn("prop_133");
+			var c = q.getColumns()["prop_133"];
+			equals(c.property, "prop_133");
+			equals(c.propertyId, 133);
+		});
+
+		test("add properties using array parameter.", function() {
+			var q = new Query();
+			var arr = ["prop_133", "prop_134", "content"];
+			q.addColumn(arr);
+			
+			var c133 = q.getColumn("prop_133");
+			equals(c133.property, "prop_133");
+			equals(c133.propertyId, 133);
+			
+			var c134 = q.getColumn("prop_134");
+			equals(c134.property, "prop_134");
+			equals(c134.propertyId, 134);
+			
+			var cc = q.getColumn("content");
+			equals(cc.property, "content");
+			ok(!cc.propertyId, "Not a customize property.");
+		});
+
+		test("remove default property.", function() {
+			var q = new Query("http://whatever#c=[title]");
+			q.removeColumn("title");
+			var c = q.getColumns()["title"];
+			ok(!c, " has been removed.");
+		});
+
+		test("remove customize property.", function() {
+			var q = new Query("http://whatever#c=[prop_144]");
+			q.removeColumn("prop_144");
+			var c = q.getColumns()["prop_144"];
+			ok(!c, " has been removed.");
+		});
+
+		test("clear.", function() {
+			expect(0);
+			var q = new Query();
+			var arr = ["prop_133", "prop_134", "content"];
+			q.addColumn(arr);
+			q.clearColumns();
+			var c = q.getColumns();
+			for (var p in c) {
+				ok(false, "Should not have any property.");
+			}
+		});
+
+		test("serialize.", function() {
+			var q = new Query();
+			q.addColumn("prop_133");
+			q.addColumn("content");
+			q.addColumn("prop_155");
+			q.addColumn("title");
+			equals(q.serialize(), "c=[prop_133]+[content]+[prop_155]+[title]");
+		});
+
+		module("Query.Conditions");
+		module("Query.Sorts");
+		module("Query.Columns");
+	});
+	</script>
+
+</head>
+<body>
+
+<h1 id="qunit-header">Spark.widgets.QueryParser Test Suite</h1>
+<h2 id="qunit-banner"></h2>
+<h2 id="qunit-userAgent"></h2>
+<ol id="qunit-tests">
+</ol>
+
+</body>
+</html>

@@ -1,0 +1,13 @@
+#!/bin/bash
+# backup spark's app
+#
+OFFSET_PATH=`date +%Y%m%d`
+TIME=`date +%Y%m%d-%H%M`
+SOURCE_PATH=/home/work/workdir/apps
+BACKUP_PATH=/home/work/opdir/backup/spark/${OFFSET_PATH}
+TARGETFILE=$BACKUP_PATH/spark_app_$TIME.tar.gz
+
+mkdir -p ${BACKUP_PATH}
+cd ${SOURCE_PATH}
+tar zcvf ${TARGETFILE} spark
+ls -l ${TARGETFILE}

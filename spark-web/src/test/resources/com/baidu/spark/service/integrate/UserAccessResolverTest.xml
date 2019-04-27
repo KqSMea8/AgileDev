@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+	<spaces id="1" name="测试空间1" prefix_code="spark1" type="0" />
+	<spaces id="2" name="测试空间2" prefix_code="spark2" type="1" />
+	
+	<users id="1" username="systemAdmin"/>
+	<users id="2" username="systemWrite"/>
+	<users id="3" username="systemRead"/>	
+	<users id="4" username="space1Admin"/>
+	<users id="5" username="space1Write"/>
+	<users id="6" username="space1Read"/>
+	<users id="7" username="noright"/>
+	<users id="8" username="card1Read"/>
+	<users id="9" username="space1Owner"/>
+	<users id="10" username="card1Owner"/>
+	<users id="11" username="card2Owner"/>
+	<users id="12" username="card2Read"/>
+	<users id="13" username="systemOwner"/>
+	
+	<users username="guolin"/>
+	<users username="chenhui"/>
+	
+	<!-- card属于space1，相互之间有关联关系 -->
+	<card id="1" title="我是一张卡片1" detail="我是卡片1的描述" space_id="1" sequence="1" super_id="[NULL]" created_user="1"/>
+	<card id="2" title="我是一张卡片2" detail="我是卡片2的描述" space_id="1" sequence="2" super_id="1" created_user="8"/>
+
+	<groups id="1" name="systemAdmin" space_id="[NULL]" locked="0" />
+	<groups id="2" name="systemWrite" locked="0" />
+	<groups id="3" name="systemRead" locked="0" />	
+	<groups id="4" name="space1Admin" space_id="1" locked="0" />
+	<groups id="5" name="space1Write" space_id="1" locked="0" />
+	<groups id="6" name="space1Read" space_id="1" locked="0" />
+	
+	<group_space space_id="1" group_id="4"/>
+	<group_space space_id="1" group_id="5"/>
+	<group_space space_id="1" group_id="6"/>
+	<group_space group_id="1"/>
+	<group_space group_id="2"/>
+	<group_space group_id="3"/>
+
+	<group_user group_id="1" user_id="1"/>
+	<group_user group_id="2" user_id="2"/>
+	<group_user group_id="3" user_id="3"/>
+	<group_user group_id="4" user_id="4"/>
+	<group_user group_id="5" user_id="5"/>
+	<group_user group_id="6" user_id="6"/>
+	
+	<acl_class id="101" class="com.baidu.spark.security.SparkSystemResource"/>
+	<acl_class id="102" class="com.baidu.spark.model.Space"/>
+	<acl_class id="103" class="com.baidu.spark.model.card.Card"/>
+	
+	<acl_sid id="101" principal="1" sid="group_1"/>
+	<acl_sid id="102" principal="1" sid="group_2"/>
+	<acl_sid id="103" principal="1" sid="group_3"/>
+	<acl_sid id="104" principal="1" sid="group_4"/>
+	<acl_sid id="105" principal="1" sid="group_5"/>
+	<acl_sid id="106" principal="1" sid="group_6"/>
+	
+	<acl_sid id="111" principal="1" sid="user_1"/>
+	<acl_sid id="112" principal="1" sid="user_2"/>
+	<acl_sid id="113" principal="1" sid="user_3"/>
+	<acl_sid id="114" principal="1" sid="user_4"/>
+	<acl_sid id="115" principal="1" sid="user_5"/>
+	<acl_sid id="116" principal="1" sid="user_6"/>
+	<acl_sid id="117" principal="1" sid="user_7"/>
+	<acl_sid id="118" principal="1" sid="user_8"/>
+	<acl_sid id="119" principal="1" sid="user_9"/>
+	<acl_sid id="120" principal="1" sid="user_10"/>
+	<acl_sid id="121" principal="1" sid="user_11"/>
+	<acl_sid id="122" principal="1" sid="user_12"/>
+	<acl_sid id="123" principal="1" sid="user_13"/>
+	
+	<!-- 设置object Identity 和owner -->
+	<acl_object_identity id="101" object_id_class="101" object_id_identity="1" owner_sid="123" entries_inheriting="1"/>
+	<acl_object_identity id="102" object_id_class="102" object_id_identity="1" owner_sid="119" entries_inheriting="1"/>
+	<acl_object_identity id="103" object_id_class="102" object_id_identity="2" owner_sid="119" entries_inheriting="1"/>
+	<acl_object_identity id="104" object_id_class="103" object_id_identity="1" owner_sid="120" entries_inheriting="1"/>
+	<acl_object_identity id="105" object_id_class="103" object_id_identity="2" owner_sid="121" entries_inheriting="1"/>
+	
+	<!-- system admin组权限 -->
+	<acl_entry id="101" acl_object_identity="101" ace_order="0" sid="101" mask="31" granting="1" audit_success="0" audit_failure="0"/>
+	<!-- system write组权限 -->
+	<acl_entry id="102" acl_object_identity="101" ace_order="1" sid="102" mask="7" granting="1" audit_success="0" audit_failure="0"/>
+	<!-- system read组权限 -->
+	<acl_entry id="103" acl_object_identity="101" ace_order="2" sid="103" mask="1" granting="1" audit_success="0" audit_failure="0"/>
+	
+	<!-- space1 admin组权限 -->
+	<acl_entry id="104" acl_object_identity="102" ace_order="0" sid="104" mask="31" granting="1" audit_success="0" audit_failure="0"/>
+	<!-- space1 write组权限 -->
+	<acl_entry id="105" acl_object_identity="102" ace_order="1" sid="105" mask="7" granting="1" audit_success="0" audit_failure="0"/>
+	<!-- space1 read组权限 -->
+	<acl_entry id="106" acl_object_identity="102" ace_order="2" sid="106" mask="1" granting="1" audit_success="0" audit_failure="0"/>
+	
+	<!-- card1 read权限 -->
+	<acl_entry id="107" acl_object_identity="104" ace_order="0" sid="118" mask="1" granting="1" audit_success="0" audit_failure="0"/>
+	<!-- card2 read权限 -->
+	<acl_entry id="108" acl_object_identity="105" ace_order="0" sid="122" mask="1" granting="1" audit_success="0" audit_failure="0"/>
+	
+</dataset>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="20100714-1628">
+  <ReviewIssue id="GBLY2W9B">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-07-14 :: 17:04:22:991 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-07-14 :: 17:07:58:813 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>sunyi_qa</ReviewerId>
+    <AssignedTo>sunyi_qa</AssignedTo>
+    <File line="32">src/test/java/com/baidu/spark/dao/integrate/CardDaoTest.java</File>
+    <Type>item.type.label.optimization</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>card的各种情况需要考虑覆盖</Summary>
+    <Description>各字段的null，各种空，长度等异常情况，父节点的为空，父节点其他情况</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GBLY5Y9M">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-07-14 :: 17:06:45:562 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-07-14 :: 17:08:18:508 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>sunyi_qa</ReviewerId>
+    <AssignedTo>sunyi_qa</AssignedTo>
+    <File line="44">src/test/java/com/baidu/spark/dao/integrate/CardDaoTest.java</File>
+    <Type>item.type.label.optimization</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>deletecard这个方法的参数要考虑异常覆盖</Summary>
+    <Description>比如传入一个不存在的cardid等情况</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GBLYBA7C">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-07-14 :: 17:10:54:312 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-07-14 :: 17:11:06:297 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>sunyi_qa</ReviewerId>
+    <AssignedTo>sunyi_qa</AssignedTo>
+    <File line="54">src/test/java/com/baidu/spark/dao/integrate/CardDaoTest.java</File>
+    <Type>item.type.label.optimization</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>这个测试好像没啥效果</Summary>
+    <Description>感觉这里需要考虑的：
+space的card数量为0
+space的card有几种type等</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GBLYCRKH">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-07-14 :: 17:12:03:473 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-07-14 :: 17:12:31:468 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>sunyi_qa</ReviewerId>
+    <AssignedTo>sunyi_qa</AssignedTo>
+    <File line="22">src/test/java/com/baidu/spark/dao/integrate/CardDaoTest.java</File>
+    <Type>item.type.label.optimization</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>缺少update方法的测试？</Summary>
+    <Description>需要考虑的东西基本同insert</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

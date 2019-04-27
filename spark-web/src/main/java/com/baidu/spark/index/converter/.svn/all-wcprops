@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/iit/!svn/ver/13510/trunk/spark/spark-web/src/main/java/com/baidu/spark/index/converter
+END
+IndexConverter.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/iit/!svn/ver/6169/trunk/spark/spark-web/src/main/java/com/baidu/spark/index/converter/IndexConverter.java
+END
+AbstractIndexConverter.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/iit/!svn/ver/8746/trunk/spark/spark-web/src/main/java/com/baidu/spark/index/converter/AbstractIndexConverter.java
+END
+SimpleReflectionIndexConverter.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/iit/!svn/ver/13393/trunk/spark/spark-web/src/main/java/com/baidu/spark/index/converter/SimpleReflectionIndexConverter.java
+END
+CardIndexConverter.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/iit/!svn/ver/13510/trunk/spark/spark-web/src/main/java/com/baidu/spark/index/converter/CardIndexConverter.java
+END

@@ -1,0 +1,68 @@
+# Runtime enviroment settings
+host.server.url.context=spark
+host.server.url.prefix=http://db-iit-prod06.vm.baidu.com
+
+# Database settings
+datasource.driver=com.mysql.jdbc.Driver
+datasource.url=jdbc:mysql://bb-iit-dev01.bb01.baidu.com:8888/spark-beta?useUnicode=true&amp;characterEncoding=utf8
+datasource.username=root
+datasource.password=iitmysql_dev01
+
+# Hibernate settings
+hibernate.dialect=org.hibernate.dialect.MySQL5InnoDBDialect
+hibernate.show_sql=false
+hibernate.format_sql=false
+hibernate.hbm2ddl.auto=none
+hibernate.useCache=true
+# Lucene setting
+lucene.indexDirPath=/home/work/workdir/spark/luceneindex
+
+# SSO settings
+sso.cas.url.prefix=http://uuap.baidu.com
+
+# Restful Service for Discussion settings 
+discussion.rest.hostname=db-iit-prod03.vm.baidu.com
+discussion.rest.port=8083
+discussion.rest.contextPath=/api
+discussion.rest.token=27068de1aca81874
+discussion.rest.sourceId=spark_dog_food
+
+# Restful Service for UIC settings 
+uic.rest.hostname=bb-iit-gwfp04.bb01.baidu.com
+uic.rest.port=8086
+uic.rest.contextPath=/rest
+
+#system setting
+init.cardIndexInitStrategy=addOrUpdateAll
+system.encoding=utf-8
+system.defaultAdminAccount=chenhui
+system.name=SPARK(ci)
+system.mode.debug=false
+#\u6240\u6709\u7528\u6237\u7684\u7528\u6237\u7ec4\u7684\u914d\u7f6e
+system.group.everyone.id=0
+system.group.everyone.namekey=everyoneGroupName
+
+server.icafe=http://db-iit-qa01.vm.baidu.com
+server.icafeserver=${server.icafe}:8000
+server.icafepath=${server.icafeserver}/icafe
+server.icafe.projectInfoUrl=${server.icafepath}/icafeproject/getProjectInfo.action?projectId\=
+
+# Mail sending settings
+mail.smtp.host=mail2-in.baidu.com
+mail.smtp.username=
+mail.smtp.password=
+mail.smtp.authenticate=false
+mail.system.sender=spark@baidu.com
+mail.admin.receiver=spark@baidu.com
+mail.max.receivers=45
+mail.debug=false
+mail.debug.receiver=shixiaolei@baidu.com
+
+# Picture Server for tinyMCE
+richtext.pictrue.server=http://db-iit-prod03.vm.baidu.com:8083/
+
+# Attachment
+attachment.basePath=/home/work/workdir/spark/attachment
+
+# JOBs
+job.uic.synchronizeTime=5 55 5 * * ?

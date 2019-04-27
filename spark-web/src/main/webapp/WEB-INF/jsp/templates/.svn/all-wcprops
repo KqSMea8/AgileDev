@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/iit/!svn/ver/13546/trunk/spark/spark-web/src/main/webapp/WEB-INF/jsp/templates
+END
+card-delete-confirm.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/iit/!svn/ver/13410/trunk/spark/spark-web/src/main/webapp/WEB-INF/jsp/templates/card-delete-confirm.jsp
+END
+jstt.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/iit/!svn/ver/6263/trunk/spark/spark-web/src/main/webapp/WEB-INF/jsp/templates/jstt.jsp
+END
+main.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/iit/!svn/ver/13517/trunk/spark/spark-web/src/main/webapp/WEB-INF/jsp/templates/main.jsp
+END
+tab.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/iit/!svn/ver/3091/trunk/spark/spark-web/src/main/webapp/WEB-INF/jsp/templates/tab.jsp
+END
+manage.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/iit/!svn/ver/5740/trunk/spark/spark-web/src/main/webapp/WEB-INF/jsp/templates/manage.jsp
+END
+breadcrumbs.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/iit/!svn/ver/5523/trunk/spark/spark-web/src/main/webapp/WEB-INF/jsp/templates/breadcrumbs.jsp
+END
+pagination.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/iit/!svn/ver/2963/trunk/spark/spark-web/src/main/webapp/WEB-INF/jsp/templates/pagination.jsp
+END
+base.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/iit/!svn/ver/11001/trunk/spark/spark-web/src/main/webapp/WEB-INF/jsp/templates/base.jsp
+END
+info.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/iit/!svn/ver/6119/trunk/spark/spark-web/src/main/webapp/WEB-INF/jsp/templates/info.jsp
+END
+space.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/iit/!svn/ver/13517/trunk/spark/spark-web/src/main/webapp/WEB-INF/jsp/templates/space.jsp
+END
+systemmanage.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/iit/!svn/ver/13546/trunk/spark/spark-web/src/main/webapp/WEB-INF/jsp/templates/systemmanage.jsp
+END
+views.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/iit/!svn/ver/12982/trunk/spark/spark-web/src/main/webapp/WEB-INF/jsp/templates/views.jsp
+END
+searchbox.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/iit/!svn/ver/2963/trunk/spark/spark-web/src/main/webapp/WEB-INF/jsp/templates/searchbox.jsp
+END
+toolbar.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/iit/!svn/ver/13333/trunk/spark/spark-web/src/main/webapp/WEB-INF/jsp/templates/toolbar.jsp
+END

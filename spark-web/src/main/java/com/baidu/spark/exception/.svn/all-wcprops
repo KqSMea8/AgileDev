@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/iit/!svn/ver/13336/trunk/spark/spark-web/src/main/java/com/baidu/spark/exception
+END
+ResponseStatusException.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/iit/!svn/ver/13336/trunk/spark/spark-web/src/main/java/com/baidu/spark/exception/ResponseStatusException.java
+END
+SparkRuntimeException.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/iit/!svn/ver/3495/trunk/spark/spark-web/src/main/java/com/baidu/spark/exception/SparkRuntimeException.java
+END
+IndexException.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/iit/!svn/ver/4329/trunk/spark/spark-web/src/main/java/com/baidu/spark/exception/IndexException.java
+END
+AttachmentException.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/iit/!svn/ver/11078/trunk/spark/spark-web/src/main/java/com/baidu/spark/exception/AttachmentException.java
+END
+PropertyValueValidationException.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/iit/!svn/ver/4382/trunk/spark/spark-web/src/main/java/com/baidu/spark/exception/PropertyValueValidationException.java
+END
+UnhandledViewException.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/iit/!svn/ver/3548/trunk/spark/spark-web/src/main/java/com/baidu/spark/exception/UnhandledViewException.java
+END

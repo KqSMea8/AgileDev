@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="Sprint3-review2">
+  <ReviewIssue id="GD8GH455">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 15:49:57:689 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-09-01 :: 11:42:56:635 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tianyusong</ReviewerId>
+    <AssignedTo>sunjiaxiang</AssignedTo>
+    <File line="5">src/main/webapp/js/pages/cards/discussion.js</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>命名空间</Summary>
+    <Description></Description>
+    <Annotation>加namespace</Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8GIBJR">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 15:50:53:943 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-30 :: 16:22:09:039 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tianyusong</ReviewerId>
+    <AssignedTo>sunjiaxiang</AssignedTo>
+    <File line="20">src/main/webapp/js/pages/cards/discussion.js</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>大写的This看着不爽...</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8GJ3BS">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 15:51:29:944 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 18:24:46:312 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tianyusong</ReviewerId>
+    <AssignedTo>sunjiaxiang</AssignedTo>
+    <File line="23">src/main/webapp/js/pages/cards/discussion.js</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>d=XXX 这个不是统一处理了么</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8GMDUV">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 15:54:03:559 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-30 :: 16:22:15:008 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tianyusong</ReviewerId>
+    <AssignedTo>sunjiaxiang</AssignedTo>
+    <File line="43">src/main/webapp/js/pages/cards/discussion.js</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>这么多data[i],写个变量_data=data[i]好一点.</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8GSKJW">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 15:58:52:172 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 18:21:01:765 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tianyusong</ReviewerId>
+    <AssignedTo>sunjiaxiang</AssignedTo>
+    <File line="128">src/main/webapp/js/pages/cards/discussion.js</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>没有分号和括号,看起来各种不爽</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8IG12F">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 16:45:06:279 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 18:20:10:703 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tianyusong</ReviewerId>
+    <AssignedTo>chenhui</AssignedTo>
+    <File line="104">src/main/java/com/baidu/spark/service/impl/CardBasicServiceImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>类里面很多地方没做参数验证.</Summary>
+    <Description></Description>
+    <Annotation>加入Assert校验</Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8IKKXZ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 16:48:38:663 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 18:19:23:312 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tianyusong</ReviewerId>
+    <AssignedTo>shixiaolei</AssignedTo>
+    <File line="72">src/main/java/com/baidu/spark/service/impl/DiscussionServiceImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>常量</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validFixlater</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8ILU0N">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 16:49:37:079 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 18:19:15:500 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tianyusong</ReviewerId>
+    <AssignedTo>shixiaolei</AssignedTo>
+    <File line="87">src/main/java/com/baidu/spark/service/impl/DiscussionServiceImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>页面貌似会有不友好的提示信息吧?</Summary>
+    <Description></Description>
+    <Annotation>补充注释，确认Controller做了判断</Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GD8IOXX1">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 16:52:02:101 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-08-24 :: 18:16:02:500 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>tianyusong</ReviewerId>
+    <AssignedTo>shixiaolei</AssignedTo>
+    <File line="80">src/main/java/com/baidu/spark/service/impl/DiscussionServiceImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>这几个方法很像,能合并不?</Summary>
+    <Description>起码reply和save看上去基本一样.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

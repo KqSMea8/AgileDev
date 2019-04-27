@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="Sprint3-review1">
+  <ReviewIssue id="GBVY7HWH">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-07-21 :: 17:05:39:425 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-07-21 :: 17:08:12:115 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>chenhui</ReviewerId>
+    <AssignedTo>chenhui</AssignedTo>
+    <File line="392">src/main/webapp/js/spark.js</File>
+    <Type>item.type.label.clarity</Type>
+    <Severity>item.severity.label.trivial</Severity>
+    <Summary>Data.protoype.format为了清晰是否可以去掉了</Summary>
+    <Description>因为已经有了Spark.util.formatDate</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GBVYEALH">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-07-21 :: 17:10:56:549 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-07-21 :: 17:11:32:196 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>chenhui</ReviewerId>
+    <AssignedTo>chenhui</AssignedTo>
+    <File line="372">src/main/webapp/js/spark.js</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>foc和focus的作用分别是什么呢？</Summary>
+    <Description>如果是工具方法是不是应该放在Spark.util下面，如果是必要的而且多增加一些注释</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GBVYFTGK">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-07-21 :: 17:12:07:652 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-07-21 :: 17:12:37:877 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>chenhui</ReviewerId>
+    <AssignedTo>chenhui</AssignedTo>
+    <File line="419">src/main/webapp/js/spark.js</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>这个trim也应该符合分包的结构</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GBVYJILI">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-07-21 :: 17:15:00:198 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-07-21 :: 17:15:22:875 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>chenhui</ReviewerId>
+    <AssignedTo>chenhui</AssignedTo>
+    <File line="9">src/main/webapp/WEB-INF/jsp/cards/userview.jsp</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>记得补充到国际化资源文件</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GBVYK8B2">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-07-21 :: 17:15:33:518 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-07-21 :: 17:16:17:535 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>chenhui</ReviewerId>
+    <AssignedTo>chenhui</AssignedTo>
+    <File line="8">src/main/webapp/WEB-INF/jsp/cards/userview.jsp</File>
+    <Type>item.type.label.optimization</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>样式信息尽量不要直接写在页面元素的style上面：）</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GBVYPQGD">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-07-21 :: 17:19:50:317 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-07-21 :: 17:20:38:385 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>chenhui</ReviewerId>
+    <AssignedTo>chenhui</AssignedTo>
+    <File line="71">src/main/webapp/js/pages/cards/userview.js</File>
+    <Type>item.type.label.optimization</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>感觉样式的信息一般可在css中定义class</Summary>
+    <Description>这样一条条加，当调整样式的时候还必须修改js代码不太合适</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GBVYTDY2">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-07-21 :: 17:22:40:730 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-07-21 :: 17:22:57:055 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>chenhui</ReviewerId>
+    <AssignedTo>chenhui</AssignedTo>
+    <File line="8">src/main/webapp/js/pages/cards/userview.js</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>js文件里面也要考虑国际化问题</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GBWZ41K0">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-07-22 :: 10:18:44:064 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-07-22 :: 10:20:05:703 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>chenhui</ReviewerId>
+    <AssignedTo>chenhui</AssignedTo>
+    <File line="103">src/main/webapp/js/pages/cards/list.js</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>改成!history.getHash()</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GBWZOCJ0">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-07-22 :: 10:34:31:404 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-07-22 :: 10:35:01:518 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>chenhui</ReviewerId>
+    <AssignedTo>chenhui</AssignedTo>
+    <File line="202">src/main/webapp/js/pages/cards/list.js</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>是不是加上var比较好?否则跑到window作用域去了</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GBWZRLH9">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-07-22 :: 10:37:02:973 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-07-22 :: 10:37:41:454 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>chenhui</ReviewerId>
+    <AssignedTo>chenhui</AssignedTo>
+    <File line="211">src/main/webapp/js/pages/cards/list.js</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>是否可以换个调用方式</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GBWZY2SZ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-07-22 :: 10:42:05:363 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-07-22 :: 10:42:40:182 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>chenhui</ReviewerId>
+    <AssignedTo>chenhui</AssignedTo>
+    <File line="255">src/main/webapp/js/pages/cards/list.js</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>应该把下面的逻辑放在回调中</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GBX0BSDW">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-07-22 :: 10:52:45:044 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-07-22 :: 10:53:19:670 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>chenhui</ReviewerId>
+    <AssignedTo>chenhui</AssignedTo>
+    <File line="345">src/main/webapp/js/pages/cards/list.js</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>IE有问题</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GBX0GDVH">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-07-22 :: 10:56:19:517 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-07-22 :: 10:56:55:310 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>chenhui</ReviewerId>
+    <AssignedTo>chenhui</AssignedTo>
+    <File line="88">src/main/webapp/js/pages/cards/hierarchy.js</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>这一堆push,用append来写不是会简化很多么?</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

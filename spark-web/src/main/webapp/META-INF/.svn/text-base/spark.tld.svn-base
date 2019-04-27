@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee" 
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+        xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd" 
+        version="2.0">  
+
+	<description>spark JSP Tag Library</description>
+	<tlib-version>1.0</tlib-version>
+	<short-name>spark</short-name>
+	<uri>http://spark.baidu.com/tags</uri>
+	
+	<tag>
+		<description><![CDATA[
+			Template to do the same work as Freemaker macro.
+		]]></description>
+		<name>template</name>
+		<tag-class>com.baidu.spark.web.taglib.TemplateTag</tag-class>
+		<body-content>JSP</body-content>
+		<attribute>
+			<description>The template to use</description>
+			<name>page</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<dynamic-attributes>true</dynamic-attributes>
+	</tag>
+
+	<tag>
+		<description><![CDATA[
+			Render all messages in JavaScript code.
+			eg. <code>{ "user.name": "Real name", "user.validate.notFound": "User {0} could not found." }</code>
+		]]></description>
+		<name>message</name>
+		<tag-class>com.baidu.spark.web.taglib.MessageTag</tag-class>
+		<body-content>JSP</body-content>
+	</tag>
+
+	<tag>
+		<description><![CDATA[
+			URL with specified parameters string.
+		]]></description>
+		<name>url</name>
+		<tag-class>com.baidu.spark.web.taglib.UrlTag</tag-class>
+		<body-content>JSP</body-content>
+		<attribute>
+			<description>Base URL</description>
+			<name>value</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<description>Whether including orignal params(Only 'GET' method)</description>
+			<name>includeParams</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<dynamic-attributes>true</dynamic-attributes>
+	</tag>
+	
+	<tag>
+		<description>
+			Diff date format tag.Format date as : *** day(s) ago
+		</description>
+		<name>date</name>
+		<tag-class>com.baidu.spark.web.taglib.DateFormatTag</tag-class>
+		<body-content>JSP</body-content>
+		<attribute>
+			<description>Date object</description>
+			<name>value</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<description>I18n message key which for date time format pattern</description>
+			<name>datetimeFormatKey</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+		<attribute>
+			<description>I18n message key which for time format pattern</description>
+			<name>timeFormatKey</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+	</tag>
+	<tag>
+		 <description>
+            Allows inclusion of a tag body if the current Authentication
+            has one of the specified permissions to the presented
+            domain object instance.
+        </description>
+        <name>acl</name>
+        <tag-class>com.baidu.spark.web.taglib.SparkAclTaglib</tag-class>
+		<body-content>JSP</body-content>
+        <attribute>
+        	<description>
+                A comma separated list of permissions, which will be converted to
+                Permission instances by the configured PermissionFactory.
+            </description>
+            <name>hasPermission</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+        	<description>
+                The actual domain object instance for which permissions
+                are being evaluated.
+            </description>
+            <name>domainObject</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+        	<description>
+                User to evaluate permissions.
+            </description>
+            <name>user</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+    
+    <tag>
+		<description><![CDATA[
+			Decode Url.
+		]]></description>
+		<name>decoder</name>
+		<tag-class>com.baidu.spark.web.taglib.DecodeTag</tag-class>
+		<body-content>JSP</body-content>
+		<attribute>
+			<description>string value to be decoded</description>
+			<name>value</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<description>encode</description>
+			<name>enc</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+	</tag>
+	
+	<tag>
+		<description><![CDATA[
+			spark out tag
+		]]></description>
+		<name>out</name>
+		<tag-class>com.baidu.spark.web.taglib.OutTag</tag-class>
+		<body-content>JSP</body-content>
+		<attribute>
+			<description>string value to output</description>
+			<name>value</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<description>escape to json value</description>
+			<name>jsonValueStyle</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<description>default value when it is null</description>
+			<name>default</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+	</tag>
+	
+	<tag>
+		<description><![CDATA[config reader tag]]></description>
+		<name>config</name>
+		<tag-class>com.baidu.spark.web.taglib.ConfigTag</tag-class>
+		<body-content>JSP</body-content>
+		<attribute>
+			<description>key of the config whose value to be shown</description>
+			<name>key</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+</taglib>

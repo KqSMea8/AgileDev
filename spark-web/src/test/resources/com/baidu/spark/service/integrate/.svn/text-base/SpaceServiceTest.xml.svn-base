@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+	<spaces id="1" name="测试空间1" prefix_code="spark1" type="0" />
+	<spaces id="2" name="测试空间2" prefix_code="spark2" type="1" />
+	<spaces id="3" name="测试空间3" prefix_code="spark3" type="1" />
+	<!-- space sequence -->
+	<space_sequence id="1" next_card_seq_num="1"/>
+	<space_sequence id="2" next_card_seq_num="2"/>
+	<space_sequence id="3" next_card_seq_num="3"/>
+	
+	<users username="chenhui" />
+</dataset>

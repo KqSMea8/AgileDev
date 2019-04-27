@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/iit/!svn/ver/13547/trunk/spark/spark-web/src/main/webapp/WEB-INF/jsp/cards
+END
+batchUpdate.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/iit/!svn/ver/13547/trunk/spark/spark-web/src/main/webapp/WEB-INF/jsp/cards/batchUpdate.jsp
+END
+cardinfo.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/iit/!svn/ver/13053/trunk/spark/spark-web/src/main/webapp/WEB-INF/jsp/cards/cardinfo.jsp
+END
+filter.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/iit/!svn/ver/13440/trunk/spark/spark-web/src/main/webapp/WEB-INF/jsp/cards/filter.jsp
+END
+attachment.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/iit/!svn/ver/10976/trunk/spark/spark-web/src/main/webapp/WEB-INF/jsp/cards/attachment.jsp
+END
+userview.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/iit/!svn/ver/9220/trunk/spark/spark-web/src/main/webapp/WEB-INF/jsp/cards/userview.jsp
+END
+list.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/iit/!svn/ver/13456/trunk/spark/spark-web/src/main/webapp/WEB-INF/jsp/cards/list.jsp
+END
+cardform.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/iit/!svn/ver/11147/trunk/spark/spark-web/src/main/webapp/WEB-INF/jsp/cards/cardform.jsp
+END
+hierarchy.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/iit/!svn/ver/13514/trunk/spark/spark-web/src/main/webapp/WEB-INF/jsp/cards/hierarchy.jsp
+END
+searchbox.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/iit/!svn/ver/6749/trunk/spark/spark-web/src/main/webapp/WEB-INF/jsp/cards/searchbox.jsp
+END
+wall.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/iit/!svn/ver/13456/trunk/spark/spark-web/src/main/webapp/WEB-INF/jsp/cards/wall.jsp
+END
+show.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/iit/!svn/ver/13401/trunk/spark/spark-web/src/main/webapp/WEB-INF/jsp/cards/show.jsp
+END
+history.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/iit/!svn/ver/10882/trunk/spark/spark-web/src/main/webapp/WEB-INF/jsp/cards/history.jsp
+END
+showHistory.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/iit/!svn/ver/8017/trunk/spark/spark-web/src/main/webapp/WEB-INF/jsp/cards/showHistory.jsp
+END

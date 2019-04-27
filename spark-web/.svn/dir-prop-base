@@ -1,0 +1,13 @@
+K 10
+svn:ignore
+V 71
+.classpath
+.mymetadata
+.pmd
+.project
+.settings
+output
+reports
+.ruleset
+
+END

@@ -1,0 +1,14 @@
+#!/bin/bash
+# backup spark's db
+MYSQL_HOME=/home/work/local/mysql
+OFFSET_PATH=`date +%Y%m%d`
+TIME=`date +%Y%m%d-%H%M`
+DBNAME=spark
+BAKCUP_PATH=/home/work/opdir/backup/spark/${OFFSET_PATH}
+
+mkdir -p ${BAKCUP_PATH}
+${MYSQL_HOME}/bin/mysqldump -B ${DBNAME} -uroot -piitmysqlroot --default-character-set=utf8 > ${BAKCUP_PATH}/MySQL_${DBNAME}_${TIME}.sql
+cd $BAKCUP_PATH
+tar zcf MySQL_${DBNAME}_$TIME.tar.gz MySQL_${DBNAME}_$TIME.sql
+rm -rf ./MySQL_${DBNAME}_$TIME.sql
+ls -l MySQL_${DBNAME}_$TIME.tar.gz

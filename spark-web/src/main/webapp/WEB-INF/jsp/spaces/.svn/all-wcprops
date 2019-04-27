@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/iit/!svn/ver/10882/trunk/spark/spark-web/src/main/webapp/WEB-INF/jsp/spaces
+END
+edit.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/iit/!svn/ver/6750/trunk/spark/spark-web/src/main/webapp/WEB-INF/jsp/spaces/edit.jsp
+END
+new.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/iit/!svn/ver/6750/trunk/spark/spark-web/src/main/webapp/WEB-INF/jsp/spaces/new.jsp
+END
+projects.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/iit/!svn/ver/5523/trunk/spark/spark-web/src/main/webapp/WEB-INF/jsp/spaces/projects.jsp
+END
+list.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/iit/!svn/ver/10882/trunk/spark/spark-web/src/main/webapp/WEB-INF/jsp/spaces/list.jsp
+END
+delete.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/iit/!svn/ver/4023/trunk/spark/spark-web/src/main/webapp/WEB-INF/jsp/spaces/delete.jsp
+END
+importOption.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/iit/!svn/ver/5189/trunk/spark/spark-web/src/main/webapp/WEB-INF/jsp/spaces/importOption.jsp
+END

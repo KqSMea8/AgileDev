@@ -1,0 +1,104 @@
+10
+
+dir
+13555
+https://svn.baidu.com/iit/trunk/spark/spark-web/src/main/webapp/WEB-INF/jsp
+https://svn.baidu.com/iit
+
+
+
+2011-03-21T03:02:52.471418Z
+13547
+shixiaolei
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+9239ee77-4c2c-43be-9850-63cbc84e55ed
+
+groups
+dir
+
+ajax
+dir
+
+cardproperties
+dir
+
+admin
+dir
+
+cards
+dir
+
+templates
+dir
+
+plugin
+dir
+
+cardtypes
+dir
+
+globalgroups
+dir
+
+users
+dir
+
+index.jsp
+file
+
+
+
+
+2011-03-21T09:09:24.842803Z
+1ea349737573f84878ad53b228cd2135
+2010-09-08T07:13:13.493893Z
+6512
+guolin
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+376
+
+project
+dir
+
+spaceviews
+dir
+
+errors
+dir
+
+spaces
+dir
+

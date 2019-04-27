@@ -1,0 +1,13 @@
+#!/bin/bash
+SRCFILE=$1
+BUILD_NUMBER=$2
+RESOURCE_PATH=/home/work/opdir/tmp/SPARK
+
+
+echo 'get product of build '\#$BUILD_NUMBER
+rm -rf $RESOURCE_PATH/
+mkdir -p $RESOURCE_PATH/
+cd $RESOURCE_PATH/ || exit 1
+wget ftp://spark:spark@bb-iit-test01.bb01/${BUILD_NUMBER}/${SRCFILE}
+ls -l ${SRCFILE}
+unzip -q -d spark ${SRCFILE}

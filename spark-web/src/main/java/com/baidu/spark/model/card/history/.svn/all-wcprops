@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/iit/!svn/ver/8017/trunk/spark/spark-web/src/main/java/com/baidu/spark/model/card/history
+END
+CardHistorySingleDiff.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/iit/!svn/ver/8017/trunk/spark/spark-web/src/main/java/com/baidu/spark/model/card/history/CardHistorySingleDiff.java
+END
+CardHistoryDiffBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/iit/!svn/ver/4076/trunk/spark/spark-web/src/main/java/com/baidu/spark/model/card/history/CardHistoryDiffBean.java
+END
+CardHistory.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/iit/!svn/ver/3852/trunk/spark/spark-web/src/main/java/com/baidu/spark/model/card/history/CardHistory.java
+END

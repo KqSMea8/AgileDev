@@ -1,0 +1,1 @@
+测试i18n: ${message("global.title")}

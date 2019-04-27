@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/iit/!svn/ver/13546/trunk/spark/spark-web/src/main/webapp/WEB-INF/jsp/admin
+END
+shadow.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/iit/!svn/ver/13546/trunk/spark/spark-web/src/main/webapp/WEB-INF/jsp/admin/shadow.jsp
+END
+mock.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/iit/!svn/ver/13546/trunk/spark/spark-web/src/main/webapp/WEB-INF/jsp/admin/mock.jsp
+END
+spaceform.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/iit/!svn/ver/3335/trunk/spark/spark-web/src/main/webapp/WEB-INF/jsp/admin/spaceform.jsp
+END

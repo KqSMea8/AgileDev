@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd"
+	default-lazy-init="true">
+
+	<!-- RMDB数据源配置,主要用于开发测试环境 -->
+	<bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">
+		<property name="driverClass" value="${datasource.driver}" />
+		<property name="jdbcUrl" value="${datasource.url}" />
+		<property name="user" value="${datasource.username}" />
+		<property name="password" value="${datasource.password}" />
+
+		<property name="minPoolSize" value="5" />
+		<property name="maxPoolSize" value="20" />
+		<property name="acquireIncrement" value="5" />
+		<property name="acquireRetryAttempts" value="30" />
+		<property name="maxStatements" value="100" />
+		<property name="maxStatementsPerConnection" value="20" />
+		<property name="maxIdleTime" value="60" />
+		<property name="idleConnectionTestPeriod" value="60" />
+		<property name="autoCommitOnClose" value="false" />
+		<property name="numHelperThreads" value="3" />
+	</bean>
+	
+	<!-- Hibernate配置 -->
+	<bean id="namingStrategy" class="org.hibernate.cfg.ImprovedNamingStrategy" />
+	<bean id="sessionFactory" class="org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean">
+		<property name="dataSource" ref="dataSource" />
+		<property name="namingStrategy" ref="namingStrategy" />
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">${hibernate.dialect}</prop>
+				<prop key="hibernate.default_batch_fetch_size">20</prop>
+				<prop key="hibernate.cache.use_second_level_cache">${hibernate.useCache}</prop>
+				<prop key="hibernate.cache.provider_class">org.hibernate.cache.EhCacheProvider</prop>
+				<prop key="hibernate.cache.use_query_cache">${hibernate.useCache}</prop>
+				<prop key="hibernate.query.substitutions">true 1, false 0</prop>
+				<prop key="hibernate.show_sql">${hibernate.show_sql}</prop>
+				<prop key="hibernate.format_sql">${hibernate.format_sql}</prop>
+				<prop key="hibernate.hbm2ddl.auto">${hibernate.hbm2ddl.auto}</prop>
+			</props>
+		</property>
+		<property name="packagesToScan">
+			<list>
+				<value>com.baidu.spark.model</value>
+			</list>
+		</property>
+	</bean>
+
+	<!-- 事务配置 -->
+	<bean id="transactionManager" class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<!-- 元注释声明式事务
+	<tx:annotation-driven transaction-manager="transactionManager" />
+	-->
+
+	<!-- 配置事务拦截器 --> 
+	<bean id="transactionInterceptor" class="org.springframework.transaction.interceptor.TransactionInterceptor"> 
+		<property name="transactionManager" ref="transactionManager" /> 
+		<property name="transactionAttributes"> 
+			<props>
+				<prop key="save*">PROPAGATION_REQUIRED</prop>
+				<prop key="insert*">PROPAGATION_REQUIRED</prop>
+				<prop key="create*">PROPAGATION_REQUIRED</prop>
+				<prop key="update*">PROPAGATION_REQUIRED</prop>
+				<prop key="delete*">PROPAGATION_REQUIRED</prop>
+				<prop key="move*">PROPAGATION_REQUIRED</prop>
+				<!-- space sequence，独立事务 -->
+				<prop key="get*AndIncrease">PROPAGATION_REQUIRES_NEW</prop>
+				<prop key="*FromUic">PROPAGATION_REQUIRES_NEW</prop>
+				<prop key="is*">PROPAGATION_REQUIRED,readOnly</prop>
+				<prop key="check*">PROPAGATION_REQUIRED,readOnly</prop>
+				<prop key="get*">PROPAGATION_REQUIRED,readOnly</prop>
+				<prop key="sync*">PROPAGATION_NOT_SUPPORTED</prop>
+				<prop key="*">PROPAGATION_REQUIRED</prop>
+			</props>
+		</property>
+	</bean>
+	
+	<!-- 根据事务拦截器为目标bean自动创建事务代理 指定对满足哪些bean name的bean自动生成业务代理 --> 
+	<bean class="org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator"> 
+		<property name="interceptorNames"> 
+			<list> 
+				<value>transactionInterceptor</value> 
+			</list> 
+		</property> 
+		<property name="beanNames"> 
+			<list>
+				<value>*ServiceImpl</value>
+				<value>*DaoHibernate</value> 
+			</list> 
+		</property> 
+	</bean> 
+	
+</beans>

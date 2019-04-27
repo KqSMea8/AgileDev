@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+	<test_user user_id="1" group_id="2" first_name="zhang" last_name="jing"/>
+</dataset>

@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/iit/!svn/ver/13501/trunk/spark/spark-web/src/test/java/com/baidu/spark/service/integrate
+END
+UserServiceTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/iit/!svn/ver/8361/trunk/spark/spark-web/src/test/java/com/baidu/spark/service/integrate/UserServiceTest.java
+END
+CardIndexServiceTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/iit/!svn/ver/13214/trunk/spark/spark-web/src/test/java/com/baidu/spark/service/integrate/CardIndexServiceTest.java
+END
+SpaceCopyTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/iit/!svn/ver/5249/trunk/spark/spark-web/src/test/java/com/baidu/spark/service/integrate/SpaceCopyTest.java
+END
+NotificationServiceTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/iit/!svn/ver/13216/trunk/spark/spark-web/src/test/java/com/baidu/spark/service/integrate/NotificationServiceTest.java
+END
+ProjectServiceTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/iit/!svn/ver/13475/trunk/spark/spark-web/src/test/java/com/baidu/spark/service/integrate/ProjectServiceTest.java
+END
+CardServiceTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/iit/!svn/ver/13475/trunk/spark/spark-web/src/test/java/com/baidu/spark/service/integrate/CardServiceTest.java
+END
+CardBatchServiceTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/iit/!svn/ver/13475/trunk/spark/spark-web/src/test/java/com/baidu/spark/service/integrate/CardBatchServiceTest.java
+END
+CardHistoryServiceTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/iit/!svn/ver/13475/trunk/spark/spark-web/src/test/java/com/baidu/spark/service/integrate/CardHistoryServiceTest.java
+END
+CardTypeServiceTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/iit/!svn/ver/6531/trunk/spark/spark-web/src/test/java/com/baidu/spark/service/integrate/CardTypeServiceTest.java
+END
+SpaceServiceTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/iit/!svn/ver/13501/trunk/spark/spark-web/src/test/java/com/baidu/spark/service/integrate/SpaceServiceTest.java
+END
+GroupServiceTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/iit/!svn/ver/13475/trunk/spark/spark-web/src/test/java/com/baidu/spark/service/integrate/GroupServiceTest.java
+END

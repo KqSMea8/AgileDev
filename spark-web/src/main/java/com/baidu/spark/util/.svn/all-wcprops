@@ -1,0 +1,155 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/iit/!svn/ver/13390/trunk/spark/spark-web/src/main/java/com/baidu/spark/util
+END
+RestTemplateFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/iit/!svn/ver/5284/trunk/spark/spark-web/src/main/java/com/baidu/spark/util/RestTemplateFactory.java
+END
+CustomResourceBundleMessageSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/iit/!svn/ver/4097/trunk/spark/spark-web/src/main/java/com/baidu/spark/util/CustomResourceBundleMessageSource.java
+END
+UserSynchronizeJob.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/iit/!svn/ver/8363/trunk/spark/spark-web/src/main/java/com/baidu/spark/util/UserSynchronizeJob.java
+END
+CustomCookieLocaleResolver.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/iit/!svn/ver/3587/trunk/spark/spark-web/src/main/java/com/baidu/spark/util/CustomCookieLocaleResolver.java
+END
+ApplicationContextHolder.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/iit/!svn/ver/3925/trunk/spark/spark-web/src/main/java/com/baidu/spark/util/ApplicationContextHolder.java
+END
+SparkConfig.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/iit/!svn/ver/6417/trunk/spark/spark-web/src/main/java/com/baidu/spark/util/SparkConfig.java
+END
+SparkResponseErrorHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/iit/!svn/ver/10976/trunk/spark/spark-web/src/main/java/com/baidu/spark/util/SparkResponseErrorHandler.java
+END
+IdentityHashSet.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/iit/!svn/ver/4555/trunk/spark/spark-web/src/main/java/com/baidu/spark/util/IdentityHashSet.java
+END
+ReflectionUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/iit/!svn/ver/3509/trunk/spark/spark-web/src/main/java/com/baidu/spark/util/ReflectionUtils.java
+END
+SpringSecurityUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/iit/!svn/ver/4298/trunk/spark/spark-web/src/main/java/com/baidu/spark/util/SpringSecurityUtils.java
+END
+MessageHolder.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/iit/!svn/ver/6413/trunk/spark/spark-web/src/main/java/com/baidu/spark/util/MessageHolder.java
+END
+TemplateGenerator.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/iit/!svn/ver/6598/trunk/spark/spark-web/src/main/java/com/baidu/spark/util/TemplateGenerator.java
+END
+MailSender.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/iit/!svn/ver/6404/trunk/spark/spark-web/src/main/java/com/baidu/spark/util/MailSender.java
+END
+SparkInitializer.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/iit/!svn/ver/6170/trunk/spark/spark-web/src/main/java/com/baidu/spark/util/SparkInitializer.java
+END
+StringUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/iit/!svn/ver/13390/trunk/spark/spark-web/src/main/java/com/baidu/spark/util/StringUtils.java
+END
+FlashScope.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/iit/!svn/ver/5252/trunk/spark/spark-web/src/main/java/com/baidu/spark/util/FlashScope.java
+END
+Pair.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/iit/!svn/ver/3606/trunk/spark/spark-web/src/main/java/com/baidu/spark/util/Pair.java
+END
+UrlBasedRestTemplate.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/iit/!svn/ver/5179/trunk/spark/spark-web/src/main/java/com/baidu/spark/util/UrlBasedRestTemplate.java
+END
+MappingExceptionResolver.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/iit/!svn/ver/13335/trunk/spark/spark-web/src/main/java/com/baidu/spark/util/MappingExceptionResolver.java
+END
+LuceneUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/iit/!svn/ver/5233/trunk/spark/spark-web/src/main/java/com/baidu/spark/util/LuceneUtils.java
+END
+ListUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/iit/!svn/ver/3118/trunk/spark/spark-web/src/main/java/com/baidu/spark/util/ListUtils.java
+END
+FlashScopeFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/iit/!svn/ver/6169/trunk/spark/spark-web/src/main/java/com/baidu/spark/util/FlashScopeFilter.java
+END
+DateUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/iit/!svn/ver/10976/trunk/spark/spark-web/src/main/java/com/baidu/spark/util/DateUtils.java
+END
+BeanMapperSingletonWrapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/iit/!svn/ver/3899/trunk/spark/spark-web/src/main/java/com/baidu/spark/util/BeanMapperSingletonWrapper.java
+END
+WebUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/iit/!svn/ver/13303/trunk/spark/spark-web/src/main/java/com/baidu/spark/util/WebUtils.java
+END

@@ -1,0 +1,141 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Review>
+  <Review id="Sprint3-review1">
+    <ReviewIssue id="GBVYHZPG">
+      <ReviewIssueMeta>
+        <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-07-21 :: 17:13:49:060 CST</CreationDate>
+        <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-07-21 :: 17:13:57:654 CST</LastModificationDate>
+      </ReviewIssueMeta>
+      <ReviewerId>shixiaolei</ReviewerId>
+      <AssignedTo>chenhui</AssignedTo>
+      <File line="93">src/main/webapp/js/pages/cards/filter.js</File>
+      <Type>item.label.unset</Type>
+      <Severity>item.label.unset</Severity>
+      <Summary>不用的吧</Summary>
+      <Description></Description>
+      <Annotation></Annotation>
+      <Revision></Revision>
+      <Resolution>item.label.unset</Resolution>
+      <Status>item.status.label.open</Status>
+    </ReviewIssue>
+    <ReviewIssue id="GBVYIKDD">
+      <ReviewIssueMeta>
+        <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-07-21 :: 17:14:15:841 CST</CreationDate>
+        <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-07-21 :: 17:14:23:076 CST</LastModificationDate>
+      </ReviewIssueMeta>
+      <ReviewerId>shixiaolei</ReviewerId>
+      <AssignedTo>chenhui</AssignedTo>
+      <File line="94">src/main/webapp/js/pages/cards/filter.js</File>
+      <Type>item.label.unset</Type>
+      <Severity>item.label.unset</Severity>
+      <Summary>抽出来</Summary>
+      <Description></Description>
+      <Annotation></Annotation>
+      <Revision></Revision>
+      <Resolution>item.label.unset</Resolution>
+      <Status>item.status.label.open</Status>
+    </ReviewIssue>
+    <ReviewIssue id="GBVYIVWQ">
+      <ReviewIssueMeta>
+        <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-07-21 :: 17:14:30:794 CST</CreationDate>
+        <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-07-21 :: 17:14:45:576 CST</LastModificationDate>
+      </ReviewIssueMeta>
+      <ReviewerId>shixiaolei</ReviewerId>
+      <AssignedTo>chenhui</AssignedTo>
+      <File line="108">src/main/webapp/js/spark-menu.js</File>
+      <Type>item.label.unset</Type>
+      <Severity>item.label.unset</Severity>
+      <Summary>应该不是问题 不过不知道这种写法</Summary>
+      <Description></Description>
+      <Annotation></Annotation>
+      <Revision></Revision>
+      <Resolution>item.label.unset</Resolution>
+      <Status>item.status.label.open</Status>
+    </ReviewIssue>
+    <ReviewIssue id="GBVYJUV0">
+      <ReviewIssueMeta>
+        <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-07-21 :: 17:15:16:092 CST</CreationDate>
+        <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-07-21 :: 17:15:58:529 CST</LastModificationDate>
+      </ReviewIssueMeta>
+      <ReviewerId>shixiaolei</ReviewerId>
+      <AssignedTo>chenhui</AssignedTo>
+      <File line="134">src/main/webapp/js/spark-menu.js</File>
+      <Type>item.label.unset</Type>
+      <Severity>item.label.unset</Severity>
+      <Summary>用正则拆更好？ \s的那种 </Summary>
+      <Description></Description>
+      <Annotation></Annotation>
+      <Revision></Revision>
+      <Resolution>item.label.unset</Resolution>
+      <Status>item.status.label.open</Status>
+    </ReviewIssue>
+    <ReviewIssue id="GBVZ2AE5">
+      <ReviewIssueMeta>
+        <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-07-21 :: 17:29:36:029 CST</CreationDate>
+        <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-07-21 :: 17:29:54:123 CST</LastModificationDate>
+      </ReviewIssueMeta>
+      <ReviewerId>shixiaolei</ReviewerId>
+      <AssignedTo>chenhui</AssignedTo>
+      <File line="22">src/main/webapp/WEB-INF/jsp/cards/list.jsp</File>
+      <Type>item.label.unset</Type>
+      <Severity>item.label.unset</Severity>
+      <Summary>嗯 分号==</Summary>
+      <Description></Description>
+      <Annotation></Annotation>
+      <Revision></Revision>
+      <Resolution>item.label.unset</Resolution>
+      <Status>item.status.label.open</Status>
+    </ReviewIssue>
+    <ReviewIssue id="GBVZLS1A">
+      <ReviewIssueMeta>
+        <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-07-21 :: 17:44:45:358 CST</CreationDate>
+        <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-07-21 :: 17:45:38:686 CST</LastModificationDate>
+      </ReviewIssueMeta>
+      <ReviewerId>shixiaolei</ReviewerId>
+      <AssignedTo>chenhui</AssignedTo>
+      <File line="42">src/main/webapp/WEB-INF/jsp/cards/list.jsp</File>
+      <Type>item.label.unset</Type>
+      <Severity>item.label.unset</Severity>
+      <Summary>不知通过hide show确定唯一ID好不好 一个id 改变背景图片是不是更好</Summary>
+      <Description>menu</Description>
+      <Annotation></Annotation>
+      <Revision></Revision>
+      <Resolution>item.label.unset</Resolution>
+      <Status>item.status.label.open</Status>
+    </ReviewIssue>
+    <ReviewIssue id="GBW1M063">
+      <ReviewIssueMeta>
+        <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-07-21 :: 18:40:55:131 CST</CreationDate>
+        <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-07-21 :: 18:41:10:225 CST</LastModificationDate>
+      </ReviewIssueMeta>
+      <ReviewerId>shixiaolei</ReviewerId>
+      <AssignedTo>chenhui</AssignedTo>
+      <File line="80">src/main/webapp/js/spark-menu.js</File>
+      <Type>item.label.unset</Type>
+      <Severity>item.label.unset</Severity>
+      <Summary>这个好像不是传进来的吧？</Summary>
+      <Description></Description>
+      <Annotation></Annotation>
+      <Revision></Revision>
+      <Resolution>item.label.unset</Resolution>
+      <Status>item.status.label.open</Status>
+    </ReviewIssue>
+    <ReviewIssue id="GBW2SH0J">
+      <ReviewIssueMeta>
+        <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-07-21 :: 19:13:56:515 CST</CreationDate>
+        <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-07-21 :: 19:14:06:391 CST</LastModificationDate>
+      </ReviewIssueMeta>
+      <ReviewerId>shixiaolei</ReviewerId>
+      <AssignedTo>chenhui</AssignedTo>
+      <File line="82">src/main/webapp/js/spark-service.js</File>
+      <Type>item.label.unset</Type>
+      <Severity>item.label.unset</Severity>
+      <Summary>不大好吧</Summary>
+      <Description></Description>
+      <Annotation></Annotation>
+      <Revision></Revision>
+      <Resolution>item.label.unset</Resolution>
+      <Status>item.status.label.open</Status>
+    </ReviewIssue>
+  </Review>
+</Review>

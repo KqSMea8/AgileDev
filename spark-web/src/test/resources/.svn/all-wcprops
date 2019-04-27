@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/iit/!svn/ver/13437/trunk/spark/spark-web/src/test/resources
+END
+applicationContext-remote.xml
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/iit/!svn/ver/8381/trunk/spark/spark-web/src/test/resources/applicationContext-remote.xml
+END
+applicationContext-test.xml
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/iit/!svn/ver/8381/trunk/spark/spark-web/src/test/resources/applicationContext-test.xml
+END
+applicationContext-security-acl-test.xml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/iit/!svn/ver/4993/trunk/spark/spark-web/src/test/resources/applicationContext-security-acl-test.xml
+END
+spark-test.properties
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/iit/!svn/ver/13213/trunk/spark/spark-web/src/test/resources/spark-test.properties
+END
+applicationContext-security-test.xml
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/iit/!svn/ver/4774/trunk/spark/spark-web/src/test/resources/applicationContext-security-test.xml
+END
+logback-test.xml
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/iit/!svn/ver/3769/trunk/spark/spark-web/src/test/resources/logback-test.xml
+END

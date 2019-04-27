@@ -1,0 +1,673 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="shixiaolei,chenhui,guolin">
+  <ReviewIssue id="GFS1Z82W">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 18:18:56:552 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 18:19:21:919 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>tianyusong</AssignedTo>
+    <File line="123">src/main/java/com/baidu/spark/model/card/property/CardPropertyValue.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>缺少javadoc</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GFS20402">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 18:19:37:922 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 18:32:53:437 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>tianyusong</AssignedTo>
+    <File line="9">src/main/java/com/baidu/spark/service/CardEmportService.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>缺少javadoc，类名写错了，应该叫ExportImport</Summary>
+    <Description>下面的常量也缺乏javadoc</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GFS234HB">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 18:21:58:511 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 18:32:44:963 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>tianyusong</AssignedTo>
+    <File line="20">src/main/java/com/baidu/spark/service/impl/CardEmportServiceImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>应该是ExportImport，缺少javadoc</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GFS24WYZ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 18:23:22:091 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 18:26:00:184 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>tianyusong</AssignedTo>
+    <File line="30">src/main/java/com/baidu/spark/service/impl/CardEmportServiceImpl.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>不要使用printStackTrace()</Summary>
+    <Description>因为printStackTrace会将异常信息输出到stdout，这样日志就无法控制这些异常的输出位置，而且栈可以虽然可以定位到错误代码行，却不能提供更加详细的异常信息，也就是说必须去查看代码才能知道到底是发生了什么错误
+应该使用logger.error来输入异常，并给出相对友好的异常信息</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GFS28LHD">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 18:26:13:825 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 18:32:38:684 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>tianyusong</AssignedTo>
+    <File line="29">src/main/java/com/baidu/spark/service/impl/CardEmportServiceImpl.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>应该拦截更加细致的异常</Summary>
+    <Description>尽量不要拦截最顶级异常Exception，因为这样会包括中间可能发生的任何错误（也许不是outPutToResponse）所产生的，而那一类异常可能不是我们程序逻辑真的希望在此处处理的
+而且对于try catch中有多个checked异常的情况，应该尽量拆开来catch，一般来说不同的异常应该有着不同的逻辑
+
+这里最好改为catch(IOException e)，以防止内部有其他的RuntimeException（甚至有可能是outPutToResponse抛出来的）</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GFS2I6XX">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 18:33:41:541 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 18:38:21:127 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>tianyusong</AssignedTo>
+    <File line="36">src/main/java/com/baidu/spark/service/impl/CardEmportServiceImpl.java</File>
+    <Type>item.type.label.optimization</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Assert断言位置不正确</Summary>
+    <Description>这个Assert断言应该出现在generateExcelFile里
+虽然现在generateExcelData是出现在generateExcelFile的第一位，但是有可能之后的变更会导致那行代码并不在第一行，就可能出现程序逻辑判断不足的问题
+
+另外，private方法里有时可以考虑省略Assert断言，因为一个类里面的private方法一般来说是内聚的
+如果在未来扩展了新的public方法调用此private方法，那么space也应该在新的public方法中进行断言</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GFS2ORWY">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 18:38:48:658 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 18:41:14:480 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>tianyusong</AssignedTo>
+    <File line="41">src/main/java/com/baidu/spark/service/impl/CardEmportServiceImpl.java</File>
+    <Type>item.type.label.optimization</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>实例化ArrayList的时候应该给出初始值</Summary>
+    <Description>由于ArrayList的内部实现是array，因此实例化ArrayList的时候给出初始值可以节约空间使用
+在这里应该使用new ArrayList(0)
+更进一步可以使用
+cardList = java.util.Collections.emptyList();
+以节约实例化所损耗的时间</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GFS2TJTY">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 18:42:31:462 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 18:42:58:988 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>tianyusong</AssignedTo>
+    <File line="67">src/main/java/com/baidu/spark/service/impl/CardEmportServiceImpl.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>在equals的时候，常量尽量写在左边</Summary>
+    <Description>可以避免null值带来的错误</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GFS2UL5O">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 18:43:19:836 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 18:44:54:093 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>tianyusong</AssignedTo>
+    <File line="68">src/main/java/com/baidu/spark/service/impl/CardEmportServiceImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>可以考虑三目</Summary>
+    <Description>首先代码格式建议总是使用大括号
+然后像这样的情景，为了节省代码行，可以考虑使用三目运算
+return null == card.getCreatedUser() ? "" : card.getCreatedUser().getName();</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GFS3HHHD">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 19:01:08:161 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 19:12:44:803 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>tianyusong</AssignedTo>
+    <File line="66">src/main/java/com/baidu/spark/service/impl/CardEmportServiceImpl.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>column的值可以考虑使用枚举</Summary>
+    <Description>只是建议
+
+使用枚举的缺点：
+* 需要在枚举类上放置一个static方法用于将一批字符串转换为一批枚举类，或是使用枚举类构造器来逐个转化字符串
+* Controller中需要调用枚举类对接收到的字符串进行转换
+
+使用枚举的优势：
+* 使得Service的设计更加优美，逻辑更加内敛（不会因为客户端的传入而崩溃）
+* 在Controller传入非正确类型时可以及时发现问题并处理
+* 在此方法中的可以使用switch或是==进行比较
+* 客户端（暂时是Controller）可以知道需要传入什么样的column并可以方便的在Controller层校验column的值是否正确（例如构造枚举时失败）
+* 对于枚举类可以提供一个成员方法例如getData(Card)来逐个按照不同类型返回实际值（这样这个getColumnData方法就基本可以省略掉了）
+* 同样可以在枚举类上提供getTitle方法使得下面的getColumnTitle也被省略掉，此类的代码将变得非常简单且易读</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GFS3SWBY">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 19:10:00:622 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 19:11:53:742 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>tianyusong</AssignedTo>
+    <File line="79">src/main/java/com/baidu/spark/service/impl/CardEmportServiceImpl.java</File>
+    <Type>item.type.label.optimization</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>使用else if</Summary>
+    <Description>Column的值总是只可能equals一个，所以应该使用else if以减少判断次数
+下面的getColumnTitle也一样</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GFS40UNU">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 19:16:11:706 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 19:17:28:094 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>tianyusong</AssignedTo>
+    <File line="41">src/main/java/com/baidu/spark/util/poi/ExcelData.java</File>
+    <Type>item.type.label.optimization</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>对于已知长度的ArrayList应该总是给出初始大小</Summary>
+    <Description>对这里来说应该是：
+ArrayList&lt;CellData&gt; rowTemp=new ArrayList&lt;CellData&gt;(rowCon.size());
+下面方法同</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GFS43DWQ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 19:18:09:962 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 19:18:40:906 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>tianyusong</AssignedTo>
+    <File line="75">src/main/java/com/baidu/spark/util/poi/ExcelData.java</File>
+    <Type>item.type.label.optimization</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>可以考虑使用ObjectUtils</Summary>
+    <Description>可以写成这样
+ObjectUtils.toString(cellCon);</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GFS44HAY">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 19:19:01:018 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 19:19:10:845 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>tianyusong</AssignedTo>
+    <File line="99">src/main/java/com/baidu/spark/util/poi/ExcelData.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>这里不需要@return javadoc</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GFS4561E">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 19:19:33:074 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 19:19:42:544 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>tianyusong</AssignedTo>
+    <File line="128">src/main/java/com/baidu/spark/util/poi/ExcelData.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>可以考虑三目运算</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GFS46C7H">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 19:20:27:725 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 19:20:57:772 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>tianyusong</AssignedTo>
+    <File line="147">src/main/java/com/baidu/spark/util/poi/ExcelData.java</File>
+    <Type>item.type.label.optimization</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>对于空的List，应该使用Collections.emptyList()</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GFS47DDK">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 19:21:15:896 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 19:22:58:137 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>tianyusong</AssignedTo>
+    <File line="163">src/main/java/com/baidu/spark/util/poi/ExcelData.java</File>
+    <Type>item.type.label.optimization</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>ArrayList相关逻辑可以优化</Summary>
+    <Description>首先左侧应该写接口java.util.List
+然后对于下面的两个条件，应该实例化两个不同的ArrayList
+第一个为return Collections.emptyList()
+第二个为new ArrayList(currentRowData.size());</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GFS4GTWG">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 19:28:37:216 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 19:28:55:511 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>tianyusong</AssignedTo>
+    <File line="30">src/main/java/com/baidu/spark/util/poi/ExcelReader.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>不可能触发到的代码</Summary>
+    <Description>不可能触发到的代码</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GFS4IL04">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 19:29:58:996 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 19:33:26:087 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>tianyusong</AssignedTo>
+    <File line="50">src/main/java/com/baidu/spark/util/poi/ExcelReader.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>异常拦截问题</Summary>
+    <Description>如果确实希望拦截所有可能的异常，应该拦截RuntimeException，下同</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GFS4JDHE">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 19:30:35:906 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 19:33:24:660 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>tianyusong</AssignedTo>
+    <File line="65">src/main/java/com/baidu/spark/util/poi/ExcelReader.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>异常拦截问题</Summary>
+    <Description>如果确实希望拦截所有可能的异常，应该拦截RuntimeException，下同</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GFS4JM4Y">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 19:30:47:122 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 19:31:49:135 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>tianyusong</AssignedTo>
+    <File line="51">src/main/java/com/baidu/spark/util/poi/ExcelReader.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>没必要封装一个方法</Summary>
+    <Description>应该直接用logger来进行记录，而不是logException方法里面的e.printStackTrace，下同</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GFS4LO3X">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 19:32:22:989 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 19:32:56:287 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>tianyusong</AssignedTo>
+    <File line="84">src/main/java/com/baidu/spark/util/poi/ExcelReader.java</File>
+    <Type>item.type.label.optimization</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>ArrayList实例化问题</Summary>
+    <Description>已知长度的ArrayList实例化时应该给出初始值
+同时左侧应该使用List接口</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GFS4NAJD">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 19:33:38:713 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 19:34:11:749 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>tianyusong</AssignedTo>
+    <File line="113">src/main/java/com/baidu/spark/util/poi/ExcelReader.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>考虑优化</Summary>
+    <Description>return ObjectUtils.toString(cell); 即可</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GFS4PD2K">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 19:35:15:308 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 19:35:28:273 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>tianyusong</AssignedTo>
+    <File line="58">src/main/java/com/baidu/spark/util/poi/ExcelWriter.java</File>
+    <Type>item.type.label.optimization</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>此处只需要声明，不需要实例化</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GFS4PW14">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 19:35:39:880 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 19:36:18:740 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>tianyusong</AssignedTo>
+    <File line="59">src/main/java/com/baidu/spark/util/poi/ExcelWriter.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>变量声明建议</Summary>
+    <Description>声明的变量尽量放到要使用的最近的一个scope中，不需要像js一样都声明到顶部</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GFS4QWMY">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 19:36:27:322 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 19:36:38:798 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>tianyusong</AssignedTo>
+    <File line="57">src/main/java/com/baidu/spark/util/poi/ExcelWriter.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>左侧应该使用List接口</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GFS4UHJC">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 19:39:14:376 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 19:40:12:247 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>tianyusong</AssignedTo>
+    <File line="111">src/main/java/com/baidu/spark/util/poi/ExcelWriter.java</File>
+    <Type>item.type.label.optimization</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>可以不需要为address赋null值</Summary>
+    <Description>此处可以直接改为else，就不需要为address赋初值了
+else {
+    sheet.addMergedRegion(null);
+}</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GFS4YNLU">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 19:42:28:866 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 19:43:01:584 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>tianyusong</AssignedTo>
+    <File line="175">src/main/java/com/baidu/spark/util/poi/ExcelWriter.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>考虑三目运算</Summary>
+    <Description>cell.setCellStyle(specialStyle == null ? specialStyle : defaultStyle);</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GFS50HBT">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 19:43:54:041 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 19:44:05:879 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>tianyusong</AssignedTo>
+    <File line="242">src/main/java/com/baidu/spark/util/poi/ExcelWriter.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>不要在代码里使用System.out.println</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GFS50Y68">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 19:44:15:872 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 19:44:25:371 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>tianyusong</AssignedTo>
+    <File line="241">src/main/java/com/baidu/spark/util/poi/ExcelWriter.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>应该仅拦截IOException</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GFS535E5">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 19:45:58:541 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 19:46:12:776 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>tianyusong</AssignedTo>
+    <File line="256">src/main/java/com/baidu/spark/util/poi/ExcelWriter.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>没有处理oriFilename为null的情况</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GFS545XB">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 19:46:45:887 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 19:47:13:935 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>tianyusong</AssignedTo>
+    <File line="270">src/main/java/com/baidu/spark/util/poi/ExcelWriter.java</File>
+    <Type>item.type.label.optimization</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>不需要logException，并且应该使用logger记录日志而不是printStackTrace</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GFS57A0V">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 19:49:11:167 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 19:49:47:686 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>tianyusong</AssignedTo>
+    <File line="786">src/main/webapp/js/pages/cards/list.js</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>变量声明应该总是写在顶部，下同</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GFS59AZV">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 19:50:45:739 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 19:56:02:660 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>tianyusong</AssignedTo>
+    <File line="798">src/main/webapp/js/pages/cards/list.js</File>
+    <Type>item.type.label.optimization</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>程序应该尽量使用通用第三方API而非私有封装的公共API</Summary>
+    <Description>私有封装的API会增加系统复杂度，增加其他开发者学习成本，而且被其他开发者接受度比较小（因为学习私有API只有在这个系统或是这个公司里才有用，所以会对学习私有API产生抗拒）
+jQuery可以直接获取$("[name=xxx]").val()</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GFS5MTDL">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 20:01:16:089 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 20:04:34:879 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>tianyusong</AssignedTo>
+    <File line="86">src/main/java/com/baidu/spark/web/CardEmportController.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>抛出异常错误，下同</Summary>
+    <Description>只有对ajax调用才抛出ResponseStatusException，否则抛出UnhandledViewException
+如果是ajax调用，应该以/ajax/开头</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GFS5OEXX">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 20:02:30:693 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 20:04:00:115 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>tianyusong</AssignedTo>
+    <File line="95">src/main/java/com/baidu/spark/web/CardEmportController.java</File>
+    <Type>item.type.label.optimization</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>只是建议</Summary>
+    <Description>如果按照CardEmportServiceImpl中的对枚举类的建议，这里可以在枚举类上封装一个静态方法用于给出一系列的枚举元素的list，之后也不需要toArray再combine了</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GFS5RBUW">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 20:04:46:664 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 20:05:30:852 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>tianyusong</AssignedTo>
+    <File line="144">src/main/java/com/baidu/spark/web/CardEmportController.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>不需要getter</Summary>
+    <Description>IoC不需要getter
+同时很多其他情况也是不需要getter的
+应该尽量少的暴露接口</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

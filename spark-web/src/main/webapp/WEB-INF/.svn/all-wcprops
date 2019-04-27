@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/iit/!svn/ver/13547/trunk/spark/spark-web/src/main/webapp/WEB-INF
+END
+spark-servlet.xml
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/iit/!svn/ver/6215/trunk/spark/spark-web/src/main/webapp/WEB-INF/spark-servlet.xml
+END
+web.xml
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/iit/!svn/ver/13498/trunk/spark/spark-web/src/main/webapp/WEB-INF/web.xml
+END

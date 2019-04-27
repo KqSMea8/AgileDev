@@ -1,0 +1,293 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Review id="shixiaolei,chenhui,guolin">
+  <ReviewIssue id="GFS45JY3">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 19:19:51:099 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 19:20:20:583 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>shixiaolei</ReviewerId>
+    <AssignedTo>tianyusong</AssignedTo>
+    <File line="23">src/main/java/com/baidu/spark/service/impl/CardEmportServiceImpl.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>如果可能尽量不要在service层有request/response</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GFS46I06">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 19:20:35:238 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 19:20:41:271 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>shixiaolei</ReviewerId>
+    <AssignedTo>tianyusong</AssignedTo>
+    <File line="30">src/main/java/com/baidu/spark/service/impl/CardEmportServiceImpl.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>用logger</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GFS46QHN">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 19:20:46:235 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 19:20:52:431 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>shixiaolei</ReviewerId>
+    <AssignedTo>tianyusong</AssignedTo>
+    <File line="32">src/main/java/com/baidu/spark/service/impl/CardEmportServiceImpl.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>这个没用</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GFS4A1IO">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 19:23:20:496 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 19:23:49:663 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>shixiaolei</ReviewerId>
+    <AssignedTo>tianyusong</AssignedTo>
+    <File line="32">src/main/java/com/baidu/spark/service/CardEmportService.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>名字感觉可以更清楚一些。 generate感觉只是生成一个bean的味道</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GFS4B2EM">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 19:24:08:302 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 19:24:13:703 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>shixiaolei</ReviewerId>
+    <AssignedTo>tianyusong</AssignedTo>
+    <File line="24">src/main/java/com/baidu/spark/service/impl/CardEmportServiceImpl.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>各种Assert</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GFS4CRQ9">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 19:25:27:777 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 19:26:02:767 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>shixiaolei</ReviewerId>
+    <AssignedTo>tianyusong</AssignedTo>
+    <File line="44">src/main/java/com/baidu/spark/service/impl/CardEmportServiceImpl.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>还是觉得自己的也叫StringUtils不好 </Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GFS4EHAZ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 19:26:47:579 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 19:27:27:391 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>shixiaolei</ReviewerId>
+    <AssignedTo>tianyusong</AssignedTo>
+    <File line="71">src/main/java/com/baidu/spark/service/impl/CardEmportServiceImpl.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>应该用else if。因为只可能是一种情况，如果是if的话，每个if都要过</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GFS4FIZ9">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 19:27:36:405 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 19:28:10:279 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>shixiaolei</ReviewerId>
+    <AssignedTo>tianyusong</AssignedTo>
+    <File line="68">src/main/java/com/baidu/spark/service/impl/CardEmportServiceImpl.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>可以考虑把变量提取一下，然后用三目返回</Summary>
+    <Description>这样效率好一些 而且ms也好看些</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GFS4GI79">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 19:28:22:053 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 19:28:53:038 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>shixiaolei</ReviewerId>
+    <AssignedTo>tianyusong</AssignedTo>
+    <File line="97">src/main/java/com/baidu/spark/service/impl/CardEmportServiceImpl.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>是否需要考虑NullpointerException的情况，至少catch住然后continue？</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GFS4I18Z">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 19:29:33:395 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 19:30:50:150 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>shixiaolei</ReviewerId>
+    <AssignedTo>tianyusong</AssignedTo>
+    <File line="106">src/main/java/com/baidu/spark/service/impl/CardEmportServiceImpl.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>是不是初始化一个map更好些呢</Summary>
+    <Description>把CREATOR--》card.createdUser之类的初始化成map；&#13;
+而不是只初始化键</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GFS4K708">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 19:31:14:168 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 19:31:35:471 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>shixiaolei</ReviewerId>
+    <AssignedTo>tianyusong</AssignedTo>
+    <File line="40">src/main/java/com/baidu/spark/util/poi/CellData.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>为什么要声明为int 然后getter为short呢？</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GFS4L5CV">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 19:31:58:687 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 19:32:32:272 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>shixiaolei</ReviewerId>
+    <AssignedTo>tianyusong</AssignedTo>
+    <File line="28">src/main/java/com/baidu/spark/util/poi/ExcelData.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>不知用List做参数会不会有问题 如果没问题 建议用List&lt;CellData&gt;</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GFS4NR9E">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 19:34:00:386 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 19:34:13:287 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>shixiaolei</ReviewerId>
+    <AssignedTo>tianyusong</AssignedTo>
+    <File line="20">src/main/java/com/baidu/spark/util/poi/ExcelReader.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>poi的命名好挫==</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GFS4OR57">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 19:34:46:891 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 19:35:03:247 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>shixiaolei</ReviewerId>
+    <AssignedTo>tianyusong</AssignedTo>
+    <File line="37">src/main/java/com/baidu/spark/util/poi/ExcelReader.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>close应当放在finally里</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GFS4PYF5">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 19:35:42:977 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 19:35:53:960 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>shixiaolei</ReviewerId>
+    <AssignedTo>tianyusong</AssignedTo>
+    <File line="20">src/main/java/com/baidu/spark/util/poi/ExcelReader.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>同步问题</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GFS4QSVI">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 19:36:22:446 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 19:36:29:288 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>shixiaolei</ReviewerId>
+    <AssignedTo>tianyusong</AssignedTo>
+    <File line="153">src/main/java/com/baidu/spark/util/poi/ExcelReader.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>用logger</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GFS4RHGW">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 19:36:54:320 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-27 :: 19:37:05:959 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>shixiaolei</ReviewerId>
+    <AssignedTo>tianyusong</AssignedTo>
+    <File line="73">src/main/java/com/baidu/spark/util/poi/ExcelWriter.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>乘法提到循坏外</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

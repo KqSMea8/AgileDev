@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/iit/!svn/ver/13306/trunk/spark/spark-web/src/main/webapp/WEB-INF/jsp/groups
+END
+edit.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/iit/!svn/ver/13306/trunk/spark/spark-web/src/main/webapp/WEB-INF/jsp/groups/edit.jsp
+END
+groupuser.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/iit/!svn/ver/6756/trunk/spark/spark-web/src/main/webapp/WEB-INF/jsp/groups/groupuser.jsp
+END
+list.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/iit/!svn/ver/13306/trunk/spark/spark-web/src/main/webapp/WEB-INF/jsp/groups/list.jsp
+END

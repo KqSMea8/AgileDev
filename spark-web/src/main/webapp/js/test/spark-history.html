@@ -1,0 +1,468 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="UTF-8" />
+	<title>Spark.util.History Test Suite</title>
+
+	<script type="text/javascript" src="../jquery-1.4.2.min.js"></script>
+	<script type="text/javascript" src="../jquery.hashchange.js"></script>
+	<script type="text/javascript" src="../spark.js"></script>
+	<script type="text/javascript" src="../spark-history.js"></script>
+
+	<link rel="stylesheet" href="../qunit/qunit.css" type="text/css"/>
+	<script type="text/javascript" src="../qunit/qunit.js"></script>
+
+	<script type="text/javascript">
+	$(function() {
+		var h = Spark.util.History;
+		
+		module("Test hashchange", {
+			setup: function() {
+				h.destory();
+				location.hash = "";
+				h.initialize();
+			},
+			teardown: function() { 
+			}
+		});
+
+		// 初始化URL存在hash的测试
+		test("Callback called when '#x=100' in initial visited url.", function() {
+			expect(5);
+			stop();
+			// 当初始化URL中存在#x=100时，触发x回调
+			h.bind("x", function(state, oldState) {
+				ok(!oldState, "Old state 'undefined' on callback bind to 'x'.");
+				equals(state, "100", "New state '100' on callback bind to 'x'.");
+				start();
+			});
+			// 当初始化URL中存在#x=100时，触发全局回调
+			h.bind(function(module, state, oldState) {
+				equals(module, "x", "Module 'x' has been changed.");
+				ok(!oldState, "Old state 'undefined' on global callback.");
+				equals(state, "100", "New state '100' on global callback.");
+				start();
+			});
+			top.location.hash = "x=100";
+		});
+		
+		// (XXX 无法模拟出情况)点击页面链接导致hash变更的情况
+		$("#changeYTo200").trigger("click");
+		test("*** Callback called when click link to change hash.", function() {
+			stop();
+			ok(true, "*** Cannot fake click effects.");
+		});
+		
+		// 当由top.location.hash改变时
+		test("Callback called when location.hash has been changed.", function() {
+			expect(5);
+			stop();
+			// 当页面中点击链接导致#x=100时，触发x回调
+			h.bind("y", function(state, oldState) {
+				ok(!oldState, "Old state 'undefined' on callback bind to 'y'.");
+				equals(state, "200", "New state '200' on callback bind to 'y'.");
+				start();
+			});
+			// 当页面中点击链接导致#x=100时，触发全局回调
+			h.bind(function(module, state, oldState) {
+				equals(module, "y", "Module 'y' has been changed.");
+				ok(!oldState, "Old state 'undefined' on global callback.");
+				equals(state, "200", "New state '200' on global callback.");
+				start();
+			});
+			top.location.hash = "y=200";
+		});
+		
+		// 当URL中不存在hash时，执行go
+		test("Callback called when no hash in URL.", function() {
+			expect(5);
+			stop();
+			top.location.hash = "";
+			// 当URL中不存在hash时执行go("x", 200)时，触发x回调
+			h.bind("z", function(state, oldState) {
+				ok(!oldState, "Old state 'undefined' on callback bind to 'z'.");
+				equals(state, "300", "New state '300' on callback bind to 'z'.");
+				start();
+			});
+			// 当URL中不存在hash时执行go("x", 200)时，触发全局回调
+			h.bind(function(module, state, oldState) {
+				equals(module, "z", "Module 'z' has been changed.");
+				ok(!oldState, "Old state 'undefined' on global callback.");
+				equals(state, "300", "New state '300' on global callback.");
+				start();
+			});
+			h.go("z", 300);
+		});
+		
+		// 当URL中不存在z但存在其他hash时，执行go
+		test("Callback called when no z but others in hash.", function() {
+			expect(5);
+			stop();
+			top.location.hash = "x=100&y=200";
+			// 当URL中不存在x但存在其他hash时执行go("x", 200)时，触发x回调
+			h.bind("z", function(state, oldState) {
+				ok(!oldState, "Old state 'undefined' on callback bind to 'z'.");
+				equals(state, "300", "New state '300' on callback bind to 'z'.");
+				start();
+			}, false);
+			// 当URL中不存在x但存在其他hash时执行go("x", 200)时，触发全局回调
+			h.bind(function(module, state, oldState) {
+				equals(module, "z", "Module 'z' has been changed.");
+				ok(!oldState, "Old state 'undefined' on global callback.");
+				equals(state, "300", "New state '300' on global callback.");
+				start();
+			}, false);
+			h.go("z", 300);
+		});
+
+		// 当URL中存在x=100时执行go("x", 400)时
+		test("Callback called when already x in hash.", function() {
+			expect(5);
+			stop();
+			top.location.hash = "x=100";
+			// 当URL中存在x=100时执行go("x", 200)时，触发x回调
+			h.bind("x", function(state, oldState) {
+				equals(oldState, "100", "Old state '100' on callback bind to 'x'.");
+				equals(state, "400", "New state '400' on callback bind to 'x'.");
+				start();
+			}, false);
+			// 当URL中存在x=100时执行go("x", 200)时，触发全局回调
+			h.bind(function(module, state, oldState) {
+				equals(module, "x", "Module 'x' has been changed.");
+				equals(oldState, "100", "Old state '100' on global callback.");
+				equals(state, "400", "New state '400' on global callback.");
+				start();
+			}, false);
+			h.go("x", 400);
+		});
+
+		// 当URL中存在x=200时执行go("x", 200)时，不触发任何回调
+		test("Callback called when already x in hash.", function() {
+			expect(0);
+			stop();
+			top.location.hash = "x=200";
+			// 当URL中存在x=200时执行go("x", 200)时，不触发x回调
+			h.bind("x", function(state, oldState) {
+				ok(false, "Should not execute here.");
+				start();
+			}, false);
+			// 当URL中存在x=200时执行go("x", 200)时，不触发全局回调
+			h.bind(function(module, state, oldState) {
+				ok(false, "Should not execute here.");
+				start();
+			}, false);
+			h.go("x", 200);
+			ok(true, "Never execute any callback, because nothing changed.")
+		});
+
+		// 当回调函数被触发时，hash已经改变
+		test("Hash has been changed when callback invoke.", function() {
+			expect(1);
+			stop();
+			h.bind("x", function(state, oldState) {
+				equals(top.location.hash, "#x=200", "hash has been changed.");
+				start();
+			});
+			h.go("x", 200);
+		});
+
+		// 当回调函数绑定时，如果当前状态有值，则立即触发回调
+		test("Invoke callbacks on binding when states already has value.", function() {
+			expect(3);
+			stop();
+			top.location.hash = "x=100&y=200";
+			h.bind("x", function(state, oldState) {
+				equals(state, 100);
+				start();
+			});
+			var mark = { x: false, y: false };
+			h.bind(function(module, state, oldState) {
+				if (module == "x" && !mark.x) {
+					equals(state, 100);
+					mark.x = true;
+				}
+				else if (module == "y" && !mark.y) {
+					equals(state, 200);
+					mark.y = true;
+				}
+				else {
+					ok(false, "should not invoke.");
+				}
+				start();
+			});
+		});
+
+		// 测试go方法为主的测试模块
+		module("Test state, 'go' function", {
+			setup: function() {
+				h.destory();
+				location.hash = "";
+				h.initialize();
+			},
+			teardown: function() { 
+			}
+		});
+
+		// 与原有的module相互影响
+		test("Invoke 'go' function.", function() {
+			top.location.hash = "t=200";
+			h.go("i", "300");
+			equals(top.location.hash, "#t=200&i=300");
+		});
+		
+		// 多个module相互影响
+		test("Multipal modules.", function() {
+			h.go("t", "200");
+			h.go("i", "300");
+			equals(top.location.hash, "#t=200&i=300");
+		});
+		
+		// 多次执行go语句时状态正确转变
+		test("Invoke 'go' function many times.", function() {
+			expect(3);
+			stop();
+			window.xxx = 100;
+
+			var order = 0;
+			h.bind("t", function(state, oldState) {
+				if (order == 0 && state == "200" && !oldState) {
+					order = 1;
+					ok(true, "First state transition success.");
+				}
+				else if (order == 1 && state == "300" && oldState == "200") {
+					order = 2;
+					ok(true, "Second state transition success.");
+				}
+				else {
+					ok(false, "Unexpected state transition: " + oldState + " - " + state);
+				}
+				start();
+			});
+			h.go("t", "200");
+			h.go("t", "300");
+			h.go("i", "300");
+			equals(top.location.hash, "#t=300&i=300");
+		});
+		
+		// 测试多个module顺序问题
+		test("Modules order.", function() {
+			h.go("t", "200");
+			h.go("i", "300");
+			h.go("j", "what")
+			equals(top.location.hash, "#t=200&i=300&j=what", "initial order.");
+			h.go("j", "jquery");
+			h.go("t", "what");
+			h.go("i", 7);
+			equals(top.location.hash, "#t=what&i=7&j=jquery", "after several function 'go' invoked.");
+		});
+
+		// state包含编码，特殊字符，如：? # /
+		test("State encoding with special characters.", function() {
+			expect(5);
+			stop();
+			h.bind("qm", function(state, oldState) {
+				equals(state, "prefix?suffix", "question mark");
+				start();
+			});
+			h.bind("bm", function(state, oldState) {
+				equals(state, "prefix#fakeModule=90", "bookmark & equals mark");
+				start();
+			});
+			h.bind("fakeModule", function(state, oldState) {
+				ok(false, "Should never be invoked.")
+				start();
+			});
+			h.bind("pathSplit", function(state, oldState) {
+				equals(state, "prefix/suffix", "path split '/'");
+				start();
+			});
+			h.bind("chinese", function(state, oldState) {
+				equals(state, "中文问题", "chinese");
+				start();
+			});
+			h.go("qm", "prefix?suffix");
+			h.go("bm", "prefix#fakeModule=90");
+			h.go("pathSplit", "prefix/suffix");
+			h.go("chinese", "中文问题");
+			var querystring = location.href.indexOf("?") < 0 ? "" : location.href.substring(location.href.indexOf("?"));
+			equals(querystring.length, 0, "Keep query string clean.");
+		});
+
+		// module包含编码，特殊字符，如：? # /
+		test("Module encoding with special characters.", function() {
+			expect(5);
+			stop();
+			h.bind("?qm", function(state, oldState) {
+				equals(state, "KO", "question mark");
+				start();
+			});
+			h.bind("#bm", function(state, oldState) {
+				equals(state, "KO", "bookmark & equals mark");
+				start();
+			});
+			h.bind("/pathSplit", function(state, oldState) {
+				equals(state, "KO", "path split '/'");
+				start();
+			});
+			h.bind("中文问题", function(state, oldState) {
+				equals(state, "KO", "chinese");
+				start();
+			});
+			h.go("?qm", "KO");
+			h.go("#bm", "KO");
+			h.go("/pathSplit", "KO");
+			h.go("中文问题", "KO");
+			var querystring = location.href.indexOf("?") < 0 ? "" : location.href.substring(location.href.indexOf("?"));
+			equals(querystring.length, 0, "Keep query string clean.");
+		});
+
+		// 已存在包含encoded字符的URL解析
+		test("Analysis encoded bookmark.", function() {
+			expect(6);
+			stop();
+			var order = 0;
+			top.location.hash = "c=%5Bhaha%5D";
+			// specific
+			h.bind("c", function(state) {
+				// bind时触发一次
+				if (order == 0) {
+					equals(state, "[haha]");
+					order = 1;
+				}
+				// 之后的变更触发一次
+				else if (order == 2) {
+					equals(state, "[heihei]");
+					order = 3;
+				}
+			});
+			// generic
+			h.bind(function(module, state) {
+				equals(module, "c");
+				// bind时触发一次
+				if (order == 1) {
+					equals(state, "[haha]");
+					order = 2;
+				}
+				// 之后的变更触发一次
+				else if (order == 3) {
+					equals(state, "[heihei]");
+					order = -1;
+				}
+			});
+			top.location.hash = "c=%5Bheihei%5D";
+		});
+
+		// 通过直接设置字符串的方式使用go方法
+		test("Using 'go' function in direct string way.", function() {
+			expect(4);
+			stop();
+			h.bind("x", function(state) {
+				equals(state, 100);
+				start();
+			});
+			h.bind("y", function(state) {
+				equals(state, 200);
+				start();
+			});
+			// single parameter
+			h.go("x=100");
+			equals(top.location.hash, "#x=100");
+			// multipal parameters
+			h.go("x=100&y=200");
+			equals(top.location.hash, "#x=100&y=200");
+			// empty string, never invoke any function
+			h.go("");
+		});
+		
+
+		// 测试浏览器历史记录触发
+		module("Test state history", {
+			setup: function() {
+				h.destory();
+				location.hash = "";
+				h.initialize();
+			},
+			teardown: function() { 
+			}
+		});
+
+		// 测试后退，前进
+		test("*** History go back", function() {
+			//expect(8);
+			stop();
+			var order = 0;
+			h.bind("x", function(state, oldState) {
+				if (order === 0) {
+					equals(state, 100);
+					ok(!oldState);
+					order = 1;
+				}
+				else if (order === 1) {
+					equals(state, 200);
+					equals(oldState, 100);
+					order = 2;
+				}
+				else if (order === 2) {
+					equals(state, 100);
+					equals(oldState, 200);
+					order = 3;
+				}
+				else if (order === 3) {
+					ok(!state);
+					equals(oldState, 100);
+					order = 4;
+				}
+				else {
+					ok(false, "unexpected invoking.");
+				}
+				start();
+			});
+			h.go("x", 100);
+			h.go("x", 200);
+			//history.back();
+			//history.back();
+
+			ok(true, "QUnit not support history.back() function invoking so we ignore this case by using '人肉测试' instead.");
+		});
+
+		// 测试工具方法getHash
+		module("getHash", {
+			setup: function() {
+				h.initialize();
+			},
+			teardown: function() { 
+			}
+		});
+
+		test("smoke", function() {
+			var hash = "y=100&x=200";
+			top.location.hash = hash;
+			equals(h.getHash(), hash);
+			equals(h.getHash("y"), 100);
+			equals(h.getHash("x"), 200);
+			equals(h.getHash("z"), null);
+		});
+
+		test("encoded hash", function() {
+			var hash = "[haha]/+?#=";
+			top.location.hash = "y=" + encodeURIComponent(hash);
+			equals(h.getHash(), "y=" + hash);
+			equals(h.getHash("y"), hash);
+		});
+
+	});
+	</script>
+
+</head>
+<body>
+
+<h1 id="qunit-header">Spark.util.History Test Suite</h1>
+<h2 id="qunit-banner"></h2>
+<h2 id="qunit-userAgent"></h2>
+<ol id="qunit-tests">
+</ol>
+
+<a href="#y=200" id="changeYTo200">changeYTo200</a>
+
+</body>
+</html>

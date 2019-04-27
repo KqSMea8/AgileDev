@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/iit/!svn/ver/4997/trunk/spark/spark-web/src/main/java/com/baidu/spark/security/annotation
+END
+SecuredObj.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/iit/!svn/ver/4993/trunk/spark/spark-web/src/main/java/com/baidu/spark/security/annotation/SecuredObj.java
+END
+SecuredMethod.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/iit/!svn/ver/4993/trunk/spark/spark-web/src/main/java/com/baidu/spark/security/annotation/SecuredMethod.java
+END
+SecuredParam.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/iit/!svn/ver/4774/trunk/spark/spark-web/src/main/java/com/baidu/spark/security/annotation/SecuredParam.java
+END

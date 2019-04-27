@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/iit/!svn/ver/9089/trunk/spark/spark-web/src/main/java/com/baidu/spark/security
+END
+SparkAclHandlerService.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/iit/!svn/ver/5358/trunk/spark/spark-web/src/main/java/com/baidu/spark/security/SparkAclHandlerService.java
+END
+SparkAclAuthorizationStrategyImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/iit/!svn/ver/6170/trunk/spark/spark-web/src/main/java/com/baidu/spark/security/SparkAclAuthorizationStrategyImpl.java
+END
+PermissionService.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/iit/!svn/ver/6187/trunk/spark/spark-web/src/main/java/com/baidu/spark/security/PermissionService.java
+END
+SparkPermission.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/iit/!svn/ver/4647/trunk/spark/spark-web/src/main/java/com/baidu/spark/security/SparkPermission.java
+END
+SparkMutableAclService.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/iit/!svn/ver/4843/trunk/spark/spark-web/src/main/java/com/baidu/spark/security/SparkMutableAclService.java
+END
+SparkSystemResource.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/iit/!svn/ver/4601/trunk/spark/spark-web/src/main/java/com/baidu/spark/security/SparkSystemResource.java
+END
+SparkPermissionEnum.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/iit/!svn/ver/4601/trunk/spark/spark-web/src/main/java/com/baidu/spark/security/SparkPermissionEnum.java
+END

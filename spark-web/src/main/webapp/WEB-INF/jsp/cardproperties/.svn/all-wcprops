@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/iit/!svn/ver/13457/trunk/spark/spark-web/src/main/webapp/WEB-INF/jsp/cardproperties
+END
+edit.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/iit/!svn/ver/5851/trunk/spark/spark-web/src/main/webapp/WEB-INF/jsp/cardproperties/edit.jsp
+END
+new.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/iit/!svn/ver/5773/trunk/spark/spark-web/src/main/webapp/WEB-INF/jsp/cardproperties/new.jsp
+END
+editlistoption.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/iit/!svn/ver/13457/trunk/spark/spark-web/src/main/webapp/WEB-INF/jsp/cardproperties/editlistoption.jsp
+END
+list.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/iit/!svn/ver/5874/trunk/spark/spark-web/src/main/webapp/WEB-INF/jsp/cardproperties/list.jsp
+END
+delete.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/iit/!svn/ver/5761/trunk/spark/spark-web/src/main/webapp/WEB-INF/jsp/cardproperties/delete.jsp
+END

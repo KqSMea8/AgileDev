@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/iit/!svn/ver/13475/trunk/spark/spark-web/src/test/java/com/baidu/spark/atest/html
+END
+ElementRetriever.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/iit/!svn/ver/13446/trunk/spark/spark-web/src/test/java/com/baidu/spark/atest/html/ElementRetriever.java
+END
+Element.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/iit/!svn/ver/13475/trunk/spark/spark-web/src/test/java/com/baidu/spark/atest/html/Element.java
+END
+ElementPresent.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/iit/!svn/ver/13475/trunk/spark/spark-web/src/test/java/com/baidu/spark/atest/html/ElementPresent.java
+END
+Page.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/iit/!svn/ver/13446/trunk/spark/spark-web/src/test/java/com/baidu/spark/atest/html/Page.java
+END

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd"
+	default-lazy-init="true">
+
+	<!-- 讨论区调用ECMP BAVE的REST服务 -->
+	<bean id="baveRestTemplate" class="com.baidu.spark.util.RestTemplateFactory" lazy-init="false">
+		<qualifier type="BAVE"/>
+		<property name="hostname" value="${discussion.rest.hostname}" />
+		<property name="port" value="${discussion.rest.port}" />
+		<property name="contextPath" value="${discussion.rest.contextPath}" />
+	</bean>
+	
+		<!-- 讨论区调用UIC的REST服务 -->
+	<bean id="uicRestTemplate" class="com.baidu.spark.util.RestTemplateFactory" lazy-init="false">
+		<qualifier type="UIC"/>
+		<property name="hostname" value="${uic.rest.hostname}" />
+		<property name="port" value="${uic.rest.port}" />
+		<property name="contextPath" value="${uic.rest.contextPath}" />
+	</bean>
+	
+	<!-- XFire客户端的声明   取icafe项目列表-->
+	<bean id="icafeProjectWebService" class="org.codehaus.xfire.spring.remoting.XFireClientFactoryBean">
+		<property name="serviceClass" value="com.baidu.iit.icafe.outservice.spark.ISparkService" />
+		<property name="lookupServiceOnStartup" value="false"></property>
+		<property name="wsdlDocumentUrl" value="${server.icafepath}/xfire/SparkWSService?wsdl" />
+		<property name="properties">
+			<props>
+				<prop key="http.connection.manager.timeout">5000</prop>
+				<prop key="http.connection.timeout">10000</prop>
+				<prop key="http.timeout">50000</prop>
+				<prop key="max.connections.per.host">100</prop>
+				<prop key="max.total.connections">300</prop>
+			</props>
+		</property>
+	</bean>
+</beans>

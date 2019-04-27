@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/iit/!svn/ver/13437/trunk/spark/spark-web/src/test/resources/com/baidu/spark/service/integrate
+END
+UserAccessResolverTest.xml
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/iit/!svn/ver/4843/trunk/spark/spark-web/src/test/resources/com/baidu/spark/service/integrate/UserAccessResolverTest.xml
+END
+NotificationServiceTest.xml
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/iit/!svn/ver/6420/trunk/spark/spark-web/src/test/resources/com/baidu/spark/service/integrate/NotificationServiceTest.xml
+END
+ProjectServiceTest.xml
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/iit/!svn/ver/5859/trunk/spark/spark-web/src/test/resources/com/baidu/spark/service/integrate/ProjectServiceTest.xml
+END
+PermissionServiceTest.xml
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/iit/!svn/ver/6232/trunk/spark/spark-web/src/test/resources/com/baidu/spark/service/integrate/PermissionServiceTest.xml
+END
+CardServiceTest.xml
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/iit/!svn/ver/13319/trunk/spark/spark-web/src/test/resources/com/baidu/spark/service/integrate/CardServiceTest.xml
+END
+CardBatchServiceTest.xml
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/iit/!svn/ver/13437/trunk/spark/spark-web/src/test/resources/com/baidu/spark/service/integrate/CardBatchServiceTest.xml
+END
+CardHistoryServiceTest.xml
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/iit/!svn/ver/5859/trunk/spark/spark-web/src/test/resources/com/baidu/spark/service/integrate/CardHistoryServiceTest.xml
+END
+CardTypeServiceTest.xml
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/iit/!svn/ver/5859/trunk/spark/spark-web/src/test/resources/com/baidu/spark/service/integrate/CardTypeServiceTest.xml
+END
+SpaceServiceTest.xml
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/iit/!svn/ver/5859/trunk/spark/spark-web/src/test/resources/com/baidu/spark/service/integrate/SpaceServiceTest.xml
+END
+GroupServiceTest.xml
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/iit/!svn/ver/4843/trunk/spark/spark-web/src/test/resources/com/baidu/spark/service/integrate/GroupServiceTest.xml
+END
+SpaceCopierTest.xml
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/iit/!svn/ver/9183/trunk/spark/spark-web/src/test/resources/com/baidu/spark/service/integrate/SpaceCopierTest.xml
+END
+UserServiceTest.xml
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/iit/!svn/ver/8015/trunk/spark/spark-web/src/test/resources/com/baidu/spark/service/integrate/UserServiceTest.xml
+END

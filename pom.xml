@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+
+	<groupId>com.baidu</groupId>
+	<artifactId>spark</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<name>Spark Main Module</name>
+	<description>The module that constitutes the main spark.war</description>
+
+	<distributionManagement>
+		<repository>
+			<id>baidu_local</id>
+			<name>Baidu Local Repository</name>
+			<url>http://jx-scmpf-server.jx.baidu.com:8081/nexus/content/repositories/Baidu_Local</url>
+		</repository>
+		<site>
+			<id>spark-site</id>
+			<name>Spark Maven Site</name>
+			<url>scp://jx-iit-dev00.jx.baidu.com</url>
+		</site>
+	</distributionManagement>
+
+	<modules>
+		<module>spark-parent</module>
+		<module>spark-web</module>
+  </modules>
+
+	<build>
+		<defaultGoal>install</defaultGoal>
+
+	</build>
+  <profiles>
+		<profile>
+			<id>prod</id>
+			<build>
+				<plugins>
+					<!--删除output目录
+					<plugin>
+						<artifactId>maven-antrun-plugin</artifactId>
+						<executions>
+							<execution>
+								<phase>clean</phase>
+								<goals>
+									<goal>run</goal>
+								</goals>
+								<configuration>
+									<tasks>
+										<delete dir="./output"/>
+										<delete dir="./target"/>
+									</tasks>
+								</configuration>
+							</execution>
+						</executions>
+					</plugin>
+					-->
+					<!--copy war包-->
+					<plugin>
+						<artifactId>maven-antrun-plugin</artifactId>
+						<executions>
+							<execution>
+								<phase>test</phase>
+								<goals>
+									<goal>run</goal>
+								</goals>
+								<configuration>
+									<tasks>
+										<copy todir="./output" overwrite="true">
+											<fileset dir="spark-web/output">
+												<include name="*.war"/>
+											</fileset>
+										</copy>
+									</tasks>
+								</configuration>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
+
+</project>

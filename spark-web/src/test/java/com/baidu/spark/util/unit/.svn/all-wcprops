@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/iit/!svn/ver/6408/trunk/spark/spark-web/src/test/java/com/baidu/spark/util/unit
+END
+TemplateGeneratorTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/iit/!svn/ver/6408/trunk/spark/spark-web/src/test/java/com/baidu/spark/util/unit/TemplateGeneratorTest.java
+END
+MailSenderTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/iit/!svn/ver/6405/trunk/spark/spark-web/src/test/java/com/baidu/spark/util/unit/MailSenderTest.java
+END

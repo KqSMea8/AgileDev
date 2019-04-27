@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Review id="附件管理功能评审">
+  <ReviewIssue id="GFHUOAPF">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-20 :: 14:56:47:667 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-20 :: 14:58:08:955 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>chenhui</ReviewerId>
+    <AssignedTo>shixiaolei</AssignedTo>
+    <File></File>
+    <Type>item.type.label.clarity</Type>
+    <Severity>item.severity.label.trivial</Severity>
+    <Summary>注释与具体前端业务功能联系太紧密</Summary>
+    <Description>感觉如果从OO的角度来看，没那么容易理解。
+如果不考虑前端到底提供了什么功能和业务的话。</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GFHURU2K">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-20 :: 14:59:32:732 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-21 :: 14:12:51:830 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>chenhui</ReviewerId>
+    <AssignedTo>shixiaolei</AssignedTo>
+    <File></File>
+    <Type>item.type.label.optimization</Type>
+    <Severity>item.severity.label.trivial</Severity>
+    <Summary>OneToMany默认就是Lazy的，可以省略配置</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GFHUUM8B">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-20 :: 15:01:42:539 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-20 :: 15:01:52:767 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>chenhui</ReviewerId>
+    <AssignedTo>shixiaolei</AssignedTo>
+    <File></File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>这里这样是否合适？</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GFHVBXK7">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-20 :: 15:15:10:375 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-21 :: 13:40:49:086 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>chenhui</ReviewerId>
+    <AssignedTo>shixiaolei</AssignedTo>
+    <File></File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>觉得这里叫做getAttamentsList还是不太合适</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GFHVFQ3J">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-20 :: 15:18:07:327 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-21 :: 13:44:27:260 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>chenhui</ReviewerId>
+    <AssignedTo>shixiaolei</AssignedTo>
+    <File></File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>这里空集可以这种这个Collections.EMPTY_LIST</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GFHVLLMD">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-20 :: 15:22:41:461 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-20 :: 15:23:02:040 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>chenhui</ReviewerId>
+    <AssignedTo>shixiaolei</AssignedTo>
+    <File></File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.trivial</Severity>
+    <Summary>感觉这里的格式化方式有点不太一样，不太容易看清，呵呵</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

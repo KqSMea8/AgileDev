@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/iit/!svn/ver/13510/trunk/spark/spark-web/src/main/java/com/baidu/spark/model
+END
+Emailgroup.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/iit/!svn/ver/6575/trunk/spark/spark-web/src/main/java/com/baidu/spark/model/Emailgroup.java
+END
+Project.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/iit/!svn/ver/5327/trunk/spark/spark-web/src/main/java/com/baidu/spark/model/Project.java
+END
+Configuration.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/iit/!svn/ver/8359/trunk/spark/spark-web/src/main/java/com/baidu/spark/model/Configuration.java
+END
+GroupSpace.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/iit/!svn/ver/4647/trunk/spark/spark-web/src/main/java/com/baidu/spark/model/GroupSpace.java
+END
+UserView.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/iit/!svn/ver/9133/trunk/spark/spark-web/src/main/java/com/baidu/spark/model/UserView.java
+END
+QueryVO.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/iit/!svn/ver/11022/trunk/spark/spark-web/src/main/java/com/baidu/spark/model/QueryVO.java
+END
+Emailable.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/iit/!svn/ver/6575/trunk/spark/spark-web/src/main/java/com/baidu/spark/model/Emailable.java
+END
+User.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/iit/!svn/ver/13150/trunk/spark/spark-web/src/main/java/com/baidu/spark/model/User.java
+END
+OpType.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/iit/!svn/ver/8017/trunk/spark/spark-web/src/main/java/com/baidu/spark/model/OpType.java
+END
+OpLog.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/iit/!svn/ver/3052/trunk/spark/spark-web/src/main/java/com/baidu/spark/model/OpLog.java
+END
+QueryConditionVO.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/iit/!svn/ver/11022/trunk/spark/spark-web/src/main/java/com/baidu/spark/model/QueryConditionVO.java
+END
+QuerySortVO.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/iit/!svn/ver/11022/trunk/spark/spark-web/src/main/java/com/baidu/spark/model/QuerySortVO.java
+END
+Discussion.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/iit/!svn/ver/13053/trunk/spark/spark-web/src/main/java/com/baidu/spark/model/Discussion.java
+END
+SpaceSequence.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/iit/!svn/ver/5858/trunk/spark/spark-web/src/main/java/com/baidu/spark/model/SpaceSequence.java
+END
+SpaceView.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/iit/!svn/ver/9133/trunk/spark/spark-web/src/main/java/com/baidu/spark/model/SpaceView.java
+END
+Attachment.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/iit/!svn/ver/13342/trunk/spark/spark-web/src/main/java/com/baidu/spark/model/Attachment.java
+END
+Space.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/iit/!svn/ver/13474/trunk/spark/spark-web/src/main/java/com/baidu/spark/model/Space.java
+END
+Group.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/iit/!svn/ver/4665/trunk/spark/spark-web/src/main/java/com/baidu/spark/model/Group.java
+END

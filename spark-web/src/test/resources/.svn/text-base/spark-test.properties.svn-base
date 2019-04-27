@@ -1,0 +1,53 @@
+# Database settings
+datasource.driver=org.hsqldb.jdbcDriver
+datasource.url=jdbc:hsqldb:mem:testdb
+datasource.username=sa
+datasource.password=
+
+# Hibernate settings
+hibernate.dialect=org.hibernate.dialect.HSQLDialect
+hibernate.show_sql=false
+hibernate.format_sql=false
+hibernate.hbm2ddl.auto=create-drop
+hibernate.useCache=false
+# Lucene setting
+lucene.indexDirPath=d:/spark/indextest
+
+# SSO settings
+sso.cas.url.prefix=http://it.baidu.com:8082
+host.server.url.context=spark
+host.server.url.prefix=http://localhost:8080/spark-web
+
+# Restful Service for Discussion settings 
+discussion.rest.hostname=db-iit-prod03.vm.baidu.com
+discussion.rest.port=8080
+discussion.rest.contextPath=/api
+discussion.rest.token=3945f071fb0f0f5c2a998e43ceffe98f
+discussion.rest.sourceId=spark
+
+# Restful Service for UIC settings 
+uic.rest.hostname=it.baidu.com
+uic.rest.port=8086
+uic.rest.contextPath=/rest
+
+server.icafe=http://db-iit-dev102.vm.baidu.com
+server.icafeserver=${server.icafe}:8101
+server.icafepath=${server.icafeserver}/icafe4spark
+server.icafe.projectInfoUrl=${server.icafepath}/icafeproject/getProjectInfo.action?projectId\=
+
+#system setting
+system.encoding=utf-8
+system.defaultAdminAccount=chenhui
+#\u6240\u6709\u7528\u6237\u7684\u7528\u6237\u7ec4\u7684\u914d\u7f6e
+system.group.everyone.id=0
+system.group.everyone.namekey=everyoneGroupName
+
+# \u90ae\u4ef6\u53d1\u9001\u76f8\u5173\u914d\u7f6e
+mail.smtp.host=mail2-in.baidu.com
+mail.smtp.username=
+mail.smtp.password=
+mail.smtp.authenticate=false
+mail.system.sender=spark@baidu.com
+mail.max.receivers=45
+mail.debug=true
+mail.debug.receiver=chenhui@baidu.com

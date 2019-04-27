@@ -1,0 +1,11 @@
+#!/bin/bash
+RESOURCE_PATH=/home/work/opdir/tmp/SPARK/spark/opbin
+OPBIN_PATH=/home/work/opbin
+
+mkdir -p ${OPBIN_PATH}
+echo "old opbin:"
+ls -l ${OPBIN_PATH}/
+echo "update opbin"
+cp -rf ${RESOURCE_PATH}/* ${OPBIN_PATH}/
+echo "new opbin:"
+ls -l ${OPBIN_PATH}/

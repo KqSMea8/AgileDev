@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/iit/!svn/ver/13474/trunk/spark/spark-web/src/main/java/com/baidu/spark/dao
+END
+CardTypeDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/iit/!svn/ver/3525/trunk/spark/spark-web/src/main/java/com/baidu/spark/dao/CardTypeDao.java
+END
+CardPropertyValueDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/iit/!svn/ver/3309/trunk/spark/spark-web/src/main/java/com/baidu/spark/dao/CardPropertyValueDao.java
+END
+GenericDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/iit/!svn/ver/8359/trunk/spark/spark-web/src/main/java/com/baidu/spark/dao/GenericDao.java
+END
+CardPropertyDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/iit/!svn/ver/3898/trunk/spark/spark-web/src/main/java/com/baidu/spark/dao/CardPropertyDao.java
+END
+UserDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/iit/!svn/ver/2963/trunk/spark/spark-web/src/main/java/com/baidu/spark/dao/UserDao.java
+END
+SpaceSequenceDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/iit/!svn/ver/5060/trunk/spark/spark-web/src/main/java/com/baidu/spark/dao/SpaceSequenceDao.java
+END
+SpaceViewDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/iit/!svn/ver/9133/trunk/spark/spark-web/src/main/java/com/baidu/spark/dao/SpaceViewDao.java
+END
+AttachmentDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/iit/!svn/ver/8017/trunk/spark/spark-web/src/main/java/com/baidu/spark/dao/AttachmentDao.java
+END
+SpaceDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/iit/!svn/ver/4021/trunk/spark/spark-web/src/main/java/com/baidu/spark/dao/SpaceDao.java
+END
+CardHistoryDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/iit/!svn/ver/3468/trunk/spark/spark-web/src/main/java/com/baidu/spark/dao/CardHistoryDao.java
+END
+GroupDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/iit/!svn/ver/4568/trunk/spark/spark-web/src/main/java/com/baidu/spark/dao/GroupDao.java
+END
+Pagination.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/iit/!svn/ver/4786/trunk/spark/spark-web/src/main/java/com/baidu/spark/dao/Pagination.java
+END
+ProjectDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/iit/!svn/ver/5207/trunk/spark/spark-web/src/main/java/com/baidu/spark/dao/ProjectDao.java
+END
+ConfigurationDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/iit/!svn/ver/8359/trunk/spark/spark-web/src/main/java/com/baidu/spark/dao/ConfigurationDao.java
+END
+GroupSpaceDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/iit/!svn/ver/4647/trunk/spark/spark-web/src/main/java/com/baidu/spark/dao/GroupSpaceDao.java
+END
+SpacegroupDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/iit/!svn/ver/8901/trunk/spark/spark-web/src/main/java/com/baidu/spark/dao/SpacegroupDao.java
+END
+CardDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/iit/!svn/ver/3299/trunk/spark/spark-web/src/main/java/com/baidu/spark/dao/CardDao.java
+END
+UserViewDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/iit/!svn/ver/9133/trunk/spark/spark-web/src/main/java/com/baidu/spark/dao/UserViewDao.java
+END

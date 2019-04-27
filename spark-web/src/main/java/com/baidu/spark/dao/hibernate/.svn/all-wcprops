@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/iit/!svn/ver/13474/trunk/spark/spark-web/src/main/java/com/baidu/spark/dao/hibernate
+END
+SpaceDaoHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/iit/!svn/ver/13474/trunk/spark/spark-web/src/main/java/com/baidu/spark/dao/hibernate/SpaceDaoHibernate.java
+END
+CardHistoryDaoHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/iit/!svn/ver/3468/trunk/spark/spark-web/src/main/java/com/baidu/spark/dao/hibernate/CardHistoryDaoHibernate.java
+END
+GroupDaoHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/iit/!svn/ver/4568/trunk/spark/spark-web/src/main/java/com/baidu/spark/dao/hibernate/GroupDaoHibernate.java
+END
+ProjectDaoHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/iit/!svn/ver/6169/trunk/spark/spark-web/src/main/java/com/baidu/spark/dao/hibernate/ProjectDaoHibernate.java
+END
+ConfigurationDaoHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/iit/!svn/ver/8359/trunk/spark/spark-web/src/main/java/com/baidu/spark/dao/hibernate/ConfigurationDaoHibernate.java
+END
+SpacegroupDaoHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/iit/!svn/ver/8901/trunk/spark/spark-web/src/main/java/com/baidu/spark/dao/hibernate/SpacegroupDaoHibernate.java
+END
+GroupSpaceDaoHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/iit/!svn/ver/4728/trunk/spark/spark-web/src/main/java/com/baidu/spark/dao/hibernate/GroupSpaceDaoHibernate.java
+END
+CardDaoHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/iit/!svn/ver/3299/trunk/spark/spark-web/src/main/java/com/baidu/spark/dao/hibernate/CardDaoHibernate.java
+END
+UserViewDaoHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/iit/!svn/ver/9133/trunk/spark/spark-web/src/main/java/com/baidu/spark/dao/hibernate/UserViewDaoHibernate.java
+END
+CardTypeDaoHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/iit/!svn/ver/3619/trunk/spark/spark-web/src/main/java/com/baidu/spark/dao/hibernate/CardTypeDaoHibernate.java
+END
+CardPropertyValueDaoHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/iit/!svn/ver/3299/trunk/spark/spark-web/src/main/java/com/baidu/spark/dao/hibernate/CardPropertyValueDaoHibernate.java
+END
+GenericDaoHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/iit/!svn/ver/10864/trunk/spark/spark-web/src/main/java/com/baidu/spark/dao/hibernate/GenericDaoHibernate.java
+END
+UserDaoHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/iit/!svn/ver/2963/trunk/spark/spark-web/src/main/java/com/baidu/spark/dao/hibernate/UserDaoHibernate.java
+END
+CardPropertyDaoHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/iit/!svn/ver/3898/trunk/spark/spark-web/src/main/java/com/baidu/spark/dao/hibernate/CardPropertyDaoHibernate.java
+END
+SpaceSequenceDaoHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/iit/!svn/ver/5060/trunk/spark/spark-web/src/main/java/com/baidu/spark/dao/hibernate/SpaceSequenceDaoHibernate.java
+END
+SpaceViewDaoHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/iit/!svn/ver/9133/trunk/spark/spark-web/src/main/java/com/baidu/spark/dao/hibernate/SpaceViewDaoHibernate.java
+END
+AttachmentDaoHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/iit/!svn/ver/8017/trunk/spark/spark-web/src/main/java/com/baidu/spark/dao/hibernate/AttachmentDaoHibernate.java
+END

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+	<spaces id="1" name="测试空间1" prefix_code="spark" type="0" />
+	<space_sequence id="1" next_card_seq_num="6" />
+	<users id="1" username="zhangjing"/>
+	<users id="2" username="chenhui"/>
+	<card_type id="1" local_id="1" name="测试类型1" space_id="1" parent_card_type_id="[NULL]" recursive="0"/>
+	<card_type id="2" local_id="2" name="测试类型2" space_id="1" parent_card_type_id="1" recursive="0"/>
+	<card_type id="3" local_id="3" name="测试类型2" space_id="1" parent_card_type_id="2" recursive="0"/>
+	<card_type id="4" local_id="4" name="测试类型2" space_id="1" parent_card_type_id="2" recursive="1"/>
+	<card_type id="5" local_id="5" name="测试类型2" space_id="1" parent_card_type_id="4" recursive="1"/>
+	<card_property id="1" local_id="1" space_id="1" name="整数字段1" type="number" sort="1"/>
+	<card_property id="2" local_id="2" space_id="1" name="字符串字段1" type="text" sort="2"/>
+	
+	<card_type_property card_type_id="1" card_property_id="1"/>
+	<card_type_property card_type_id="2" card_property_id="2"/>
+	
+	<card id="1" title="我是一张卡片1" detail="我是卡片1的描述" space_id="1" card_type="2" sequence="1" super_id="[NULL]" created_user="1"/>
+	<card id="2" title="我是一张卡片2" detail="我是卡片2的描述" space_id="1" card_type="2" sequence="2" super_id="1" created_user="1"/>
+	<card id="3" title="我是一张卡片3" detail="我是卡片3的描述" space_id="1" card_type="1" sequence="3" super_id="[NULL]" created_user="1"/>
+	<card id="4" title="我是一张卡片4" detail="我是卡片4的描述" space_id="1" card_type="2" sequence="4" super_id="2" created_user="1"/>
+	<card id="5" title="我是一张卡片5" detail="我是卡片5的描述" space_id="1" card_type="2" sequence="5" super_id="2" created_user="1"/>
+	<card id="6" title="我是一张卡片6" detail="我是卡片6的描述" space_id="1" card_type="1" sequence="6" super_id="[NULL]" created_user="1"/>
+	<card id="7" title="我是一张卡片7" detail="我是卡片7的描述" space_id="1" card_type="5" sequence="7" super_id="[NULL]" created_user="1"/>
+	<card id="8" title="我是一张卡片8" detail="我是卡片8的描述" space_id="1" card_type="4" sequence="8" super_id="1" created_user="1"/>
+	<card id="9" title="我是一张卡片9" detail="我是卡片9的描述" space_id="1" card_type="5" sequence="9" super_id="8" created_user="1"/>
+	<card id="10" title="我是一张卡片10" detail="我是卡片9的描述" space_id="1" card_type="5" sequence="10" super_id="9" created_user="1"/>
+	<card_history id="1" card_id="1" op_user_id="1" op_time="2010-06-24 13:14:23" op_type="0" title="我是一张卡片1" detail="我是卡片1的描述" 
+			data='{"id":"1","space":"1","parent":"0","type":"1","title":"我是一张卡片1","detail":"我是卡片1的描述","createdUser":"1","createdTime":"","sequence":"1","properties":[{"id":"1","name":"整数字段1","value":"2"}]}' 
+			diff_data='{"isNew":true,"diffList":null}' />
+	<card_property_value id="1" card_id="1" card_property_id="1" type="number" intvalue="2" strvalue="[NULL]" timevalue="[NULL]"/>
+	<card_property_value id="2" card_id="5" card_property_id="1" type="number" intvalue="2"/>
+	<card_property_value id="3" card_id="2" card_property_id="1" type="number" intvalue="3"/>
+	<card_property_value id="4" card_id="2" card_property_id="2" type="text" strvalue="2" intvalue="2"/>
+	<icafe_project id="1" icafe_project_id="1" name="项目1" space_id="1"/>
+	<icafe_project id="2" icafe_project_id="2" name="项目2" space_id="1"/>
+</dataset>

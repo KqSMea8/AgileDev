@@ -1,0 +1,30 @@
+#!/bin/bash
+DEPLOY_PATH=/home/work/workdir/apps
+RESOURCE_PATH=/home/work/opdir/tmp/SPARK/
+
+RUN_MODE=$1
+if [ -z ${RUN_MODE} ]
+then
+        echo "please give me RUNMODE. Usage:  $0 [nightly|beta|release|etc.]"
+        exit 1
+else
+        echo "$0 ${RUN_MODE}..."
+fi
+
+
+echo "Deploy spark..."
+rm -rf $DEPLOY_PATH/spark/
+cd ${RESOURCE_PATH} || exit 1
+cp -r spark $DEPLOY_PATH/
+cd $DEPLOY_PATH/spark
+ln -s /home/work/workdir/spark/upload upload
+echo "Config spark..."
+cd $DEPLOY_PATH/spark/WEB-INF/classes/$RUN_MODE || exit 1
+cp -rf $DEPLOY_PATH/spark/WEB-INF/classes/$RUN_MODE/* $DEPLOY_PATH/spark/WEB-INF/classes/
+
+if [ ${RUN_MODE} = "release" ]
+then
+        cp /home/work/opdir/configfile/sparkdb.properties $DEPLOY_PATH/spark/WEB-INF/classes/sparkdb.properties
+        md5sum /home/work/opdir/configfile/sparkdb.properties $DEPLOY_PATH/spark/WEB-INF/classes/sparkdb.properties
+fi
+echo "Finish deploy..."

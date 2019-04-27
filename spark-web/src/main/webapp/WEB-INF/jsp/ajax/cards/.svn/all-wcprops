@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/iit/!svn/ver/9216/trunk/spark/spark-web/src/main/webapp/WEB-INF/jsp/ajax/cards
+END
+attachment.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/iit/!svn/ver/9216/trunk/spark/spark-web/src/main/webapp/WEB-INF/jsp/ajax/cards/attachment.jsp
+END
+cards_for_parent_select.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/iit/!svn/ver/8853/trunk/spark/spark-web/src/main/webapp/WEB-INF/jsp/ajax/cards/cards_for_parent_select.jsp
+END

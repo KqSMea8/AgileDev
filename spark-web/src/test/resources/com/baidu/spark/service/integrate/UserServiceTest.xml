@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+	<users id="1" username="chenhui" name="陈惠" email="chenhui@baidu.com" uic_id="8428" locked="false"/>
+	<users id="2" username="guolin" name="郭凛" email="guolin@baidu.com"  uic_id="7265" locked="false"/>
+	<users id="3" username="lizhi" name="离职" email="lizhi@baidu.com"  uic_id="8888" locked="true"/>
+</dataset>

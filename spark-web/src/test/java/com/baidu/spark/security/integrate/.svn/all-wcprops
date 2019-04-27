@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/iit/!svn/ver/13475/trunk/spark/spark-web/src/test/java/com/baidu/spark/security/integrate
+END
+DummyAclCache.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/iit/!svn/ver/4728/trunk/spark/spark-web/src/test/java/com/baidu/spark/security/integrate/DummyAclCache.java
+END
+UserAccessResolverTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/iit/!svn/ver/13475/trunk/spark/spark-web/src/test/java/com/baidu/spark/security/integrate/UserAccessResolverTest.java
+END
+PermissionServiceTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/iit/!svn/ver/6219/trunk/spark/spark-web/src/test/java/com/baidu/spark/security/integrate/PermissionServiceTest.java
+END
+SparkAclHandlerTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/iit/!svn/ver/6236/trunk/spark/spark-web/src/test/java/com/baidu/spark/security/integrate/SparkAclHandlerTest.java
+END

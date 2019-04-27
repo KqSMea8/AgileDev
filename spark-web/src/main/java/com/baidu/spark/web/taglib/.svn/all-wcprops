@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/iit/!svn/ver/13546/trunk/spark/spark-web/src/main/java/com/baidu/spark/web/taglib
+END
+DecodeTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/iit/!svn/ver/5701/trunk/spark/spark-web/src/main/java/com/baidu/spark/web/taglib/DecodeTag.java
+END
+MessageTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/iit/!svn/ver/4119/trunk/spark/spark-web/src/main/java/com/baidu/spark/web/taglib/MessageTag.java
+END
+ConfigTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/iit/!svn/ver/10911/trunk/spark/spark-web/src/main/java/com/baidu/spark/web/taglib/ConfigTag.java
+END
+DateFormatTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/iit/!svn/ver/11026/trunk/spark/spark-web/src/main/java/com/baidu/spark/web/taglib/DateFormatTag.java
+END
+OutTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/iit/!svn/ver/13491/trunk/spark/spark-web/src/main/java/com/baidu/spark/web/taglib/OutTag.java
+END
+SparkAclTaglib.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/iit/!svn/ver/13546/trunk/spark/spark-web/src/main/java/com/baidu/spark/web/taglib/SparkAclTaglib.java
+END
+TemplateTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/iit/!svn/ver/10866/trunk/spark/spark-web/src/main/java/com/baidu/spark/web/taglib/TemplateTag.java
+END
+UrlTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/iit/!svn/ver/4364/trunk/spark/spark-web/src/main/java/com/baidu/spark/web/taglib/UrlTag.java
+END

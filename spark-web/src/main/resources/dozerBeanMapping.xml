@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://dozer.sourceforge.net" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://dozer.sourceforge.net http://dozer.sourceforge.net/schema/beanmapping.xsd">
+
+	<configuration>
+		<stop-on-errors>true</stop-on-errors>
+		<date-format>yyyy-MM-dd</date-format>
+		<wildcard>true</wildcard>
+		<trim-strings>false</trim-strings>
+	</configuration>
+	
+	<mapping map-null="false">
+		<class-a>com.baidu.spark.model.card.property.CardPropertyValue</class-a>
+		<class-b>com.baidu.spark.model.card.property.CardPropertyValue</class-b>
+		<field copy-by-reference="true">
+			<a set-method="setCardProperty">cardProperty</a>
+			<b set-method="setCardProperty">cardProperty</b>
+		</field>
+	</mapping>
+	
+	<mapping map-null="false" wildcard="false">
+		<class-a>com.baidu.spark.model.card.property.CardProperty</class-a>
+		<class-b>com.baidu.spark.model.card.property.CardProperty</class-b>
+		<field>
+			<a>id</a>
+			<b>id</b>
+		</field>
+	</mapping>
+	
+	<mapping map-id="cardType-availableField4Search">
+		<class-a>com.baidu.spark.model.card.CardType</class-a>
+		<class-b>com.baidu.spark.model.card.CardType</class-b>
+		<field map-id="cardProperty-availableField4Search">
+			<a>cardProperties</a>
+			<b>cardProperties</b>
+			<a-hint>com.baidu.spark.model.card.property.DummyProperty</a-hint>
+		</field>
+		<field-exclude>
+			<a>children</a>
+			<b>children</b>
+		</field-exclude>
+		<field map-id="cardType-basic">
+			<a>parent</a>
+			<b>parent</b>
+		</field>
+		<field map-id="space-basic">
+			<a>space</a>
+			<b>space</b>
+		</field>
+	</mapping>
+	
+	<mapping map-id="cardType-basic" map-null="false">
+		<class-a>com.baidu.spark.model.card.CardType</class-a>
+		<class-b>com.baidu.spark.model.card.CardType</class-b>
+		<field-exclude>
+			<a>cardProperties</a>
+			<b>cardProperties</b>
+		</field-exclude>
+		<field-exclude>
+			<a>children</a>
+			<b>children</b>
+		</field-exclude>
+		<field-exclude>
+			<a>parent</a>
+			<b>parent</b>
+		</field-exclude>
+		<field-exclude>
+			<a>space</a>
+			<b>space</b>
+		</field-exclude>
+	</mapping>
+	
+	<mapping map-id="space-basic">
+		<class-a>com.baidu.spark.model.Space</class-a>
+		<class-b>com.baidu.spark.model.Space</class-b>
+		<field-exclude>
+			<a>cardTypes</a>
+			<b>cardTypes</b>
+		</field-exclude>
+		<field-exclude>
+			<a>cardProperties</a>
+			<b>cardProperties</b>
+		</field-exclude>
+		<field-exclude>
+			<a>projects</a>
+			<b>projects</b>
+		</field-exclude>
+		<field-exclude>
+			<a>views</a>
+			<b>views</b>
+		</field-exclude>
+	</mapping>
+	
+	<mapping map-id="cardProperty-availableField4Search" wildcard="false">
+		<class-a>com.baidu.spark.model.card.property.CardProperty</class-a>
+		<class-b>com.baidu.spark.model.card.property.CardProperty</class-b>
+		<field>
+			<a>id</a>
+			<b>id</b>
+		</field>
+		<field>
+			<a>name</a>
+			<b>name</b>
+		</field>
+		<field>
+			<a>hidden</a>
+			<b>hidden</b>
+		</field>
+		<field>
+			<a>info</a>
+			<b>info</b>
+		</field>
+		<field>
+			<a>type</a>
+			<b>type</b>
+		</field>
+	</mapping>
+	
+	<mapping map-id="cardProperty-controllerMapping" wildcard="false">
+		<class-a>com.baidu.spark.model.card.property.CardProperty</class-a>
+		<class-b>com.baidu.spark.model.card.property.CardProperty</class-b>
+		<field>
+			<a>id</a>
+			<b>id</b>
+		</field>
+		<field>
+			<a>name</a>
+			<b>name</b>
+		</field>
+		<field>
+			<a>hidden</a>
+			<b>hidden</b>
+		</field>
+		
+		<field>
+			<a>type</a>
+			<b>type</b>
+		</field>
+		<field-exclude >
+			<a>cardTypes</a>
+			<b>cardTypes</b>
+		</field-exclude>
+		<field-exclude>
+			<a>info</a>
+			<b>info</b>
+		</field-exclude>
+	</mapping>
+	
+	<mapping map-null="false">
+		<class-a>com.baidu.spark.model.card.CardType</class-a>
+		<class-b>com.baidu.spark.model.card.CardType</class-b>
+		<field map-id="space-basic">
+			<a>space</a>
+			<b>space</b>
+		</field>
+		<field-exclude>
+			<a>cardProperties</a>
+			<b>cardProperties</b>
+		</field-exclude>
+	</mapping>
+	
+	<mapping map-null="false">
+		<class-a>com.baidu.spark.model.Space</class-a>
+		<class-b>com.baidu.spark.model.Space</class-b>
+	</mapping>
+	<!-- card properties copy .Using in CardServiceImpl.updateCard -->
+	<mapping map-id="cardType-updateCard" wildcard="false">
+		<class-a>com.baidu.spark.model.card.Card</class-a>
+		<class-b>com.baidu.spark.model.card.Card</class-b>
+		<field copy-by-reference="true">
+			<a>lastModifiedUser</a>
+			<b>lastModifiedUser</b>
+		</field>
+		<field>
+			<a>detail</a>
+			<b>detail</b>
+		</field>
+		<field>
+			<a>title</a>
+			<b>title</b>
+		</field>
+		<field copy-by-reference="true">
+			<a>project</a>
+			<b>project</b>
+		</field>
+		<field-exclude >
+			<a>id</a>
+			<b>id</b>
+		</field-exclude>
+		<field-exclude >
+			<a>space</a>
+			<b>space</b>
+		</field-exclude>
+		<field-exclude >
+			<a>type</a>
+			<b>type</b>
+		</field-exclude>
+		<field-exclude >
+			<a>createdUser</a>
+			<b>createdUser</b>
+		</field-exclude>
+		<field-exclude >
+			<a>createdTime</a>
+			<b>createdTime</b>
+		</field-exclude>
+		<field-exclude >
+			<a>lastModifiedTime</a>
+			<b>lastModifiedTime</b>
+		</field-exclude>
+		<field-exclude >
+			<a>historyList</a>
+			<b>historyList</b>
+		</field-exclude>
+		<field-exclude >
+			<a>propertyValues</a>
+			<b>propertyValues</b>
+		</field-exclude>
+		<field-exclude >
+			<a>attachmentList</a>
+			<b>attachmentList</b>
+		</field-exclude>
+	</mapping>
+	<!-- group copy .Using in GroupController and GlobalGroupController-->
+	<mapping map-id="group-updateGroup" wildcard="false">
+		<class-a>com.baidu.spark.model.Group</class-a>
+		<class-b>com.baidu.spark.model.Group</class-b>
+		<field>
+			<a>name</a>
+			<b>name</b>
+		</field>
+		<field>
+			<a>locked</a>
+			<b>locked</b>
+		</field>
+		<field>
+			<a>exposed</a>
+			<b>exposed</b>
+		</field>
+		<field-exclude >
+			<a>id</a>
+			<b>id</b>
+		</field-exclude>
+		<field-exclude >
+			<a>owner</a>
+			<b>owner</b>
+		</field-exclude>
+		<field-exclude >
+			<a>users</a>
+			<b>users</b>
+		</field-exclude>
+	</mapping>
+	
+	<!-- view copy .Using in UserViewService-->
+	<mapping map-id="userview-updateView" wildcard="false">
+		<class-a>com.baidu.spark.model.UserView</class-a>
+		<class-b>com.baidu.spark.model.UserView</class-b>
+		<field>
+			<a>name</a>
+			<b>name</b>
+		</field>
+		<field>
+			<a>sort</a>
+			<b>sort</b>
+		</field>
+		<field>
+			<a>url</a>
+			<b>url</b>
+		</field>
+	</mapping>
+	
+		<!-- user copy .Using in UserServiceImpl-->
+	<mapping map-id="user-updateUser" map-null="false" wildcard="false">
+		<class-a>com.baidu.spark.model.User</class-a>
+		<class-b>com.baidu.spark.model.User</class-b>
+		<field>
+			<a>uicId</a>
+			<b>uicId</b>
+		</field>
+		<field>
+			<a>name</a>
+			<b>name</b>
+		</field>
+		<field>
+			<a>username</a>
+			<b>username</b>
+		</field>
+		<field>
+			<a>email</a>
+			<b>email</b>
+		</field>
+		<field>
+			<a>locked</a>
+			<b>locked</b>
+		</field>
+		<field>
+			<a>groups</a>
+			<b>groups</b>
+		</field>
+		<field>
+			<a>authorities</a>
+			<b>authorities</b>
+		</field>
+	</mapping>
+	
+</mappings>

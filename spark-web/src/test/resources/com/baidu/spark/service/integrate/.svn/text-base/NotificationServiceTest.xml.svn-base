@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+	<spaces id="1" name="测试空间1" prefix_code="spark" type="0" />
+	<space_sequence id="1" next_card_seq_num="6" />
+	
+	<users id="1" username="guolin" name="郭凛" email="guolin@baidu.com" />
+	<users id="2" username="chenhui" name="陈惠" email="chenhui@baidu.com" />
+	
+	<card_type id="1" name="测试类型1" space_id="1"/>
+	<card_type id="2" name="测试类型2" space_id="1"/>
+	
+	<card_property id="1" space_id="1" name="整数字段1" type="number" sort="1"/>
+	<card_property id="2" space_id="1" name="整数字段2" type="number" sort="2"/>
+	<card_property id="3" space_id="1" name="日期字段1" type="date" sort="3"/>
+	<card_property id="4" space_id="1" name="字符串字段1" type="text" sort="4"/>
+	<card_property id="5" space_id="1" name="列表字段1" type="list" sort="5"/>
+	
+	<card_type_property card_type_id="1" card_property_id="1"/>
+	<card_type_property card_type_id="1" card_property_id="2"/>
+	<card_type_property card_type_id="1" card_property_id="3"/>
+	<card_type_property card_type_id="1" card_property_id="4"/>
+	<card_type_property card_type_id="1" card_property_id="5"/>
+	
+	<card id="1" title="我是一张卡片1" detail="我是卡片1的描述" space_id="1" card_type="1" sequence="1" super_id="[NULL]" created_user="1" last_modified_user="1" />
+	<card id="2" title="我是一张卡片2" detail="我是卡片2的描述" space_id="1" card_type="1" sequence="2" super_id="1" created_user="1" last_modified_user="1"/>
+	<card id="3" title="我是一张卡片3" detail="我是卡片3的描述" space_id="1" card_type="1" sequence="3" super_id="1" created_user="1" last_modified_user="1" />
+	<card id="4" title="我是一张卡片4" detail="我是卡片4的描述" space_id="1" card_type="1" sequence="4" super_id="2" created_user="1" last_modified_user="1" />
+	<card id="5" title="我是一张卡片5" detail="我是卡片5的描述" space_id="1" card_type="1" sequence="5" super_id="2" created_user="1" last_modified_user="1" />
+	
+	<card_property_value id="1" card_id="1" card_property_id="1" type="number" intvalue="2" strvalue="[NULL]" timevalue="[NULL]"/>
+	<card_property_value id="2" card_id="2" card_property_id="2" type="number" intvalue="100"/>
+	<card_property_value id="3" card_id="3" card_property_id="3" type="date" timevalue="2010-06-23 13:14:23"/>
+	<card_property_value id="4" card_id="4" card_property_id="4" type="text" strvalue="some text"/>
+	<card_property_value id="5" card_id="5" card_property_id="5" type="list" intvalue="2"/>
+	
+	<card_history id="1" card_id="1" op_user_id="1" op_time="2010-06-24 13:14:23" op_type="2" title="我是一张卡片1" detail="我是卡片1的描述" 
+			data='{"id":1,"space":1,"parent":null,"type":1,"title":"我是一张卡片1","detail":"我是卡片1的描述","createdUser":1,"sequence":1,"properties":[{"id":1,"name":"整数字段1","value":2}]}' 
+			diff_data='{"isNew":true,"diffList":null}' />
+	<card_history id="2" card_id="2" op_user_id="1" op_time="2010-06-24 13:14:23" op_type="2" title="我是一张卡片2" detail="我是卡片2的描述" 
+			data='{"id":2,"space":1,"parent":1,"type":1,"title":"我是一张卡片2","detail":"我是卡片2的描述","createdUser":1,"sequence":2,"properties":[{"id":2,"name":"整数字段2","value":100}]}' 
+			diff_data='{"isNew":true,"diffList":null}' />
+	<card_history id="3" card_id="3" op_user_id="1" op_time="2010-06-24 13:14:23" op_type="2" title="我是一张卡片3" detail="我是卡片3的描述" 
+			data='{"id":3,"space":1,"parent":1,"type":1,"title":"我是一张卡片3","detail":"我是卡片3的描述","createdUser":1,"sequence":3,"properties":[{"id":3,"name":"日期字段1","value":"2010-06-23 13:14:23"}]}' 
+			diff_data='{"isNew":true,"diffList":null}' />
+	<card_history id="4" card_id="4" op_user_id="1" op_time="2010-06-24 13:14:23" op_type="2" title="我是一张卡片4" detail="我是卡片4的描述" 
+			data='{"id":4,"space":1,"parent":2,"type":1,"title":"我是一张卡片4","detail":"我是卡片4的描述","createdUser":1,"sequence":4,"properties":[{"id":4,"name":"字符串字段1","value":"some text"}]}' 
+			diff_data='{"isNew":true,"diffList":null}' />
+	<card_history id="5" card_id="5" op_user_id="1" op_time="2010-06-24 13:14:23" op_type="2" title="我是一张卡片5" detail="我是卡片5的描述" 
+			data='{"id":5,"space":1,"parent":2,"type":1,"title":"我是一张卡片5","detail":"我是卡片5的描述","createdUser":1,"sequence":5,"properties":[{"id":5,"name":"列表字段1","value":2}]}' 
+			diff_data='{"isNew":true,"diffList":null}' />
+	
+</dataset>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+	<spaces id="1" name="测试空间1" prefix_code="spark1" type="0" />
+	<space_sequence id="1" next_card_seq_num="2" next_card_property_local_id="1" next_card_type_local_id="3" next_list_value_local_id="4"/>
+	<space_view name="123223" view_url="aa/bb/cc" sort="1"/>
+	<space_view name="123234" view_url="aa/bb/cc/dd" sort="2"/>
+	<card_type id="1" local_id="1" name="Release" space_id="1" parent_card_type_id="[NULL]" recursive="0"/>
+	<card_type id="2" local_id="2" name="Sprint" space_id="1" parent_card_type_id="1" recursive="0"/>
+	<card_type id="3" local_id="3" name="Project" space_id="1" parent_card_type_id="1" recursive="0"/>
+	<card_type id="4" local_id="4" name="Story" space_id="1" parent_card_type_id="2"  recursive="0"/>
+	<card_type id="5" local_id="5" name="Release" space_id="1"  recursive="0"/>
+	<card_property id="1" local_id="1" space_id="1" name="列表字段1" type="list" sort="1"/>
+	<card_property id="2" local_id="2" space_id="1" name="字符串字段2" type="text" sort="2"/>
+	<card_property id="3" local_id="3" space_id="1" name="字符串字段1" type="text" sort="2"/>
+	<card_property id="4" local_id="4" space_id="1" name="字符串字段4" type="text" sort="2"/>
+	<card_property id="5" local_id="5" space_id="1" name="列表字段2" type="list" sort="2" info="{&quot;1302536f-60d7-415d-9e84-1ac102c57e44&quot;:&quot;高&quot;,&quot;2cd434d9-0e9a-431f-a492-1a7fb0ea229b&quot;:&quot;中&quot;,&quot;97ddb81c-3851-437c-8949-aab203f9f0e5&quot;:&quot;低&quot;}"/>
+	
+	<card_type_property card_type_id="2" card_property_id="1"/>
+	<card_type_property card_type_id="2" card_property_id="2"/>
+	<card_type_property card_type_id="1" card_property_id="3"/>
+	<card_type_property card_type_id="4" card_property_id="4"/>
+	<card_type_property card_type_id="2" card_property_id="5"/>
+	
+	<users id="1" username="zhangjing"/>
+	<users id="2" username="guolin"/>
+	<users id="3" username="chenhui"/>
+	<groups id="1" name="用户组1" space_id="1" locked="0" />
+	<group_user group_id="1" user_id="1"/>
+	<group_user group_id="1" user_id="2"/>
+	<group_space group_id="1" space_id="1"/>
+	<acl_class id="101" class="com.baidu.spark.model.Space"/>
+	<acl_class id="102" class="com.baidu.spark.model.card.Card"/>
+	<acl_sid id="101" principal="1" sid="group_1"/>
+	<acl_sid id="102" principal="1" sid="user_2"/>
+	<acl_object_identity id="101" object_id_class="101" object_id_identity="1" owner_sid="102" entries_inheriting="1"/>
+	<acl_entry id="101" acl_object_identity="101" ace_order="0" sid="101" mask="5" granting="1" audit_success="0" audit_failure="0"/>
+	
+</dataset>

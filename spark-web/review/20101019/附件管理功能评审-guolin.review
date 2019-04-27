@@ -1,0 +1,455 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Review id="附件管理功能评审">
+  <ReviewIssue id="GFHR0HQ8">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-20 :: 13:14:18:176 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-21 :: 14:12:42:101 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>shixiaolei</AssignedTo>
+    <File line="40">src/main/java/com/baidu/spark/web/ajax/AttachmentAjaxController.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>缺少异常情况捕捉</Summary>
+    <Description>space不存在怎么办？card不存在怎么办？attach不存在怎么办？都应该有相应的处理逻辑</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GFHR200E">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-20 :: 13:15:28:526 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-21 :: 14:12:35:558 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>shixiaolei</AssignedTo>
+    <File line="51">src/main/java/com/baidu/spark/web/ajax/AttachmentAjaxController.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>缺少异常情况捕捉，同上</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GFHR3U7G">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-20 :: 13:16:54:316 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-21 :: 13:38:49:454 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>shixiaolei</AssignedTo>
+    <File line="19">src/main/java/com/baidu/spark/web/ajax/AttachmentAjaxController.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>有unused warnning</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GFHR6BDW">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-20 :: 13:18:49:892 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-21 :: 13:44:05:221 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>shixiaolei</AssignedTo>
+    <File line="60">src/main/java/com/baidu/spark/web/AttachmentController.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>异常处理可以优化</Summary>
+    <Description>1. 没有IllegalStateException，不需要捕获&#13;
+2. IOException由Controller向上抛出意义不大，应该直接try catch捕获然后抛出对页面有意义的异常，例如：UnhandledViewException或是ResponseStatusException</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GFHRAJX9">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-20 :: 13:22:07:581 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-21 :: 14:12:20:774 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>shixiaolei</AssignedTo>
+    <File line="60">src/main/java/com/baidu/spark/web/AttachmentController.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>缺少异常情况的捕获</Summary>
+    <Description>如space/card不存在的情况</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GFHRQO8G">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-20 :: 13:34:39:664 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-21 :: 13:37:06:237 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>shixiaolei</AssignedTo>
+    <File line="56">src/main/java/com/baidu/spark/web/AttachmentController.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>参数优化</Summary>
+    <Description>1. 不需要Request&#13;
+2. 尽量不要使用与容器相关联的HttpServletRequest和HttpServletResponse，这样会使得测试等非容器依赖的行动受到阻碍&#13;
+在这里由于只是需要返回一个id值，所以可以考虑加上@ResponseBody再直接返回字符串</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GFHRUA7V">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-20 :: 13:37:28:123 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-21 :: 13:36:55:366 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>shixiaolei</AssignedTo>
+    <File line="71">src/main/java/com/baidu/spark/web/AttachmentController.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Annotation优化</Summary>
+    <Description>所有的Annotation在只有一个参数时都可以省略value，写成&#13;
+@PathVariable("id")即可</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GFHRVTZJ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-20 :: 13:38:40:399 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-21 :: 14:12:29:390 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>shixiaolei</AssignedTo>
+    <File line="75">src/main/java/com/baidu/spark/web/AttachmentController.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>异常、参数等优化同上个方法</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GFHRWR53">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-20 :: 13:39:23:367 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-21 :: 13:36:31:333 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>shixiaolei</AssignedTo>
+    <File line="91">src/main/java/com/baidu/spark/web/AttachmentController.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>异常优化</Summary>
+    <Description>1. 第二个参数可以省略，不需要传入空字符串&#13;
+2. SparkRuntimeException是在没有可选异常时才选用，在Controller中没有可选异常时首选UnhandledViewException，或是使用ResponseStatusException这些对视图层有意义的异常</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GFHS9GLX">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-20 :: 13:49:16:245 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-21 :: 13:34:41:342 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>shixiaolei</AssignedTo>
+    <File line="117">src/main/java/com/baidu/spark/web/AttachmentController.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>可以考虑抛出一个RuntimeException</Summary>
+    <Description>因为有可能将来真有人把utf-8改了并且改错了，这样问题就很难被定位了</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GFHSBBJB">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-20 :: 13:50:42:983 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-21 :: 13:34:33:662 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>shixiaolei</AssignedTo>
+    <File line="133">src/main/java/com/baidu/spark/web/AttachmentController.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>logger记录日志，否则出错后无从定位</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GFHSBQEN">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-20 :: 13:51:02:255 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-21 :: 13:34:27:893 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>shixiaolei</AssignedTo>
+    <File line="139">src/main/java/com/baidu/spark/web/AttachmentController.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>不要使用printStackTrace，下同</Summary>
+    <Description>logger记录日志，否则出错后无从定位</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GFHSG5UB">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-20 :: 13:54:28:883 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-21 :: 13:34:21:190 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>shixiaolei</AssignedTo>
+    <File line="61">src/main/java/com/baidu/spark/service/impl/AttachmentServiceImpl.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>不应该在Service层抛出View层的异常</Summary>
+    <Description>在进行n层结构编码时，各个层应该是独立存在的，即下层不知道上层的存在&#13;
+例如：编写Service时应该假装Controller不存在，Service只是独立的、与视图无关的逻辑&#13;
+这也是面向对象设计时需要注意的问题之一，设计一个对象时不要依赖于客户端</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GFHSQQG5">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-20 :: 14:02:42:149 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-21 :: 13:33:44:102 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>shixiaolei</AssignedTo>
+    <File line="37">src/main/java/com/baidu/spark/service/impl/AttachmentServiceImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>常量全大写</Summary>
+    <Description>要么首字小写驼峰也行，关键是全代码保持风格统一&#13;
+首字大写像类名，又加了下划线，不是java建议的命名方式</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GFHST8E9">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-20 :: 14:04:38:721 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-21 :: 13:33:36:933 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>shixiaolei</AssignedTo>
+    <File line="173">src/main/java/com/baidu/spark/service/impl/AttachmentServiceImpl.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>不如把常量改为M_SIZE，减少一次运算</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GFHSV6XU">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-20 :: 14:06:10:146 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-21 :: 13:43:43:118 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>shixiaolei</AssignedTo>
+    <File line="177">src/main/java/com/baidu/spark/service/impl/AttachmentServiceImpl.java</File>
+    <Type>item.type.label.optimization</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>timestamp仅在else分支中需要，不应该写在这个位置</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GFHSXNVI">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-20 :: 14:08:05:406 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-21 :: 13:32:52:310 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>shixiaolei</AssignedTo>
+    <File line="197">src/main/java/com/baidu/spark/service/impl/AttachmentServiceImpl.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>函数设计优化</Summary>
+    <Description>函数设计成existsSameNameInCard，返回boolean更加有意义</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GFHT0OON">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-20 :: 14:10:26:423 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-21 :: 13:32:44:069 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>shixiaolei</AssignedTo>
+    <File line="191">src/main/java/com/baidu/spark/service/impl/AttachmentServiceImpl.java</File>
+    <Type>item.type.label.optimization</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>lastIndexOf及字符串拼接优化</Summary>
+    <Description>两次lastIndexOf可以弄个loc变量出来&#13;
+也可以考虑使用StringBuilder的insert功能直接将"_"+timestamp插入到点前面，减免字符串分割和拼接的动作</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GFHT3K8L">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-20 :: 14:12:40:629 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-21 :: 13:29:42:389 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>shixiaolei</AssignedTo>
+    <File line="174">src/main/java/com/baidu/spark/service/impl/AttachmentServiceImpl.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>不应使用ResponseStatusException</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GFHT6HQI">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-20 :: 14:14:57:354 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-21 :: 13:27:04:070 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>shixiaolei</AssignedTo>
+    <File line="168">src/main/java/com/baidu/spark/service/impl/CardHistoryServiceImpl.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>没有需要拦截的CheckedException</Summary>
+    <Description>最多有RuntimeException，不应该拦截Exception&#13;
+有了logger后就不应该再写e.printStackTrace()，因为这个异常是往标准输出上写内容，无法受控制</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GFHT8WF2">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-20 :: 14:16:49:694 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-21 :: 13:26:38:517 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>shixiaolei</AssignedTo>
+    <File line="160">src/main/java/com/baidu/spark/service/impl/CardHistoryServiceImpl.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>不要使用非Java建议命名方式</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GFHT9P3U">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-20 :: 14:17:26:874 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-21 :: 13:26:09:046 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>shixiaolei</AssignedTo>
+    <File line="161">src/main/java/com/baidu/spark/service/impl/CardHistoryServiceImpl.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>IncludePathCallback接受可变参数，不需要写数组</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GFHTGO2C">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-20 :: 14:22:52:116 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-21 :: 13:36:37:806 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>shixiaolei</AssignedTo>
+    <File line="256">src/main/java/com/baidu/spark/service/impl/helper/CardHistoryDiffHelper.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>请使用Java驼峰命名</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GFHTKDTK">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-20 :: 14:25:45:464 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-20 :: 14:25:53:244 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>shixiaolei</AssignedTo>
+    <File line="2">src/main/webapp/js/pages/cards/attachment.js</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>缺少jsdoc注释</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GFHTLNB2">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-20 :: 14:26:44:414 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-20 :: 14:26:58:890 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>shixiaolei</AssignedTo>
+    <File line="15">src/main/webapp/js/pages/cards/attachment.js</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>成员变量和成员函数都缺少jsdoc</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GFHTQBV7">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-20 :: 14:30:22:867 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2010-10-21 :: 12:40:21:061 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>guolin</ReviewerId>
+    <AssignedTo>shixiaolei</AssignedTo>
+    <File line="83">src/main/webapp/js/pages/cards/attachment.js</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>尽量统一用单引号或是双引号</Summary>
+    <Description>建议是平时使用双引号，只有在html代码块的时候才使用单引号</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+</Review>

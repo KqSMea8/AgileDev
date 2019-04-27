@@ -1,0 +1,80 @@
+<?xml version="1.0"	encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:security="http://www.springframework.org/schema/security"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:util="http://www.springframework.org/schema/util" 
+  xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+  			  http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-2.0.xsd
+              http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-3.0.xsd">
+ 	
+	<!-- acl security config -->
+	
+	<security:global-method-security secured-annotations="enabled" access-decision-manager-ref="businessAccessDecisionManager"/>
+	
+	
+	<bean id="lookupStrategy" class="org.springframework.security.acls.jdbc.BasicLookupStrategy">
+        <constructor-arg ref="dataSource"/>
+        <constructor-arg ref="aclCache"/>
+        <constructor-arg ref="aclAuthorizationStrategy"/>
+        <constructor-arg>
+            <bean class="org.springframework.security.acls.domain.ConsoleAuditLogger"/>
+        </constructor-arg>
+        <property name="permissionFactory" >
+			<bean class="org.springframework.security.acls.domain.DefaultPermissionFactory">
+				<constructor-arg type="java.lang.Class" value="com.baidu.spark.security.SparkPermission"/>
+			</bean>
+			
+		</property>
+    </bean>
+
+    <bean id="aclCache" class="org.springframework.security.acls.domain.EhCacheBasedAclCache">
+        <constructor-arg>
+            <bean class="org.springframework.cache.ehcache.EhCacheFactoryBean">
+                <property name="cacheManager">
+                    <bean class="org.springframework.cache.ehcache.EhCacheManagerFactoryBean"/>
+                </property>
+                <property name="cacheName" value="aclCache"/>
+            </bean>
+        </constructor-arg>
+    </bean>
+
+    <bean id="aclAuthorizationStrategy" class="com.baidu.spark.security.SparkAclAuthorizationStrategyImpl">
+        <constructor-arg>
+            <list>
+                <bean class="org.springframework.security.core.authority.GrantedAuthorityImpl">
+                    <constructor-arg value="ROLE_ADMIN"/><!-- GeneralChanges修改其他ace信息。TODO 写个全局的管理员组名称 -->
+                </bean>
+                <bean class="org.springframework.security.core.authority.GrantedAuthorityImpl">
+                    <constructor-arg value="ROLE_ADMIN"/><!-- ModifyAuditing变更授权。TODO 写个全局的管理员组名称 -->
+                </bean>
+                <bean class="org.springframework.security.core.authority.GrantedAuthorityImpl">
+                    <constructor-arg value="ROLE_ADMIN"/><!-- TakeOwnership修改从属者。TODO 写个全局的管理员组名称 -->
+                </bean>
+            </list>
+        </constructor-arg>
+    </bean>
+
+    <bean id="aclService" class="com.baidu.spark.security.impl.SparkMutableAclServiceImpl">
+        <constructor-arg ref="dataSource"/>
+        <constructor-arg ref="lookupStrategy"/>
+        <constructor-arg ref="aclCache"/>
+        <property name="classIdentityQuery" value="SELECT @@IDENTITY"/><!-- avoid exception in mysql: org.springframework.jdbc.BadSqlGrammarException: StatementCallback; bad SQL grammar [call identity()]; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: PROCEDURE spark.identity does not exist-->
+		<property name="sidIdentityQuery" value="SELECT @@IDENTITY"/> 
+    </bean>
+    
+
+    <!-- An access decision voter that reads ACL_OBJECT_READ configuration settings -->
+    <bean id="aclMethodVoter" class="com.baidu.spark.security.voter.SparkAclVoter">
+    	<constructor-arg value="commonVoter"/>
+    </bean>
+
+    <!-- An access decision manager used by the business objects -->
+    <bean id="businessAccessDecisionManager" class="org.springframework.security.access.vote.AffirmativeBased">
+        <property name="allowIfAllAbstainDecisions" value="false"/>
+        <property name="decisionVoters">
+            <list>
+                <ref local="aclMethodVoter"/>
+            </list>
+        </property>
+    </bean>
+</beans>

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/iit/!svn/ver/5188/trunk/spark/spark-web/src/main/java/com/baidu/spark/service/impl/helper/copyspace/validation/impl
+END
+DeserializeError.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/iit/!svn/ver/5188/trunk/spark/spark-web/src/main/java/com/baidu/spark/service/impl/helper/copyspace/validation/impl/DeserializeError.java
+END
+InvalidDataError.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/iit/!svn/ver/5188/trunk/spark/spark-web/src/main/java/com/baidu/spark/service/impl/helper/copyspace/validation/impl/InvalidDataError.java
+END

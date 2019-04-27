@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/iit/!svn/ver/13510/trunk/spark/spark-web/src/test/java/com/baidu/spark/model/unit
+END
+DummyPropertyTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/iit/!svn/ver/5855/trunk/spark/spark-web/src/test/java/com/baidu/spark/model/unit/DummyPropertyTest.java
+END
+QueryVOTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/iit/!svn/ver/4330/trunk/spark/spark-web/src/test/java/com/baidu/spark/model/unit/QueryVOTest.java
+END
+CardPropertyValueTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/iit/!svn/ver/13510/trunk/spark/spark-web/src/test/java/com/baidu/spark/model/unit/CardPropertyValueTest.java
+END

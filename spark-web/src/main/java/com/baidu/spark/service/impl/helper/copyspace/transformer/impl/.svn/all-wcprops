@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/iit/!svn/ver/10930/trunk/spark/spark-web/src/main/java/com/baidu/spark/service/impl/helper/copyspace/transformer/impl
+END
+GroupTransformer.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/iit/!svn/ver/6170/trunk/spark/spark-web/src/main/java/com/baidu/spark/service/impl/helper/copyspace/transformer/impl/GroupTransformer.java
+END
+CardPropertyTransformer.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/iit/!svn/ver/6532/trunk/spark/spark-web/src/main/java/com/baidu/spark/service/impl/helper/copyspace/transformer/impl/CardPropertyTransformer.java
+END
+SpaceSequenceTransformer.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/iit/!svn/ver/6170/trunk/spark/spark-web/src/main/java/com/baidu/spark/service/impl/helper/copyspace/transformer/impl/SpaceSequenceTransformer.java
+END
+SpaceViewTransformer.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/iit/!svn/ver/10930/trunk/spark/spark-web/src/main/java/com/baidu/spark/service/impl/helper/copyspace/transformer/impl/SpaceViewTransformer.java
+END
+PojoTransformer.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/iit/!svn/ver/5766/trunk/spark/spark-web/src/main/java/com/baidu/spark/service/impl/helper/copyspace/transformer/impl/PojoTransformer.java
+END
+CardTypeTransformer.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/iit/!svn/ver/6170/trunk/spark/spark-web/src/main/java/com/baidu/spark/service/impl/helper/copyspace/transformer/impl/CardTypeTransformer.java
+END

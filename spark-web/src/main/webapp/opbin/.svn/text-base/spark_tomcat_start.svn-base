@@ -1,0 +1,5 @@
+#!/bin/bash
+TOMCAT_HOME=/home/work/local/tomcat-spark
+cd $TOMCAT_HOME/bin && ./startup.sh
+echo "after start tomcat"
+ps -ef|grep $TOMCAT_HOME|grep org.apache.catalina.startup.Bootstrap|grep -v grep

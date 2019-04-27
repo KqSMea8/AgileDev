@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/iit/!svn/ver/13553/trunk/spark/spark-web/docs
+END
+cp_and_ct__n2n.sql
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/iit/!svn/ver/5725/trunk/spark/spark-web/docs/cp_and_ct__n2n.sql
+END
+pmd-rulsets.xml
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/iit/!svn/ver/13553/trunk/spark/spark-web/docs/pmd-rulsets.xml
+END
+spark.sql
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/iit/!svn/ver/11006/trunk/spark/spark-web/docs/spark.sql
+END

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" 
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xmlns:context="http://www.springframework.org/schema/context"
+	   xmlns:util="http://www.springframework.org/schema/util" 
+	   xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd 
+		   http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-2.5.xsd
+		   http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-2.0.xsd"
+	   default-autowire="byType" default-lazy-init="true">
+
+	<util:properties id="properties" location="classpath:spark-test.properties" />
+ 
+	<context:property-placeholder properties-ref="properties" />
+ 
+	<context:component-scan base-package="com.baidu.spark" />
+
+	<!-- 导入其他配置文件 -->
+	<import resource="applicationContext-dao.xml" />
+	<import resource="applicationContext-remote.xml" />
+
+	<!-- 工具bean定义 -->
+	<bean id="applicationContextHolder" class="com.baidu.spark.util.ApplicationContextHolder" scope="singleton" lazy-init="false" />
+
+	<!-- 测试用JDBC Template -->
+	<bean id="jdbcTemplate" class="org.springframework.jdbc.core.simple.SimpleJdbcTemplate">
+		<constructor-arg ref="dataSource" />
+	</bean>
+	
+	<!-- json工具的工厂 -->
+	<bean id="stringHttpMessageConverter" class="org.springframework.http.converter.StringHttpMessageConverter" />
+	<bean id="jacksonHttpMessageConverter" class="org.springframework.http.converter.json.MappingJacksonHttpMessageConverter">
+		<property name="objectMapper" ref="jacksonObjectMapper" />
+	</bean>
+	<bean id="jacksonObjectMapper" class="com.baidu.spark.util.json.JsonObjectMapperFactory" />
+
+	<!-- spark-servlet - i18n -->
+	<bean id="messageSource" class="com.baidu.spark.util.CustomResourceBundleMessageSource">
+		<property name="basename" value="messages" />
+		<property name="useCodeAsDefaultMessage" value="true" />
+	</bean>
+
+	<!-- spark-servlet - Static Message Holder -->
+	<bean id="messageHolder" class="com.baidu.spark.util.MessageHolder" scope="singleton" lazy-init="false">
+		<property name="messageSource" ref="messageSource" />
+	</bean>
+	<!-- 系统属性的定义 -->
+	<bean id="systemConfig" class="com.baidu.spark.util.SparkConfig" lazy-init="false">
+		<property name="props" ref="properties"></property>
+	</bean>
+	
+	<!-- 空间模板的配置 -->
+	<bean id="ssTransformer" class="com.baidu.spark.service.impl.helper.copyspace.transformer.impl.SpaceSequenceTransformer"></bean>
+	<bean id="cardTypeTransformer" class="com.baidu.spark.service.impl.helper.copyspace.transformer.impl.CardTypeTransformer"></bean>
+	<bean id="cardPropertyTransformer" class="com.baidu.spark.service.impl.helper.copyspace.transformer.impl.CardPropertyTransformer"></bean>
+	<bean id="groupTransformer" class="com.baidu.spark.service.impl.helper.copyspace.transformer.impl.GroupTransformer"></bean>
+	<bean id="spaceViewTransformer" class="com.baidu.spark.service.impl.helper.copyspace.transformer.impl.SpaceViewTransformer"></bean>
+	<bean id="spaceCopyService" class="com.baidu.spark.service.impl.SpaceCopyServiceImpl">
+		<property name="transformers">
+			<list>
+				<ref local="ssTransformer"/>
+				<ref local="cardTypeTransformer"/>
+				<ref local="cardPropertyTransformer"/>
+				<ref local="groupTransformer"/>
+				<ref local="spaceViewTransformer"/>
+			</list>
+		</property>
+	</bean>
+
+	<!-- 邮件发送配置 -->
+	<bean id="templateGenerator" class="com.baidu.spark.util.TemplateGenerator">
+		<property name="basePath" value="/email" />
+	</bean>
+    <bean id="javaMailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
+        <property name="host" value="${mail.smtp.host}" />
+        <property name="username" value="${mail.smtp.username}" />
+        <property name="password" value="${mail.smtp.password}" />
+        <property name="javaMailProperties">
+            <props>
+                <prop key="mail.smtp.auth">${mail.smtp.authenticate}</prop>
+            </props>
+        </property>
+    </bean>
+	<bean id="mailSender" class="com.baidu.spark.util.MailSender">
+		<property name="mailSender" ref="javaMailSender" />
+		<property name="systemSender" value="${mail.system.sender}" />
+		<property name="maxReceiversOnce" value="${mail.max.receivers}" />
+		<property name="debug" value="${mail.debug}" />
+		<property name="debugReceiver" value="${mail.debug.receiver}" />
+	</bean>
+
+</beans>

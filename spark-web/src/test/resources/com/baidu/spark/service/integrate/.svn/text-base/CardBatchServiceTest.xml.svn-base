@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+
+	<spaces id="1" name="测试空间1" prefix_code="spark" type="0" />
+	<space_sequence id="1" next_card_seq_num="6" />
+
+	<users id="1" username="zhangjing"/>
+	<users id="2" username="chenhui"/>
+	<users id="3" username="shixiaolei"/>
+	<users id="4" username="guolin"/>
+	<users id="5" username="tianyusong"/>
+
+	<card_type id="1" local_id="1" name="测试类型1" space_id="1" parent_card_type_id="[NULL]" recursive="0"/>
+	<card_type id="2" local_id="2" name="测试类型2" space_id="1" parent_card_type_id="1" recursive="0"/>
+	<card_type id="3" local_id="3" name="测试类型3" space_id="1" parent_card_type_id="2" recursive="0"/>
+	<card_type id="4" local_id="4" name="测试类型4" space_id="1" parent_card_type_id="2" recursive="1"/>
+	
+	<card_property id="1" local_id="1" space_id="1" name="整数字段1" type="number" sort="1"/>
+	<card_property id="2" local_id="2" space_id="1" name="字符串字段1" type="text" sort="2"/>
+	<card_property id="3" local_id="3" space_id="1" name="列表字段1" type="list" sort="3" info="{&quot;1302536f-60d7-415d-9e84-1ac102c57e44&quot;:&quot;高&quot;,&quot;2cd434d9-0e9a-431f-a492-1a7fb0ea229b&quot;:&quot;中&quot;,&quot;97ddb81c-3851-437c-8949-aab203f9f0e5&quot;:&quot;低&quot;}"/>
+	<card_property id="4" local_id="4" space_id="1" name="用户字段1" type="user" sort="4"/>
+	<card_property id="5" local_id="5" space_id="1" name="时间字段" type="date" sort="5"/>
+	
+	<card_type_property card_type_id="1" card_property_id="1"/>
+	<card_type_property card_type_id="1" card_property_id="2"/>
+	<card_type_property card_type_id="1" card_property_id="3"/>
+	<card_type_property card_type_id="2" card_property_id="1"/>
+	<card_type_property card_type_id="2" card_property_id="3"/>
+	<card_type_property card_type_id="2" card_property_id="4"/>
+	<card_type_property card_type_id="3" card_property_id="1"/>
+	<card_type_property card_type_id="3" card_property_id="4"/>
+	<card_type_property card_type_id="3" card_property_id="5"/>
+	<card_type_property card_type_id="4" card_property_id="1"/>
+	<card_type_property card_type_id="4" card_property_id="2"/>
+	<card_type_property card_type_id="4" card_property_id="3"/>
+	
+	<card id="1" title="我是一张卡片1" detail="我是卡片1的描述" space_id="1" card_type="1" sequence="1" super_id="[NULL]" created_user="1"/>
+	<card id="2" title="我是一张卡片2" detail="我是卡片2的描述" space_id="1" card_type="2" sequence="2" super_id="1" created_user="2"/>
+	<card id="3" title="我是一张卡片3" detail="我是卡片3的描述" space_id="1" card_type="3" sequence="3" super_id="2" created_user="1"/>
+	<card id="4" title="我是一张卡片4" detail="我是卡片4的描述" space_id="1" card_type="4" sequence="4" super_id="2" created_user="3"/>
+	<card id="5" title="我是一张卡片5" detail="我是卡片5的描述" space_id="1" card_type="1" sequence="5" super_id="[NULL]" created_user="1"/>
+	<card id="6" title="我是一张卡片6" detail="我是卡片6的描述" space_id="1" card_type="2" sequence="6" super_id="[NULL]" created_user="5"/>
+	<card id="7" title="我是一张卡片7" detail="我是卡片7的描述" space_id="1" card_type="3" sequence="7" super_id="2" created_user="1"/>
+	<card id="8" title="我是一张卡片8" detail="我是卡片8的描述" space_id="1" card_type="4" sequence="8" super_id="4" created_user="4"/>
+	<card id="9" title="我是一张卡片9" detail="我是卡片9的描述" space_id="1" card_type="4" sequence="9" super_id="8" created_user="4"/>
+	<card id="10" title="我是一张卡片10" detail="我是卡片10的描述" space_id="1" card_type="4" sequence="10" super_id="4" created_user="4"/>
+	
+	<card_property_value id="1" card_id="1" card_property_id="1" type="number" intvalue="2"/>
+	<card_property_value id="2" card_id="1" card_property_id="2" type="text" strvalue="2"/>
+	<card_property_value id="3" card_id="1" card_property_id="3" type="list" strvalue="2cd434d9-0e9a-431f-a492-1a7fb0ea229b"/>
+	<card_property_value id="4" card_id="2" card_property_id="1" type="number" intvalue="4"/>
+	<card_property_value id="5" card_id="2" card_property_id="3" type="list" strvalue="97ddb81c-3851-437c-8949-aab203f9f0e5"/>
+	<card_property_value id="6" card_id="2" card_property_id="4" type="user" intvalue="2"/>
+	<card_property_value id="7" card_id="3" card_property_id="1" type="number" intvalue="25"/>
+	<card_property_value id="8" card_id="3" card_property_id="4" type="user" intvalue="3"/>
+	<card_property_value id="9" card_id="3" card_property_id="5" type="date" timevalue="2010-11-30 14:03:00"/>
+	<card_property_value id="10" card_id="4" card_property_id="1" type="number" intvalue="634"/>
+	<card_property_value id="11" card_id="4" card_property_id="2" type="text" strvalue="dgsgsdf"/>
+	<card_property_value id="12" card_id="4" card_property_id="3" type="list" strvalue="1302536f-60d7-415d-9e84-1ac102c57e44"/>
+	<card_property_value id="13" card_id="5" card_property_id="1" type="number" intvalue="266"/>
+	<card_property_value id="14" card_id="5" card_property_id="2" type="text" strvalue="yjrtssdg"/>
+	<card_property_value id="15" card_id="5" card_property_id="3" type="list" strvalue="1302536f-60d7-415d-9e84-1ac102c57e44"/>
+	<card_property_value id="16" card_id="6" card_property_id="1" type="number" intvalue="735"/>
+	<card_property_value id="17" card_id="6" card_property_id="3" type="list" strvalue="97ddb81c-3851-437c-8949-aab203f9f0e5"/>
+	<card_property_value id="18" card_id="6" card_property_id="4" type="user" intvalue="1"/>
+	<card_property_value id="19" card_id="7" card_property_id="1" type="number" intvalue="7543"/>
+	<card_property_value id="20" card_id="7" card_property_id="4" type="user" intvalue="2"/>
+	<card_property_value id="21" card_id="7" card_property_id="5" type="date" timevalue="2012-11-30 14:03:00"/>
+	<card_property_value id="22" card_id="8" card_property_id="1" type="number" intvalue="2984"/>
+	<card_property_value id="23" card_id="8" card_property_id="2" type="text" strvalue="faeads"/>
+	<card_property_value id="24" card_id="8" card_property_id="3" type="list" strvalue="1302536f-60d7-415d-9e84-1ac102c57e44"/>
+	<card_property_value id="25" card_id="9" card_property_id="1" type="number" strvalue="538"/>
+	<card_property_value id="26" card_id="9" card_property_id="2" type="text" strvalue="iulersfd"/>
+	<card_property_value id="27" card_id="9" card_property_id="3" type="list" strvalue="1302536f-60d7-415d-9e84-1ac102c57e44"/>
+	
+	<card_history id="1" card_id="1" op_user_id="1" op_time="2010-06-24 13:14:23" op_type="0" title="我是一张卡片1" detail="我是卡片1的描述" 
+			data='{"id":1,"space":1,"parent":0,"type":1,"title":"我是一张卡片1","detail":"我是卡片1的描述","createdUser":1,"createdTime":"","sequence":1,"properties":[{"id":1,"name":"整数字段1","value":2}]}' 
+			diff_data='{"isNew":true,"diffList":null}' />
+	<card_history id="2" card_id="2" op_user_id="1" op_time="2010-06-24 13:14:23" op_type="0" title="我是一张卡片2" detail="我是卡片2的描述" 
+			data='{"id":2,"space":1,"parent":1,"type":2,"title":"我是一张卡片2","detail":"我是卡片2的描述","createdUser":1,"createdTime":"","sequence":2,"properties":[{"id":1,"name":"整数字段1","value":2}]}' 
+			diff_data='{"isNew":true,"diffList":null}' />
+	<card_history id="3" card_id="3" op_user_id="1" op_time="2010-06-24 13:14:23" op_type="0" title="我是一张卡片3" detail="我是卡片3的描述" 
+			data='{"id":3,"space":1,"parent":2,"type":1,"title":"我是一张卡片3","detail":"我是卡片3的描述","createdUser":1,"createdTime":"","sequence":3,"properties":[{"id":1,"name":"整数字段1","value":2}]}' 
+			diff_data='{"isNew":true,"diffList":null}' />
+	<card_history id="4" card_id="4" op_user_id="1" op_time="2010-06-24 13:14:23" op_type="0" title="我是一张卡片4" detail="我是卡片4的描述" 
+			data='{"id":4,"space":1,"parent":2,"type":1,"title":"我是一张卡片4","detail":"我是卡片1的描述","createdUser":1,"createdTime":"","sequence":4,"properties":[{"id":1,"name":"整数字段1","value":2}]}' 
+			diff_data='{"isNew":true,"diffList":null}' />
+	<card_history id="5" card_id="5" op_user_id="1" op_time="2010-06-24 13:14:23" op_type="0" title="我是一张卡片5" detail="我是卡片5的描述" 
+			data='{"id":5,"space":1,"parent":0,"type":1,"title":"我是一张卡片5","detail":"我是卡片5的描述","createdUser":1,"createdTime":"","sequence":5,"properties":[{"id":1,"name":"整数字段1","value":2}]}' 
+			diff_data='{"isNew":true,"diffList":null}' />
+	<card_history id="6" card_id="6" op_user_id="1" op_time="2010-06-24 13:14:23" op_type="0" title="我是一张卡片6" detail="我是卡片6的描述" 
+			data='{"id":6,"space":1,"parent":0,"type":1,"title":"我是一张卡片6","detail":"我是卡片6的描述","createdUser":1,"createdTime":"","sequence":6,"properties":[{"id":1,"name":"整数字段1","value":2}]}' 
+			diff_data='{"isNew":true,"diffList":null}' />
+	<card_history id="7" card_id="7" op_user_id="2" op_time="2010-06-24 13:14:23" op_type="0" title="我是一张卡片7" detail="我是卡片7的描述" 
+			data='{"id":7,"space":1,"parent":2,"type":1,"title":"我是一张卡片7","detail":"我是卡片1的描述","createdUser":1,"createdTime":"","sequence":7,"properties":[{"id":1,"name":"整数字段1","value":2}]}' 
+			diff_data='{"isNew":true,"diffList":null}' />
+	<card_history id="8" card_id="8" op_user_id="1" op_time="2010-06-24 13:14:23" op_type="0" title="我是一张卡片8" detail="我是卡片8的描述" 
+			data='{"id":8,"space":1,"parent":4,"type":1,"title":"我是一张卡片8","detail":"我是卡片1的描述","createdUser":1,"createdTime":"","sequence":8,"properties":[{"id":1,"name":"整数字段1","value":2}]}' 
+			diff_data='{"isNew":true,"diffList":null}' />
+	<card_history id="9" card_id="9" op_user_id="1" op_time="2010-06-24 13:14:23" op_type="0" title="我是一张卡片9" detail="我是卡片9的描述" 
+			data='{"id":9,"space":1,"parent":8,"type":1,"title":"我是一张卡片9","detail":"我是卡片1的描述","createdUser":1,"createdTime":"","sequence":9,"properties":[{"id":1,"name":"整数字段1","value":2}]}' 
+			diff_data='{"isNew":true,"diffList":null}' />
+	<card_history id="10" card_id="10" op_user_id="1" op_time="2010-06-24 13:14:23" op_type="0" title="我是一张卡片10" detail="我是卡片10的描述" 
+			data='{"id":10,"space":1,"parent":0,"type":1,"title":"我是一张卡片10","detail":"我是卡片1的描述","createdUser":1,"createdTime":"","sequence":10,"properties":[{"id":1,"name":"整数字段1","value":2}]}' 
+			diff_data='{"isNew":true,"diffList":null}' />
+</dataset>

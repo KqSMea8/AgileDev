@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+	<users id="1" username="chenhui"/>
+	<spaces id="1" name="测试空间1" prefix_code="space1" type="0" />
+	<space_sequence id="1" next_card_seq_num="1" next_card_type_local_id="1" next_card_property_local_id="1" next_list_value_local_id="1"/>
+	<spaces id="2" name="测试空间2" prefix_code="space2" type="0" />
+	<space_sequence id="2" next_card_seq_num="1"  next_card_type_local_id="1" next_card_property_local_id="1" next_list_value_local_id="1"/>
+	<card_type id="1" name="Release" space_id="1" parent_card_type_id="[NULL]" recursive="0"/>
+	<card_type id="2" name="Sprint" space_id="1" parent_card_type_id="1" recursive="0"/>
+	<card_type id="3" name="Project" space_id="1" parent_card_type_id="1" recursive="0"/>
+	<card_type id="4" name="Story" space_id="1" parent_card_type_id="2"  recursive="0"/>
+	<card_type id="5" name="Release" space_id="2"  recursive="0"/>
+	<card_type id="6" name="需求" space_id="2"  recursive="0"/>
+	<card_type id="7" name="子需求" space_id="2"  recursive="0"/>
+	<card_property id="1" local_id="1" space_id="1" name="列表字段1" type="list" sort="1"/>
+	<card_property id="2" local_id="2" space_id="1" name="字符串字段2" type="text" sort="2"/>
+	<card_property id="3" local_id="3" space_id="1" name="字符串字段1" type="text" sort="2"/>
+	<card_property id="4" local_id="4" space_id="1" name="字符串字段4" type="text" sort="2"/>
+	<card_property id="5" local_id="5" space_id="1" name="列表字段2" type="list" sort="2" info="{&quot;1302536f-60d7-415d-9e84-1ac102c57e44&quot;:&quot;高&quot;,&quot;2cd434d9-0e9a-431f-a492-1a7fb0ea229b&quot;:&quot;中&quot;,&quot;97ddb81c-3851-437c-8949-aab203f9f0e5&quot;:&quot;低&quot;}"/>
+	
+	<card_type_property card_type_id="2" card_property_id="1"/>
+	<card_type_property card_type_id="2" card_property_id="2"/>
+	<card_type_property card_type_id="1" card_property_id="3"/>
+	<card_type_property card_type_id="4" card_property_id="4"/>
+	<card_type_property card_type_id="2" card_property_id="5"/>
+	
+	<card id="1" title="Release1" detail="我是卡片1的描述" space_id="1" card_type="1" sequence="1" super_id="[NULL]"/>
+	<card id="2" title="Sprint1" detail="我是卡片2的描述" space_id="1" card_type="2" sequence="2" super_id="1" />
+	<card id="3" title="Sprint2" detail="我是卡片3的描述" space_id="1" card_type="2" sequence="3" super_id="1"/>
+	<card id="4" title="Story1" detail="我是卡片4的描述" space_id="1" card_type="4" sequence="4" super_id="2"/>
+	<card id="5" title="Story2" detail="我是卡片5的描述" space_id="1" card_type="4" sequence="5" super_id="2"/>
+	<card_history id="1" card_id="1" op_user_id="1" op_type="0" title="Release1" detail="我是卡片1的描述"/>
+	<card_history id="2" card_id="2" op_user_id="1" op_type="0" title="Release1" detail="我是卡片1的描述"/>
+	<card_history id="3" card_id="3" op_user_id="1" op_type="0" title="Release1" detail="我是卡片1的描述"/>
+	<card_history id="4" card_id="4" op_user_id="1" op_type="0" title="Release1" detail="我是卡片1的描述"/>
+	<card_history id="5" card_id="5" op_user_id="1" op_type="0" title="Release1" detail="我是卡片1的描述"/>
+	<card_property_value id="1" card_id="1" card_property_id="3" type="text" intvalue="2" strvalue="[NULL]" timevalue="[NULL]"/>
+	<card_property_value id="2" card_id="2" card_property_id="5" type="list" strvalue="97ddb81c-3851-437c-8949-aab203f9f0e5"/>
+	<card_property_value id="3" card_id="2" card_property_id="5" type="list" strvalue="1302536f-60d7-415d-9e84-1ac102c57e44"/>
+	<card_property_value id="4" card_id="4" card_property_id="4" type="text" strvalue="2"/>
+</dataset>
